@@ -1,1 +1,1 @@
-# project-amethyst-front
+# project-chalcanthite-front
