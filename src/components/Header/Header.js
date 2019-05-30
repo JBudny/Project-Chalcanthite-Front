@@ -1,6 +1,7 @@
-import React, {Fragment} from "react";
-import SearchAppBar from './SearchBar';
-import Navigation from './Navigation';
+// @flow
+import React, { Fragment } from "react";
+import SearchAppBar from "./SearchBar";
+import Navigation from "./Navigation";
 
 function HeaderContent() {
   return (
