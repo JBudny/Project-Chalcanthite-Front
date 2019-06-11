@@ -42,6 +42,8 @@
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-preset-flow": "^6.23.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
@@ -51,7 +53,8 @@
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
     "prettier": "^1.17.1",
-    "pretty-quick": "^1.11.0"
+    "pretty-quick": "^1.11.0",
+    "react-test-renderer": "^16.8.6"
   },
   "husky": {
     "hooks": {
