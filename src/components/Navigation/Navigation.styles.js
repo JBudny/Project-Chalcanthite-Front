@@ -7,10 +7,24 @@ const styles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper
   },
   tab: {
-    minWidth: "33%",
+    minWidth: "33.33%",
     [theme.breakpoints.up("sm")]: {
-      minWidth: "25%",
+      minWidth: "33.33%",
       maxWidth: "none"
+    }
+  },
+  notFound: {
+    textAlign: "center",
+    "& span": {
+      fontSize: "2rem",
+      [theme.breakpoints.up("sm")]: {
+        fontSize: "3rem"
+      }
+    }
+  },
+  tabs: {
+    "& div.MuiTabs-scroller.MuiTabs-scrollable > div": {
+      justifyContent: "center"
     }
   }
 }));

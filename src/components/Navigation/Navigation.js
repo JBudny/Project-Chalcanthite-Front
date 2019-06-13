@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import TabContainer from "./TabContainer";
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import styles from "./Navigation.styles";
+import Top from "./tab_content/Top";
+import Fresh from "./tab_content/Fresh";
+import Random from "./tab_content/Random";
+import NoMatch from "./tab_content/NoMatch";
 
 const Navigation = () => {
   const classes = styles();
@@ -14,31 +18,32 @@ const Navigation = () => {
     setCurrentTab(newValue);
   };
 
-  const renderTab = () =>
-    (currentTab === 0 && <TabContainer>TOP</TabContainer>) ||
-    (currentTab === 1 && <TabContainer>TRENDING</TabContainer>) ||
-    (currentTab === 2 && <TabContainer>FRESH</TabContainer>) ||
-    (currentTab === 3 && <TabContainer>RANDOM</TabContainer>);
-
   return (
-    <div className={nav}>
-      <AppBar position="static" color="default">
-        <Tabs
-          value={currentTab}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="scrollable"
-          scrollButtons="off"
-        >
-          <Tab label="TOP" className={tab} />
-          <Tab label="TRENDING" className={tab} />
-          <Tab label="FRESH" className={tab} />
-          <Tab label="RANDOM" className={tab} />
-        </Tabs>
-      </AppBar>
-      {renderTab()}
-    </div>
+    <Router>
+      <div className={nav}>
+        <AppBar position="static" color="default">
+          <Tabs
+            value={currentTab}
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="primary"
+            variant="scrollable"
+            scrollButtons="off"
+          >
+            <Tab label="TOP" className={tab} component={Link} to="/top" />
+            <Tab label="FRESH" className={tab} component={Link} to="/fresh" />
+            <Tab label="RANDOM" className={tab} component={Link} to="/random" />
+          </Tabs>
+        </AppBar>
+        <Switch>
+          <Redirect exact from="/" to="/top" />
+          <Route path="/top" component={Top} />
+          <Route path="/fresh" component={Fresh} />
+          <Route path="/random" component={Random} />
+          <Route component={NoMatch} />
+        </Switch>
+      </div>
+    </Router>
   );
 };
 
