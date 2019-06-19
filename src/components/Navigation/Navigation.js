@@ -3,7 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
-import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
 import styles from "./Navigation.styles";
 import Top from "./tab_content/Top";
 import Fresh from "./tab_content/Fresh";
@@ -11,11 +11,12 @@ import Random from "./tab_content/Random";
 import NoMatch from "./tab_content/NoMatch";
 import getModesByDateInitial from "../../actions/postActions";
 
-const Navigation = props => {
+const Navigation = () => {
   const classes = styles();
   const { nav, tab } = classes;
   const [currentTab, setCurrentTab] = useState(0);
-  const { getModesInitial } = props;
+  const dispatch = useDispatch();
+  const getModesInitial = quantity => dispatch(getModesByDateInitial(quantity));
 
   const handleChange = (event, newValue) => {
     getModesInitial(5);
@@ -51,13 +52,4 @@ const Navigation = props => {
   );
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    getModesInitial: quantity => dispatch(getModesByDateInitial(quantity))
-  };
-};
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(Navigation);
+export default Navigation;
