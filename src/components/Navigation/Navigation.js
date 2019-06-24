@@ -9,7 +9,7 @@ import Top from "./tab_content/Top";
 import Fresh from "./tab_content/Fresh";
 import Random from "./tab_content/Random";
 import NoMatch from "./tab_content/NoMatch";
-import getModesByDateInitial from "../../actions/postActions";
+import { getModesByDateInitial } from "../../actions/postActions";
 
 const Navigation = () => {
   const classes = styles();

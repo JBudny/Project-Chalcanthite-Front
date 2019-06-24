@@ -4,7 +4,8 @@ import TabContainer from "../TabContainer";
 
 function Fresh() {
   const posts = useSelector(state => state.posts);
-  return <TabContainer>{`FRESH: ${posts.length} posts`}</TabContainer>;
+  const isLoading = useSelector(state => state.isLoading);
+  return <TabContainer>{isLoading ? `loading...` : `FRESH: ${posts.length} posts`}</TabContainer>;
 }
 
 export default Fresh;
