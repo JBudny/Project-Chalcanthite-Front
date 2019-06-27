@@ -5,9 +5,9 @@ import { Provider } from "react-redux";
 import reduxThunk from "redux-thunk";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
-import rootReducer from "./reducers/rootReducer";
+import getModesByDateInitial from "./reducers/getModesByDateInitial";
 
-const store = createStore(rootReducer, applyMiddleware(reduxThunk));
+const store = createStore(getModesByDateInitial, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
   <Provider store={store}>
