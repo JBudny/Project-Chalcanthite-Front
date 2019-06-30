@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducer should handle GET_MODES_BY_DATE_INITIAL_DONE 1`] = `
+Object {
+  "isLoading": false,
+  "posts": undefined,
+}
+`;
+
+exports[`reducer should handle GET_MODES_BY_DATE_INITIAL_FAILED 1`] = `
+Object {
+  "isError": true,
+  "isLoading": false,
+}
+`;
+
+exports[`reducer should handle GET_MODES_BY_DATE_INITIAL_REQUESTED 1`] = `
+Object {
+  "isLoading": true,
+}
+`;
+
+exports[`reducer should return the initial state 1`] = `
+Object {
+  "isError": false,
+  "isLoading": false,
+  "posts": Array [],
+}
+`;
