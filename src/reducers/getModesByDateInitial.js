@@ -17,7 +17,7 @@ const getModesByDateInitial = (state = initState, action) => {
     case GET_MODES_BY_DATE_INITIAL_DONE:
       return { ...state, isLoading: false, posts: action.payload };
     case GET_MODES_BY_DATE_INITIAL_FAILED:
-      return { ...state, isLoading: false, isError: true };
+      return { ...state, isLoading: false, isError: true, error: action.payload };
     default:
       return state;
   }

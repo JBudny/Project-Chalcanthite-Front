@@ -19,12 +19,8 @@ export const getModesByDateInitialFailed = error => ({
 
 export const getModesByDateInitial = quantity => dispatch => {
   dispatch(getModesByDateInitialRequested());
-  fetch(`${REACT_APP_API_URL}/modes/top/${quantity}`)
+  return fetch(`${REACT_APP_API_URL}/modes/top/${quantity}`)
     .then(posts => posts.json())
-    .then(posts => {
-      dispatch(getModesByDateInitialDone(posts));
-    })
-    .catch(error => {
-      dispatch(getModesByDateInitialFailed(error));
-    });
+    .then(posts => dispatch(getModesByDateInitialDone(posts)))
+    .catch(error => dispatch(getModesByDateInitialFailed(error)));
 };

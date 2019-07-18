@@ -2,14 +2,37 @@
 
 exports[`action creator creates GET_MODES_BY_DATE_INITIAL_DONE action 1`] = `
 Object {
-  "payload": "test",
+  "payload": Array [
+    Object {
+      "__v": 0,
+      "_id": "5d2f57294b9625238ce44575",
+      "author": "5cf2a6fded450065969652b2",
+      "createdAt": "2019-07-17T17:13:13.029Z",
+      "favorites": 0,
+      "points": 0,
+      "tags": Array [],
+      "thumbnail": "/path/to/default.img",
+    },
+    Object {
+      "__v": 0,
+      "_id": "5d2f58a24b9625238ce44577",
+      "author": "5cf2a6fded450065969652b2",
+      "createdAt": "2019-07-17T17:19:30.091Z",
+      "favorites": 0,
+      "points": 0,
+      "tags": Array [],
+      "thumbnail": "/path/to/default.img",
+    },
+  ],
   "type": "GET_MODES_BY_DATE_INITIAL_DONE",
 }
 `;
 
 exports[`action creator creates GET_MODES_BY_DATE_INITIAL_FAILED action 1`] = `
 Object {
-  "payload": "test",
+  "payload": Object {
+    "Error": "TypeError: Failed to fetch",
+  },
   "type": "GET_MODES_BY_DATE_INITIAL_FAILED",
 }
 `;
@@ -20,4 +43,49 @@ Object {
 }
 `;
 
-exports[`action creator creates getModesByDateInitial function 1`] = `[Function]`;
+exports[`async actions creates GET_MODES_BY_DATE_INITIAL_DONE when fetching posts has been done 1`] = `
+Array [
+  Object {
+    "type": "GET_MODES_BY_DATE_INITIAL_REQUESTED",
+  },
+  Object {
+    "payload": Object {
+      "posts": Array [
+        Object {
+          "__v": 0,
+          "_id": "5d2f57294b9625238ce44575",
+          "author": "5cf2a6fded450065969652b2",
+          "createdAt": "2019-07-17T17:13:13.029Z",
+          "favorites": 0,
+          "points": 0,
+          "tags": Array [],
+          "thumbnail": "/path/to/default.img",
+        },
+        Object {
+          "__v": 0,
+          "_id": "5d2f58a24b9625238ce44577",
+          "author": "5cf2a6fded450065969652b2",
+          "createdAt": "2019-07-17T17:19:30.091Z",
+          "favorites": 0,
+          "points": 0,
+          "tags": Array [],
+          "thumbnail": "/path/to/default.img",
+        },
+      ],
+    },
+    "type": "GET_MODES_BY_DATE_INITIAL_DONE",
+  },
+]
+`;
+
+exports[`async actions creates GET_MODES_BY_DATE_INITIAL_FAILED when fetching posts has failed 1`] = `
+Array [
+  Object {
+    "type": "GET_MODES_BY_DATE_INITIAL_REQUESTED",
+  },
+  Object {
+    "payload": [Error: TypeError: Failed to fetch],
+    "type": "GET_MODES_BY_DATE_INITIAL_FAILED",
+  },
+]
+`;
