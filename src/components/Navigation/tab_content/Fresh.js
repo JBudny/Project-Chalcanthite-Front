@@ -5,15 +5,17 @@ import { getModesByDateInitial } from "../../../actions/postActions";
 
 const Fresh = () => {
   const dispatch = useDispatch();
-  const getModes = quantity => dispatch(getModesByDateInitial(quantity));
 
   useEffect(() => {
+    const getModes = quantity => dispatch(getModesByDateInitial(quantity));
     getModes(5);
-  }, []);
+  }, [dispatch]);
 
-  const posts = useSelector(state => state.posts);
   const isLoading = useSelector(state => state.isLoading);
-  return <TabContainer>{isLoading ? `loading...` : `FRESH: ${posts.length} posts`}</TabContainer>;
+  const isError = useSelector(state => state.isError);
+  if (isLoading) return `Loading...`;
+  if (isError) return "Error";
+  return <TabContainer />;
 };
 
 export default Fresh;

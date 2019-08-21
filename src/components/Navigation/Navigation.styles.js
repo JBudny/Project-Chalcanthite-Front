@@ -14,6 +14,7 @@ const styles = makeStyles(theme => ({
     }
   },
   notFound: {
+    padding: "0.875rem",
     textAlign: "center",
     "& span": {
       fontSize: "2rem",

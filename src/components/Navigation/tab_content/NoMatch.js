@@ -1,6 +1,5 @@
 // @flow
 import React from "react";
-import TabContainer from "../TabContainer";
 import styles from "../Navigation.styles";
 
 type Location = {
@@ -18,16 +17,14 @@ const NoMatch = ({ location }: Props) => {
 
   return (
     <div className={notFound}>
-      <TabContainer>
-        <span>404 Not Found</span>
-        <hr />
-        <p>
-          The page &#34;
-          {` ${pathname} `}
-          &#34; you were looking for doesn&#39;t exist. You may have mistyped the address or the
-          page may have moved.
-        </p>
-      </TabContainer>
+      <span>404 Not Found</span>
+      <hr />
+      <p>
+        The page &#34;
+        {` ${pathname} `}
+        &#34; you were looking for doesn&#39;t exist. You may have mistyped the address or the page
+        may have moved.
+      </p>
     </div>
   );
 };
