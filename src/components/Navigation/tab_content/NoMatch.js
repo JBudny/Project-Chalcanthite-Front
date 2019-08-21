@@ -1,8 +1,17 @@
+// @flow
 import React from "react";
 import TabContainer from "../TabContainer";
 import styles from "../Navigation.styles";
 
-function NoMatch({ location }) {
+type Location = {
+  pathname: string
+};
+
+type Props = {
+  location: Location
+};
+
+const NoMatch = ({ location }: Props) => {
   const classes = styles();
   const { notFound } = classes;
   const { pathname } = location;
@@ -21,6 +30,6 @@ function NoMatch({ location }) {
       </TabContainer>
     </div>
   );
-}
+};
 
 export default NoMatch;
