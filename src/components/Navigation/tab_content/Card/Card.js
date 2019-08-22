@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+// @flow
 import "../../../../utils/fontello/css/fontello.css";
+import { isEqual } from "lodash";
+import React, { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import {
   Wrapper,
   MorePanel,
@@ -17,8 +20,20 @@ import {
   IconBox
 } from "./Card.styles";
 
+type Post = {
+  tags: Array<string>,
+  thumbnail: string,
+  favorites: number,
+  points: number,
+  author: string,
+  title: string,
+  shortDescription: string,
+  actualCode: string,
+  _id: string
+};
+
 type Props = {
-  post: Object
+  post: Post
 };
 
 const Card = (props: Props) => {
@@ -27,32 +42,32 @@ const Card = (props: Props) => {
   const [likeHeart, setLikeHeart] = useState(false);
   const [dislikeHeart, setDislikeHeart] = useState(false);
   const { tags, thumbnail, favorites, points, author, title, shortDescription, actualCode } = post;
+  const tagsWithCommas = tags.join(", ");
+
   const handleFavouritesKeyDown = e => {
-    if (e.keyCode === 13) {
-      setStar(!star);
-    }
+    if (isEqual(e.keyCode, 13)) setStar(!star);
   };
   const handleFavouritesClick = () => setStar(!star);
 
   const handleLikeKeyDown = e => {
-    if (e.keyCode === 13) {
-      if (dislikeHeart === true) setDislikeHeart(!dislikeHeart);
+    if (isEqual(e.keyCode, 13)) {
+      if (dislikeHeart) setDislikeHeart(!dislikeHeart);
       setLikeHeart(!likeHeart);
     }
   };
   const handleLikeClick = () => {
-    if (dislikeHeart === true) setDislikeHeart(!dislikeHeart);
+    if (dislikeHeart) setDislikeHeart(!dislikeHeart);
     setLikeHeart(!likeHeart);
   };
 
   const handleDislikeKeyDown = e => {
-    if (e.keyCode === 13) {
-      if (likeHeart === true) setLikeHeart(!likeHeart);
+    if (isEqual(e.keyCode, 13)) {
+      if (likeHeart) setLikeHeart(!likeHeart);
       setDislikeHeart(!dislikeHeart);
     }
   };
   const handleDislikeClick = () => {
-    if (likeHeart === true) setLikeHeart(!likeHeart);
+    if (likeHeart) setLikeHeart(!likeHeart);
     setDislikeHeart(!dislikeHeart);
   };
 
@@ -66,10 +81,13 @@ const Card = (props: Props) => {
 
       <TitlePanel>
         <Title>{title}</Title>
-        <Tags>{tags}</Tags>
+        <Tags>
+          {`Tags: `}
+          {tagsWithCommas}
+        </Tags>
         <InlineElements>
           <UploadedBy>
-            <span>By: </span>
+            {`By: `}
             <a href="/#">{author}</a>
           </UploadedBy>
           <div
@@ -89,9 +107,11 @@ const Card = (props: Props) => {
       <ModeBox>
         <figure>
           <Picture thumbnailUrl={thumbnail} alt="Mode picture">
-            <Code tabIndex="0" role="button">
-              {actualCode}
-            </Code>
+            <CopyToClipboard text={actualCode}>
+              <Code tabIndex="0" role="button">
+                {actualCode}
+              </Code>
+            </CopyToClipboard>
           </Picture>
           <figcaption>
             <Text>{shortDescription}</Text>
@@ -101,7 +121,7 @@ const Card = (props: Props) => {
 
       <Points>
         {points}
-        Points
+        {` Points`}
       </Points>
       <BottomPanel>
         <IconBox
