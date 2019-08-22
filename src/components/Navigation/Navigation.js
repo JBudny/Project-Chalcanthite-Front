@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -22,6 +22,27 @@ const Navigation = () => {
     getModesInitial(5);
     setCurrentTab(newValue);
   };
+
+  useEffect(() => {
+    const setInitialTab = () => {
+      const { pathname } = window.location;
+      const getInitialTab = path => {
+        switch (path) {
+          case "/top":
+            return 0;
+          case "/fresh":
+            return 1;
+          case "/random":
+            return 2;
+          default:
+            return false;
+        }
+      };
+      const initialTab = getInitialTab(pathname);
+      setCurrentTab(initialTab);
+    };
+    setInitialTab();
+  }, []);
 
   return (
     <Router>
