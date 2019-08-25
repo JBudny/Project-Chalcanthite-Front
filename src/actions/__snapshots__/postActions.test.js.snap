@@ -84,7 +84,7 @@ Array [
     "type": "GET_MODES_BY_DATE_INITIAL_REQUESTED",
   },
   Object {
-    "payload": [Error: TypeError: Failed to fetch],
+    "payload": "ERROR: Error: TypeError: Failed to fetch",
     "type": "GET_MODES_BY_DATE_INITIAL_FAILED",
   },
 ]

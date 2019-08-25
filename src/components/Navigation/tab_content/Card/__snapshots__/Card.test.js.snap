@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component props should match the snapshot 1`] = `
+Object {
+  "post": Object {
+    "_id": "5d5c4546a6bab91d887208f6",
+    "actualCode": "htXjj",
+    "author": "5d5c4546a6bab91d887208f7",
+    "createdAt": "2019-02-14T00:14:55.048Z",
+    "favorites": 746,
+    "gallery": Array [],
+    "points": 9894,
+    "shortDescription": "Culpa exercitation irure consectetur irure cillum
+      incididunt quis veniam Lorem officia exercitation amet
+      deserunt enim. Velit Lorem aute proident.",
+    "tags": Array [
+      "nostrud",
+      "ex nulla",
+      "ea",
+      "sit",
+      "nostrud",
+      "esse",
+      "ad",
+      "reprehenderit mollit",
+      "labore",
+    ],
+    "thumbnail": "/path/to/default.img",
+    "title": "id quis consectetur veniam nisi magna duis fugiat",
+  },
+}
+`;
+
+exports[`Card Component should match the snapshot 1`] = `
+"<div class=\\"sc-bdVaJa dEBwxN\\"><div class=\\"sc-bwzfXH fBjhSQ\\"><div tabindex=\\"0\\" role=\\"button\\" class=\\"sc-jTzLTM gbNhMi\\"><i class=\\"icon-ellipsis\\"></i></div></div><div class=\\"sc-htpNat kfhToo\\"><div class=\\"sc-bxivhb gcFavU\\">id quis consectetur veniam nisi magna duis fugiat</div><div class=\\"sc-ifAKCX dgoSOn\\">Tags: nostrud, ex nulla, ea, sit, nostrud, esse, ad, reprehenderit mollit, labore</div><div class=\\"sc-EHOje gTGnrE\\"><div class=\\"sc-bZQynM fLdNkz\\">By: <a href=\\"/#\\">5d5c4546a6bab91d887208f7</a></div><div tabindex=\\"0\\" role=\\"button\\">746<div class=\\"sc-jTzLTM clEVGN\\"><i class=\\"icon-star-empty\\"></i></div></div></div></div><div class=\\"sc-htoDjs kvcmFh\\"><figure><div alt=\\"Mode picture\\" class=\\"sc-iwsKbI iOkylc\\"><div tabindex=\\"0\\" role=\\"button\\" class=\\"sc-gZMcBi dzxBbn\\">htXjj</div></div><figcaption><div class=\\"sc-dnqmqq kzqRwg\\">Culpa exercitation irure consectetur irure cillum
+      incididunt quis veniam Lorem officia exercitation amet
+      deserunt enim. Velit Lorem aute proident.</div></figcaption></figure></div><div class=\\"sc-gqjmRU jBacPU\\">9894 Points</div><div class=\\"sc-VigVT gzGeiB\\"><div tabindex=\\"0\\" role=\\"button\\" class=\\"sc-jTzLTM dtqRfP\\"><i class=\\"icon-heart\\"></i></div><div tabindex=\\"0\\" role=\\"button\\" class=\\"sc-jTzLTM gDFMYL\\"><i class=\\"icon-heart\\"></i></div><div tabindex=\\"0\\" role=\\"button\\" class=\\"sc-jTzLTM hdCKQp\\"><i class=\\"icon-comment\\"></i></div></div></div>"
+`;
+
+exports[`Card Component should toggle 'icon-star' class to 'icon-star-empty' after click on star button 1`] = `
+Object {
+  "className": "icon-star-empty",
+}
+`;
+
+exports[`Card Component should toggle 'icon-star-empty' class to 'icon-star' after click on star button 1`] = `
+Object {
+  "className": "icon-star",
+}
+`;
