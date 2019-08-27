@@ -1,8 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from "react-router-dom";
 import { useDispatch } from "react-redux";
 import styles from "./Navigation.styles";
 import Top from "./tab_content/Top";
@@ -14,7 +20,22 @@ import { getModesByDateInitial } from "../../actions/postActions";
 const Navigation = () => {
   const classes = styles();
   const { nav, tab } = classes;
-  const [currentTab, setCurrentTab] = useState(0);
+  const initialTab = () => {
+    const { pathname } = window.location;
+    switch (true) {
+      case /^\/$/.test(pathname):
+      case /^(\/top)$|^(\/top\/)$/.test(pathname):
+        return 0;
+      case /^(\/fresh)$|^(\/fresh\/)$/.test(pathname):
+        return 1;
+      case /^(\/random)$|^(\/random\/)$/.test(pathname):
+        return 2;
+      default:
+        return false;
+    }
+  };
+
+  const [currentTab, setCurrentTab] = useState(() => initialTab());
   const dispatch = useDispatch();
   const getModesInitial = quantity => dispatch(getModesByDateInitial(quantity));
 
@@ -22,27 +43,6 @@ const Navigation = () => {
     getModesInitial(5);
     setCurrentTab(newValue);
   };
-
-  useEffect(() => {
-    const setInitialTab = () => {
-      const { pathname } = window.location;
-      const getInitialTab = path => {
-        switch (path) {
-          case "/top":
-            return 0;
-          case "/fresh":
-            return 1;
-          case "/random":
-            return 2;
-          default:
-            return false;
-        }
-      };
-      const initialTab = getInitialTab(pathname);
-      setCurrentTab(initialTab);
-    };
-    setInitialTab();
-  }, []);
 
   return (
     <Router>
@@ -63,9 +63,9 @@ const Navigation = () => {
         </AppBar>
         <Switch>
           <Redirect exact from="/" to="/top" />
-          <Route path="/top" component={Top} />
-          <Route path="/fresh" component={Fresh} />
-          <Route path="/random" component={Random} />
+          <Route exact from="/top" component={Top} />
+          <Route exact from="/fresh" component={Fresh} />
+          <Route exact from="/random" component={Random} />
           <Route component={NoMatch} />
         </Switch>
       </div>
