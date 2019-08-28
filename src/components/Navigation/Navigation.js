@@ -24,11 +24,11 @@ const Navigation = () => {
     const { pathname } = window.location;
     switch (true) {
       case /^\/$/.test(pathname):
-      case /^(\/top)$|^(\/top\/)$/.test(pathname):
+      case /^\/top\/?$/.test(pathname):
         return 0;
-      case /^(\/fresh)$|^(\/fresh\/)$/.test(pathname):
+      case /^\/fresh\/?$/.test(pathname):
         return 1;
-      case /^(\/random)$|^(\/random\/)$/.test(pathname):
+      case /^\/random\/?$/.test(pathname):
         return 2;
       default:
         return false;
