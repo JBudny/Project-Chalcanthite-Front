@@ -1,7 +1,7 @@
-import Typography from "@material-ui/core/Typography";
 import React from "react";
+import Typography from "@material-ui/core/Typography";
 import { useSelector } from "react-redux";
-import Card from "./tab_content/Card/Card";
+import CardContainer from "./tabContent/Card/CardContainer";
 import styles from "./TabContainer.styles";
 
 const TabContainer = () => {
@@ -13,7 +13,11 @@ const TabContainer = () => {
 
   return (
     <Typography component="div" className={wrapper}>
-      {posts ? posts.map(post => <Card key={keyExtractor(post)} post={post} />) : null}
+      {posts
+        ? posts.map(post => (
+            <CardContainer key={keyExtractor(post)} post={post} />
+          ))
+        : null}
     </Typography>
   );
 };

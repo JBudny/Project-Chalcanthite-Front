@@ -7,14 +7,14 @@ const Fresh = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const getModes = quantity => dispatch(getModesByDateInitial(quantity));
-    getModes(5);
+    dispatch(getModesByDateInitial(5));
   }, [dispatch]);
 
   const isLoading = useSelector(state => state.isLoading);
   const isError = useSelector(state => state.isError);
+
   if (isLoading) return `Loading...`;
-  if (isError) return "Error";
+  if (isError) return `Error`;
   return <TabContainer />;
 };
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const CardWrapper = styled.div`
   @import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
   font-family: "Roboto", sans-serif;
   padding: 0 0 0.4rem 0;
@@ -11,13 +11,13 @@ export const Wrapper = styled.div`
   margin-bottom: 0.9rem;
 `;
 
-export const MorePanel = styled.div`
+export const MorePanelWrapper = styled.div`
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: flex-end;
 `;
 
-export const TitlePanel = styled.div`
+export const TitlePanelWrapper = styled.div`
   margin: 0 0.4rem;
 `;
 
@@ -54,7 +54,7 @@ export const UploadedBy = styled.div`
 
 export const Favourites = styled.div``;
 
-export const ModeBox = styled.div`
+export const ModeBoxWrapper = styled.div`
   margin: 5px 0;
 `;
 
@@ -96,11 +96,11 @@ export const Code = styled.div`
   transition: transform 0.05s;
 `;
 
-export const Points = styled.div`
+export const PointsWrapper = styled.div`
   margin: 0 0.4rem;
 `;
 
-export const BottomPanel = styled.div`
+export const BottomPanelWrapper = styled.div`
   text-align: center;
   font-size: 20px;
   margin: 0 0.4rem;

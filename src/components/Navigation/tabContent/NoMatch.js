@@ -22,8 +22,8 @@ const NoMatch = ({ location }: Props) => {
       <p>
         The page &#34;
         {` ${pathname} `}
-        &#34; you were looking for doesn&#39;t exist. You may have mistyped the address or the page
-        may have moved.
+        &#34; you were looking for doesn&#39;t exist. You may have mistyped the
+        address or the page may have moved.
       </p>
     </div>
   );

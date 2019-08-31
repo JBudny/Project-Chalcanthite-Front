@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModeBox props should match the snapshot 1`] = `
+Object {
+  "actualCode": "htXjj",
+  "shortDescription": "Culpa exercitation irure consectetur irure cillum.",
+  "thumbnail": "/path/to/default.img",
+}
+`;
+
+exports[`ModeBox should match the snapshot 1`] = `
+.c0 {
+  margin: 5px 0;
+}
+
+.c3 {
+  margin: 0 0.4rem;
+}
+
+.c1 {
+  position: relative;
+  min-height: 150px;
+  margin: 0 0 5px 0;
+  background: #1f2023;
+  background: url(/path/to/default.img);
+  background-size: cover;
+  background-position: center;
+}
+
+.c2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  width: 110px;
+  height: 45px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgba(208,216,232,0.32);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 0.05s;
+  -webkit-transition: transform 0.05s;
+  transition: transform 0.05s;
+}
+
+.c2:active {
+  -webkit-transform: scale(0.96);
+  -ms-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+<ModeBox
+  actualCode="htXjj"
+  shortDescription="Culpa exercitation irure consectetur irure cillum."
+  thumbnail="/path/to/default.img"
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htoDjs",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  margin: 5px 0;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htoDjs",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <figure>
+          <styled.div
+            alt="Mode picture"
+            thumbnailUrl="/path/to/default.img"
+          >
+            <StyledComponent
+              alt="Mode picture"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-iwsKbI",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  position: relative;
+  min-height: 150px;
+  margin: 0 0 5px 0;
+  background: #1f2023;
+  background: url(",
+                      [Function],
+                      ");
+  background-size: cover;
+  background-position: center;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-iwsKbI",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              thumbnailUrl="/path/to/default.img"
+            >
+              <div
+                alt="Mode picture"
+                className="c1"
+              >
+                <CopyToClipboard
+                  text="htXjj"
+                >
+                  <styled.div
+                    onClick={[Function]}
+                    role="button"
+                    tabIndex="0"
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-gZMcBi",
+                            "isStatic": true,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 110px;
+  height: 45px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgba(208, 216, 232, 0.32);
+  user-select: none;
+  &:active {
+    transform: scale(0.96);
+  }
+  transition: transform 0.05s;
+",
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-gZMcBi",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onClick={[Function]}
+                      role="button"
+                      tabIndex="0"
+                    >
+                      <div
+                        className="c2"
+                        onClick={[Function]}
+                        role="button"
+                        tabIndex="0"
+                      >
+                        htXjj
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </CopyToClipboard>
+              </div>
+            </StyledComponent>
+          </styled.div>
+          <figcaption>
+            <styled.div>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-dnqmqq",
+                      "isStatic": true,
+                      "lastClassName": "c3",
+                      "rules": Array [
+                        "
+  margin: 0 0.4rem;
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-dnqmqq",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c3"
+                >
+                  Culpa exercitation irure consectetur irure cillum.
+                </div>
+              </StyledComponent>
+            </styled.div>
+          </figcaption>
+        </figure>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</ModeBox>
+`;

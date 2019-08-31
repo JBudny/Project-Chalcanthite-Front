@@ -27,7 +27,14 @@
     "flow": "flow"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/babel",
+      "prettier/flowtype",
+      "prettier/react"
+    ]
   },
   "browserslist": {
     "production": [
@@ -46,15 +53,17 @@
     "babel-preset-flow": "^6.23.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-react": "^7.13.0",
     "fetch-mock": "^7.3.6",
-    "flow-bin": "^0.98.1",
-    "flow-typed": "^2.5.2",
+    "flow-bin": "^0.106.3",
+    "flow-typed": "^2.6.1",
     "husky": "^2.3.0",
+    "jest-styled-components": "^6.3.3",
     "lint-staged": "^8.1.7",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.11.0",
