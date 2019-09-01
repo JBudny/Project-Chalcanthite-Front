@@ -1,5 +1,5 @@
 // @flow
-type Post = {
+export type Post = {
   tags: Array<string>,
   thumbnail: string,
   favorites: number,
@@ -10,7 +10,7 @@ type Post = {
   actualCode: string
 };
 
-type ProcessedPost = {
+export type ProcessedPost = {
   ...Post,
   tags: string
 };

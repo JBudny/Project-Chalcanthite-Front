@@ -11,13 +11,7 @@ Object {
     "gallery": Array [],
     "points": 9894,
     "shortDescription": "Culpa exercitation irure consectetur irure cillum.",
-    "tags": Array [
-      "non eiusmod",
-      "cupidatat sit",
-      "ex",
-      "sint",
-      "in",
-    ],
+    "tags": "non eiusmod, cupidatat sit, ex, sint, in",
     "thumbnail": "/path/to/default.img",
     "title": "id quis consectetur veniam nisi magna duis fugiat",
   },
@@ -36,13 +30,7 @@ exports[`Card should match the snapshot 1`] = `
       "gallery": Array [],
       "points": 9894,
       "shortDescription": "Culpa exercitation irure consectetur irure cillum.",
-      "tags": Array [
-        "non eiusmod",
-        "cupidatat sit",
-        "ex",
-        "sint",
-        "in",
-      ],
+      "tags": "non eiusmod, cupidatat sit, ex, sint, in",
       "thumbnail": "/path/to/default.img",
       "title": "id quis consectetur veniam nisi magna duis fugiat",
     }
@@ -194,15 +182,7 @@ exports[`Card should match the snapshot 1`] = `
         <TitlePanel
           author="5d5c4546a6bab91d887208f7"
           favorites={746}
-          tags={
-            Array [
-              "non eiusmod",
-              "cupidatat sit",
-              "ex",
-              "sint",
-              "in",
-            ]
-          }
+          tags="non eiusmod, cupidatat sit, ex, sint, in"
           title="id quis consectetur veniam nisi magna duis fugiat"
         >
           <styled.div>
@@ -306,11 +286,7 @@ exports[`Card should match the snapshot 1`] = `
                       className="sc-ifAKCX dgoSOn"
                     >
                       Tags: 
-                      non eiusmod
-                      cupidatat sit
-                      ex
-                      sint
-                      in
+                      non eiusmod, cupidatat sit, ex, sint, in
                     </div>
                   </StyledComponent>
                 </styled.div>

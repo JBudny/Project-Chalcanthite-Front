@@ -1,6 +1,6 @@
 // @flow
 import "../../../../../utils/fontello/css/fontello.css";
-import { isEqual } from "lodash/isEqual";
+import isEqual from "lodash/isEqual";
 import React, { useState } from "react";
 import { BottomPanelWrapper, IconBox } from "../Card.styles";
 
@@ -8,27 +8,22 @@ const BottomPanel = () => {
   const [likeHeart, setLikeHeart] = useState(false);
   const [dislikeHeart, setDislikeHeart] = useState(false);
 
-  const handleLikeClick = () => {
-    if (dislikeHeart) setDislikeHeart(!dislikeHeart);
+  const switchLikeHeart = () => {
+    if (dislikeHeart) setDislikeHeart(false);
     setLikeHeart(!likeHeart);
   };
-  const handleLikeKeyDown = (e: KeyboardEvent) => {
-    if (isEqual(e.keyCode, 13)) {
-      if (dislikeHeart) setDislikeHeart(!dislikeHeart);
-      setLikeHeart(!likeHeart);
-    }
-  };
 
-  const handleDislikeClick = () => {
-    if (likeHeart) setLikeHeart(!likeHeart);
+  const switchDislikeHeart = () => {
+    if (likeHeart) setLikeHeart(false);
     setDislikeHeart(!dislikeHeart);
   };
-  const handleDislikeKeyDown = (e: KeyboardEvent) => {
-    if (isEqual(e.keyCode, 13)) {
-      if (likeHeart) setLikeHeart(!likeHeart);
-      setDislikeHeart(!dislikeHeart);
-    }
-  };
+
+  const switchHeart = action =>
+    action ? switchLikeHeart() : switchDislikeHeart();
+
+  const handleClick = action => switchHeart(action);
+  const handleKeyDown = (e: KeyboardEvent, action) =>
+    isEqual(e.keyCode, 13) ? switchHeart(action) : null;
 
   return (
     <BottomPanelWrapper>
@@ -39,8 +34,8 @@ const BottomPanel = () => {
         iconSize="1.25rem"
         iconColor="#3d73bf"
         iconRightBorder="1px solid #A3BAC3"
-        onKeyDown={handleLikeKeyDown}
-        onClick={handleLikeClick}
+        onKeyDown={e => handleKeyDown(e, true)}
+        onClick={() => handleClick(true)}
       >
         <i className={likeHeart ? "icon-heart-filled" : "icon-heart"} />
       </IconBox>
@@ -52,8 +47,8 @@ const BottomPanel = () => {
         iconColor="#3d73bf"
         iconLeftBorder="1px solid #A3BAC3"
         iconTransfer="rotate(180deg)"
-        onKeyDown={handleDislikeKeyDown}
-        onClick={handleDislikeClick}
+        onKeyDown={e => handleKeyDown(e, false)}
+        onClick={() => handleClick(false)}
       >
         <i className={dislikeHeart ? "icon-heart-filled" : "icon-heart"} />
       </IconBox>

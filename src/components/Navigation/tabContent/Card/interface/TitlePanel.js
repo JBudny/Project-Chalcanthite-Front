@@ -1,6 +1,6 @@
 // @flow
 import "../../../../../utils/fontello/css/fontello.css";
-import { isEqual } from "lodash/isEqual";
+import isEqual from "lodash/isEqual";
 import React, { useState } from "react";
 import type { TitlePanelProps } from "../Card.types";
 import {
