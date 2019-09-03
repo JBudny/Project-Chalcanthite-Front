@@ -43,9 +43,9 @@ exports[`Card should match the snapshot 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-jTzLTM",
             "isStatic": true,
-            "lastClassName": "dEBwxN",
+            "lastClassName": "eBSndl",
             "rules": Array [
               "
   @import url(\\"https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap\\");
@@ -62,7 +62,7 @@ exports[`Card should match the snapshot 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-jTzLTM",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -72,7 +72,7 @@ exports[`Card should match the snapshot 1`] = `
       forwardedRef={null}
     >
       <div
-        className="sc-bdVaJa dEBwxN"
+        className="sc-jTzLTM eBSndl"
       >
         <MorePanel>
           <styled.div>
@@ -82,9 +82,9 @@ exports[`Card should match the snapshot 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bwzfXH",
+                    "componentId": "sc-bZQynM",
                     "isStatic": true,
-                    "lastClassName": "fBjhSQ",
+                    "lastClassName": "fDLQFY",
                     "rules": Array [
                       "
   font-family: \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;
@@ -96,7 +96,7 @@ exports[`Card should match the snapshot 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bwzfXH",
+                  "styledComponentId": "sc-bZQynM",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -106,7 +106,7 @@ exports[`Card should match the snapshot 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-bwzfXH fBjhSQ"
+                className="sc-bZQynM fDLQFY"
               >
                 <styled.div
                   iconColor="#1F2023"
@@ -120,9 +120,9 @@ exports[`Card should match the snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-jTzLTM",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": false,
-                          "lastClassName": "hdCKQp",
+                          "lastClassName": "ccFJau",
                           "rules": Array [
                             "
   display: inline-block;
@@ -151,7 +151,7 @@ exports[`Card should match the snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-jTzLTM",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -165,7 +165,7 @@ exports[`Card should match the snapshot 1`] = `
                     tabIndex="0"
                   >
                     <div
-                      className="sc-jTzLTM gbNhMi"
+                      className="sc-bwzfXH cRLzrV"
                       role="button"
                       tabIndex="0"
                     >
@@ -192,9 +192,9 @@ exports[`Card should match the snapshot 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
+                    "componentId": "sc-htoDjs",
                     "isStatic": true,
-                    "lastClassName": "kfhToo",
+                    "lastClassName": "bKDsSt",
                     "rules": Array [
                       "
   margin: 0 0.4rem;
@@ -204,7 +204,7 @@ exports[`Card should match the snapshot 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-htpNat",
+                  "styledComponentId": "sc-htoDjs",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -214,7 +214,7 @@ exports[`Card should match the snapshot 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-htpNat kfhToo"
+                className="sc-htoDjs bKDsSt"
               >
                 <styled.div>
                   <StyledComponent
@@ -223,9 +223,9 @@ exports[`Card should match the snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bxivhb",
+                          "componentId": "sc-gqjmRU",
                           "isStatic": true,
-                          "lastClassName": "gcFavU",
+                          "lastClassName": "iuJJpu",
                           "rules": Array [
                             "
   text-transform: uppercase;
@@ -238,7 +238,7 @@ exports[`Card should match the snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bxivhb",
+                        "styledComponentId": "sc-gqjmRU",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -248,7 +248,7 @@ exports[`Card should match the snapshot 1`] = `
                     forwardedRef={null}
                   >
                     <div
-                      className="sc-bxivhb gcFavU"
+                      className="sc-gqjmRU iuJJpu"
                     >
                       id quis consectetur veniam nisi magna duis fugiat
                     </div>
@@ -261,9 +261,9 @@ exports[`Card should match the snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-ifAKCX",
+                          "componentId": "sc-VigVT",
                           "isStatic": true,
-                          "lastClassName": "dgoSOn",
+                          "lastClassName": "fxsaNH",
                           "rules": Array [
                             "
   font-weight: 500;
@@ -273,7 +273,7 @@ exports[`Card should match the snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-ifAKCX",
+                        "styledComponentId": "sc-VigVT",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -283,10 +283,9 @@ exports[`Card should match the snapshot 1`] = `
                     forwardedRef={null}
                   >
                     <div
-                      className="sc-ifAKCX dgoSOn"
+                      className="sc-VigVT fxsaNH"
                     >
-                      Tags: 
-                      non eiusmod, cupidatat sit, ex, sint, in
+                      Tags: non eiusmod, cupidatat sit, ex, sint, in
                     </div>
                   </StyledComponent>
                 </styled.div>
@@ -297,9 +296,9 @@ exports[`Card should match the snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-EHOje",
+                          "componentId": "sc-iwsKbI",
                           "isStatic": true,
-                          "lastClassName": "gTGnrE",
+                          "lastClassName": "cFpGCb",
                           "rules": Array [
                             "
   display: flex;
@@ -310,7 +309,7 @@ exports[`Card should match the snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-EHOje",
+                        "styledComponentId": "sc-iwsKbI",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -320,7 +319,7 @@ exports[`Card should match the snapshot 1`] = `
                     forwardedRef={null}
                   >
                     <div
-                      className="sc-EHOje gTGnrE"
+                      className="sc-iwsKbI cFpGCb"
                     >
                       <styled.div>
                         <StyledComponent
@@ -329,9 +328,9 @@ exports[`Card should match the snapshot 1`] = `
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bZQynM",
+                                "componentId": "sc-gZMcBi",
                                 "isStatic": true,
-                                "lastClassName": "fLdNkz",
+                                "lastClassName": "bNXyHm",
                                 "rules": Array [
                                   "
   font-weight: 500;
@@ -352,7 +351,7 @@ exports[`Card should match the snapshot 1`] = `
                               "displayName": "styled.div",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "sc-bZQynM",
+                              "styledComponentId": "sc-gZMcBi",
                               "target": "div",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -362,7 +361,7 @@ exports[`Card should match the snapshot 1`] = `
                           forwardedRef={null}
                         >
                           <div
-                            className="sc-bZQynM fLdNkz"
+                            className="sc-gZMcBi bNXyHm"
                           >
                             By: 
                             <a
@@ -373,73 +372,109 @@ exports[`Card should match the snapshot 1`] = `
                           </div>
                         </StyledComponent>
                       </styled.div>
-                      <div
+                      <styled.div
                         onClick={[Function]}
                         onKeyDown={[Function]}
                         role="button"
                         tabIndex="0"
                       >
-                        746
-                        <styled.div
-                          iconColor="#d1b03b"
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-dnqmqq",
+                                "isStatic": true,
+                                "lastClassName": "bDsesi",
+                                "rules": Array [],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-dnqmqq",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          onKeyDown={[Function]}
+                          role="button"
+                          tabIndex="0"
                         >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-jTzLTM",
-                                  "isStatic": false,
-                                  "lastClassName": "hdCKQp",
-                                  "rules": Array [
-                                    "
+                          <div
+                            className="sc-dnqmqq bDsesi"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            role="button"
+                            tabIndex="0"
+                          >
+                            746
+                            <styled.div
+                              iconColor="#d1b03b"
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": false,
+                                      "lastClassName": "ccFJau",
+                                      "rules": Array [
+                                        "
   display: inline-block;
   width: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
   border-right: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
   border-left: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
   color: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
   font-size: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
   transform: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
   cursor: pointer;
 ",
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-jTzLTM",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            iconColor="#d1b03b"
-                          >
-                            <div
-                              className="sc-jTzLTM clEVGN"
-                            >
-                              <i
-                                className="icon-star-empty"
-                              />
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </div>
+                                      ],
+                                    },
+                                    "displayName": "styled.div",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                iconColor="#d1b03b"
+                              >
+                                <div
+                                  className="sc-bwzfXH hjkLtl"
+                                >
+                                  <i
+                                    className="icon-star-empty"
+                                  />
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
                     </div>
                   </StyledComponent>
                 </styled.div>
@@ -459,9 +494,9 @@ exports[`Card should match the snapshot 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-htoDjs",
+                    "componentId": "sc-bxivhb",
                     "isStatic": true,
-                    "lastClassName": "kvcmFh",
+                    "lastClassName": "cBaxzC",
                     "rules": Array [
                       "
   margin: 5px 0;
@@ -471,7 +506,7 @@ exports[`Card should match the snapshot 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-htoDjs",
+                  "styledComponentId": "sc-bxivhb",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -481,7 +516,7 @@ exports[`Card should match the snapshot 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-htoDjs kvcmFh"
+                className="sc-bxivhb cBaxzC"
               >
                 <figure>
                   <styled.div
@@ -495,9 +530,9 @@ exports[`Card should match the snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-iwsKbI",
+                            "componentId": "sc-htpNat",
                             "isStatic": false,
-                            "lastClassName": "iOkylc",
+                            "lastClassName": "WSdBj",
                             "rules": Array [
                               "
   position: relative;
@@ -515,7 +550,7 @@ exports[`Card should match the snapshot 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-iwsKbI",
+                          "styledComponentId": "sc-htpNat",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -527,7 +562,7 @@ exports[`Card should match the snapshot 1`] = `
                     >
                       <div
                         alt="Mode picture"
-                        className="sc-iwsKbI iOkylc"
+                        className="sc-htpNat WSdBj"
                       >
                         <CopyToClipboard
                           text="htXjj"
@@ -543,9 +578,9 @@ exports[`Card should match the snapshot 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-gZMcBi",
+                                    "componentId": "sc-EHOje",
                                     "isStatic": true,
-                                    "lastClassName": "dzxBbn",
+                                    "lastClassName": "gVoWmh",
                                     "rules": Array [
                                       "
   position: absolute;
@@ -575,7 +610,7 @@ exports[`Card should match the snapshot 1`] = `
                                   "displayName": "styled.div",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-gZMcBi",
+                                  "styledComponentId": "sc-EHOje",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -588,7 +623,7 @@ exports[`Card should match the snapshot 1`] = `
                               tabIndex="0"
                             >
                               <div
-                                className="sc-gZMcBi dzxBbn"
+                                className="sc-EHOje gVoWmh"
                                 onClick={[Function]}
                                 role="button"
                                 tabIndex="0"
@@ -609,19 +644,19 @@ exports[`Card should match the snapshot 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-dnqmqq",
+                              "componentId": "sc-ifAKCX",
                               "isStatic": true,
-                              "lastClassName": "kzqRwg",
+                              "lastClassName": "eTalMu",
                               "rules": Array [
                                 "
-  margin: 0 0.4rem;
+margin: 0 0.4rem;
 ",
                               ],
                             },
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-dnqmqq",
+                            "styledComponentId": "sc-ifAKCX",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -631,7 +666,7 @@ exports[`Card should match the snapshot 1`] = `
                         forwardedRef={null}
                       >
                         <div
-                          className="sc-dnqmqq kzqRwg"
+                          className="sc-ifAKCX eTalMu"
                         >
                           Culpa exercitation irure consectetur irure cillum.
                         </div>
@@ -653,9 +688,9 @@ exports[`Card should match the snapshot 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-gqjmRU",
+                    "componentId": "sc-gzVnrw",
                     "isStatic": true,
-                    "lastClassName": "jBacPU",
+                    "lastClassName": "hGQQbv",
                     "rules": Array [
                       "
   margin: 0 0.4rem;
@@ -665,7 +700,7 @@ exports[`Card should match the snapshot 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-gqjmRU",
+                  "styledComponentId": "sc-gzVnrw",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -675,7 +710,7 @@ exports[`Card should match the snapshot 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-gqjmRU jBacPU"
+                className="sc-gzVnrw hGQQbv"
               >
                 9894
                  Points
@@ -691,9 +726,9 @@ exports[`Card should match the snapshot 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-VigVT",
+                    "componentId": "sc-bdVaJa",
                     "isStatic": true,
-                    "lastClassName": "gzGeiB",
+                    "lastClassName": "eXpHGC",
                     "rules": Array [
                       "
   text-align: center;
@@ -705,7 +740,7 @@ exports[`Card should match the snapshot 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-VigVT",
+                  "styledComponentId": "sc-bdVaJa",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -715,7 +750,7 @@ exports[`Card should match the snapshot 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-VigVT gzGeiB"
+                className="sc-bdVaJa eXpHGC"
               >
                 <styled.div
                   iconColor="#3d73bf"
@@ -733,9 +768,9 @@ exports[`Card should match the snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-jTzLTM",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": false,
-                          "lastClassName": "hdCKQp",
+                          "lastClassName": "ccFJau",
                           "rules": Array [
                             "
   display: inline-block;
@@ -764,7 +799,7 @@ exports[`Card should match the snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-jTzLTM",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -782,7 +817,7 @@ exports[`Card should match the snapshot 1`] = `
                     tabIndex="0"
                   >
                     <div
-                      className="sc-jTzLTM dtqRfP"
+                      className="sc-bwzfXH jDegui"
                       onClick={[Function]}
                       onKeyDown={[Function]}
                       role="button"
@@ -811,9 +846,9 @@ exports[`Card should match the snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-jTzLTM",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": false,
-                          "lastClassName": "hdCKQp",
+                          "lastClassName": "ccFJau",
                           "rules": Array [
                             "
   display: inline-block;
@@ -842,7 +877,7 @@ exports[`Card should match the snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-jTzLTM",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -861,7 +896,7 @@ exports[`Card should match the snapshot 1`] = `
                     tabIndex="0"
                   >
                     <div
-                      className="sc-jTzLTM gDFMYL"
+                      className="sc-bwzfXH cPXuaM"
                       onClick={[Function]}
                       onKeyDown={[Function]}
                       role="button"
@@ -886,9 +921,9 @@ exports[`Card should match the snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-jTzLTM",
+                          "componentId": "sc-bwzfXH",
                           "isStatic": false,
-                          "lastClassName": "hdCKQp",
+                          "lastClassName": "ccFJau",
                           "rules": Array [
                             "
   display: inline-block;
@@ -917,7 +952,7 @@ exports[`Card should match the snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-jTzLTM",
+                        "styledComponentId": "sc-bwzfXH",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -932,7 +967,7 @@ exports[`Card should match the snapshot 1`] = `
                     tabIndex="0"
                   >
                     <div
-                      className="sc-jTzLTM hdCKQp"
+                      className="sc-bwzfXH ccFJau"
                       role="button"
                       tabIndex="0"
                     >

@@ -30,7 +30,7 @@ exports[`MorePanel should match the snapshot 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-bdVaJa",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -44,7 +44,7 @@ exports[`MorePanel should match the snapshot 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-bdVaJa",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -68,7 +68,7 @@ exports[`MorePanel should match the snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jTzLTM",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -99,7 +99,7 @@ exports[`MorePanel should match the snapshot 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jTzLTM",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],

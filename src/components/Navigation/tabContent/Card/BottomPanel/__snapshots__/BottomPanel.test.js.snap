@@ -46,7 +46,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-VigVT",
+            "componentId": "sc-bdVaJa",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -60,7 +60,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-VigVT",
+          "styledComponentId": "sc-bdVaJa",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -88,7 +88,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jTzLTM",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -119,7 +119,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jTzLTM",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -166,7 +166,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jTzLTM",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -197,7 +197,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jTzLTM",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -241,7 +241,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-jTzLTM",
+                  "componentId": "sc-bwzfXH",
                   "isStatic": false,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -272,7 +272,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-jTzLTM",
+                "styledComponentId": "sc-bwzfXH",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],

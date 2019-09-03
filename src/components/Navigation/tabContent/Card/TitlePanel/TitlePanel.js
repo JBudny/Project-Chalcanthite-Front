@@ -3,17 +3,17 @@ import "../../../../../utils/fontello/css/fontello.css";
 import isEqual from "lodash/isEqual";
 import React, { useState } from "react";
 import type { TitlePanelProps } from "../Card.types";
-import {
-  TitlePanelWrapper,
-  Title,
-  Tags,
-  InlineElements,
-  UploadedBy,
-  IconBox
-} from "../Card.styles";
+import TitlePanelWrapper from "./TitlePanel.styles";
+import Favourites from "../simpleElements/Favourites/Favourites.styles";
+import EvenlyDistributed from "../simpleElements/EvenlyDistributed/EvenlyDistributed.styles";
+import Author from "../simpleElements/Author/Author.styles";
+import Title from "../simpleElements/Title/Title.styles";
+import Tags from "../simpleElements/Tags/Tags.styles";
+import IconBox from "../simpleElements/IconBox/IconBox.styles";
 
 const TitlePanel = (props: TitlePanelProps) => {
   const [star, setStar] = useState(false);
+  const { tags, favorites, author, title } = props;
 
   const handleFavouritesClick = () => setStar(!star);
 
@@ -21,21 +21,16 @@ const TitlePanel = (props: TitlePanelProps) => {
     if (isEqual(e.keyCode, 13)) setStar(!star);
   };
 
-  const { tags, favorites, author, title } = props;
-
   return (
     <TitlePanelWrapper>
       <Title>{title}</Title>
-      <Tags>
-        {`Tags: `}
-        {tags}
-      </Tags>
-      <InlineElements>
-        <UploadedBy>
+      <Tags>{`Tags: ${tags}`}</Tags>
+      <EvenlyDistributed>
+        <Author>
           {`By: `}
           <a href="/#">{author}</a>
-        </UploadedBy>
-        <div
+        </Author>
+        <Favourites
           tabIndex="0"
           role="button"
           onKeyDown={handleFavouritesKeyDown}
@@ -45,8 +40,8 @@ const TitlePanel = (props: TitlePanelProps) => {
           <IconBox iconColor="#d1b03b">
             <i className={star ? "icon-star" : "icon-star-empty"} />
           </IconBox>
-        </div>
-      </InlineElements>
+        </Favourites>
+      </EvenlyDistributed>
     </TitlePanelWrapper>
   );
 };

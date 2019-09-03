@@ -1,12 +1,12 @@
 // @flow
 import "../../../../utils/fontello/css/fontello.css";
 import React from "react";
-import BottomPanel from "./interface/BottomPanel";
-import ModeBox from "./interface/ModeBox";
-import MorePanel from "./interface/MorePanel";
-import Points from "./interface/Points";
-import TitlePanel from "./interface/TitlePanel";
-import { CardWrapper } from "./Card.styles";
+import BottomPanel from "./BottomPanel/BottomPanel";
+import ModeBox from "./ModeBox/ModeBox";
+import MorePanel from "./MorePanel/MorePanel";
+import Points from "./Points/Points";
+import TitlePanel from "./TitlePanel/TitlePanel";
+import CardWrapper from "./Card.styles";
 import type { ProcessedProps } from "./Card.types";
 
 const Card = (props: ProcessedProps) => {

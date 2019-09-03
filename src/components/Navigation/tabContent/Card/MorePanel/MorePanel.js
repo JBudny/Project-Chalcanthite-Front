@@ -1,6 +1,7 @@
 import "../../../../../utils/fontello/css/fontello.css";
 import React from "react";
-import { MorePanelWrapper, IconBox } from "../Card.styles";
+import MorePanelWrapper from "./MorePanel.styles";
+import IconBox from "../simpleElements/IconBox/IconBox.styles";
 
 const MorePanel = () => (
   <MorePanelWrapper>

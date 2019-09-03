@@ -2,8 +2,10 @@
 import "../../../../../utils/fontello/css/fontello.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import React from "react";
-import { Code, ModeBoxWrapper, Picture, Text } from "../Card.styles";
-
+import Picture from "../simpleElements/Picture/Picture.styles";
+import ModeBoxWrapper from "./ModeBox.styles";
+import Text from "../simpleElements/Text/Text.styles";
+import Code from "../simpleElements/Code/Code.styles";
 import type { ModeBoxProps } from "../Card.types";
 
 const ModeBox = (props: ModeBoxProps) => {

@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { PointsWrapper } from "../Card.styles";
+import PointsWrapper from "./Points.styles";
 import type { PointsProps } from "../Card.types";
 
 const Points = (props: PointsProps) => {

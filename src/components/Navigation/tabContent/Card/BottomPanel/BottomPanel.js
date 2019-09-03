@@ -2,7 +2,8 @@
 import "../../../../../utils/fontello/css/fontello.css";
 import isEqual from "lodash/isEqual";
 import React, { useState } from "react";
-import { BottomPanelWrapper, IconBox } from "../Card.styles";
+import BottomPanelWrapper from "./BottomPanel.styles";
+import IconBox from "../simpleElements/IconBox/IconBox.styles";
 
 const BottomPanel = () => {
   const [likeHeart, setLikeHeart] = useState(false);
@@ -18,11 +19,11 @@ const BottomPanel = () => {
     setDislikeHeart(!dislikeHeart);
   };
 
-  const switchHeart = action =>
+  const switchHeart = (action: boolean) =>
     action ? switchLikeHeart() : switchDislikeHeart();
 
-  const handleClick = action => switchHeart(action);
-  const handleKeyDown = (e: KeyboardEvent, action) =>
+  const handleClick = (action: boolean) => switchHeart(action);
+  const handleKeyDown = (e: KeyboardEvent, action: boolean) =>
     isEqual(e.keyCode, 13) ? switchHeart(action) : null;
 
   return (

@@ -14,17 +14,6 @@ exports[`TitlePanel should match the snapshot 1`] = `
   margin: 0 0.4rem;
 }
 
-.c1 {
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #4472ca;
-  font-size: 18px;
-}
-
-.c2 {
-  font-weight: 500;
-}
-
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -56,6 +45,17 @@ exports[`TitlePanel should match the snapshot 1`] = `
   text-decoration: underline;
 }
 
+.c1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4472ca;
+  font-size: 18px;
+}
+
+.c2 {
+  font-weight: 500;
+}
+
 .c5 {
   display: inline-block;
   color: #d1b03b;
@@ -75,7 +75,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-bdVaJa",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -87,7 +87,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-bdVaJa",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -106,7 +106,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bxivhb",
+                  "componentId": "sc-ifAKCX",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -121,7 +121,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bxivhb",
+                "styledComponentId": "sc-ifAKCX",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -144,7 +144,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-ifAKCX",
+                  "componentId": "sc-EHOje",
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
@@ -156,7 +156,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-ifAKCX",
+                "styledComponentId": "sc-EHOje",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -168,8 +168,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
             <div
               className="c2"
             >
-              Tags: 
-              non eiusmod, cupidatat sit, ex, sint, in
+              Tags: non eiusmod, cupidatat sit, ex, sint, in
             </div>
           </StyledComponent>
         </styled.div>
@@ -180,7 +179,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-EHOje",
+                  "componentId": "sc-htpNat",
                   "isStatic": true,
                   "lastClassName": "c3",
                   "rules": Array [
@@ -193,7 +192,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-EHOje",
+                "styledComponentId": "sc-htpNat",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -212,7 +211,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-bZQynM",
+                        "componentId": "sc-bxivhb",
                         "isStatic": true,
                         "lastClassName": "c4",
                         "rules": Array [
@@ -235,7 +234,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                       "displayName": "styled.div",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-bZQynM",
+                      "styledComponentId": "sc-bxivhb",
                       "target": "div",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -256,73 +255,109 @@ exports[`TitlePanel should match the snapshot 1`] = `
                   </div>
                 </StyledComponent>
               </styled.div>
-              <div
+              <styled.div
                 onClick={[Function]}
                 onKeyDown={[Function]}
                 role="button"
                 tabIndex="0"
               >
-                224
-                <styled.div
-                  iconColor="#d1b03b"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": true,
+                        "lastClassName": "uTxCW",
+                        "rules": Array [],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="button"
+                  tabIndex="0"
                 >
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-jTzLTM",
-                          "isStatic": false,
-                          "lastClassName": "c5",
-                          "rules": Array [
-                            "
+                  <div
+                    className=""
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                    role="button"
+                    tabIndex="0"
+                  >
+                    224
+                    <styled.div
+                      iconColor="#d1b03b"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bZQynM",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                "
   display: inline-block;
   width: ",
-                            [Function],
-                            ";
+                                [Function],
+                                ";
   border-right: ",
-                            [Function],
-                            ";
+                                [Function],
+                                ";
   border-left: ",
-                            [Function],
-                            ";
+                                [Function],
+                                ";
   color: ",
-                            [Function],
-                            ";
+                                [Function],
+                                ";
   font-size: ",
-                            [Function],
-                            ";
+                                [Function],
+                                ";
   transform: ",
-                            [Function],
-                            ";
+                                [Function],
+                                ";
   cursor: pointer;
 ",
-                          ],
-                        },
-                        "displayName": "styled.div",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-jTzLTM",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    iconColor="#d1b03b"
-                  >
-                    <div
-                      className="c5"
-                    >
-                      <i
-                        className="icon-star-empty"
-                      />
-                    </div>
-                  </StyledComponent>
-                </styled.div>
-              </div>
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bZQynM",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        iconColor="#d1b03b"
+                      >
+                        <div
+                          className="c5"
+                        >
+                          <i
+                            className="icon-star-empty"
+                          />
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </div>
+                </StyledComponent>
+              </styled.div>
             </div>
           </StyledComponent>
         </styled.div>
