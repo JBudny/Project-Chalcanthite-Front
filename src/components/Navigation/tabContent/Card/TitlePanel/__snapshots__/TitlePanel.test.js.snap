@@ -430,11 +430,6 @@ exports[`TitlePanel should match the snapshot 1`] = `
                     tabIndex="0"
                     type="button"
                   >
-                    <button
-                      type="button"
-                    >
-                      aaa
-                    </button>
                     <styled.div>
                       <StyledComponent
                         forwardedComponent={
@@ -447,9 +442,9 @@ exports[`TitlePanel should match the snapshot 1`] = `
                               "lastClassName": "c6",
                               "rules": Array [
                                 "
-color: black;
-display: inline;
-line-height: 1.5rem;
+  color: black;
+  display: inline;
+  line-height: 1.5rem;
 ",
                               ],
                             },
