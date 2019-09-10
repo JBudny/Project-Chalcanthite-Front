@@ -31,6 +31,7 @@ const BottomPanel = () => {
       <IconBox
         tabIndex="0"
         role="button"
+        type="button"
         iconWidth="33%"
         iconSize="1.25rem"
         iconColor="#3d73bf"
@@ -43,6 +44,7 @@ const BottomPanel = () => {
       <IconBox
         tabIndex="0"
         role="button"
+        type="button"
         iconWidth="33%"
         iconSize="1.25rem"
         iconColor="#3d73bf"
@@ -56,6 +58,7 @@ const BottomPanel = () => {
       <IconBox
         tabIndex="0"
         role="button"
+        type="button"
         iconWidth="33%"
         iconSize="1.25rem"
         iconColor="#3d73bf"

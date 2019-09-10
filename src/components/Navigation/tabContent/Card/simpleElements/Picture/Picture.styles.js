@@ -1,6 +1,12 @@
+// @flow
+import type { ComponentType } from "react";
 import styled from "styled-components";
 
-const Picture = styled.div`
+type Props = {
+  thumbnailUrl: string
+};
+
+const Picture: ComponentType<Props> = styled.div`
   position: relative;
   min-height: 150px;
   margin: 0 0 5px 0;

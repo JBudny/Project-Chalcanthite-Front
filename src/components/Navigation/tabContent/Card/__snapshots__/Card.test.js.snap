@@ -397,10 +397,12 @@ exports[`Card should match the snapshot 1`] = `
                         </StyledComponent>
                       </styled.div>
                       <styled.div
+                        iconColor="#d1b03b"
                         onClick={[Function]}
                         onKeyDown={[Function]}
                         role="button"
                         tabIndex="0"
+                        type="button"
                       >
                         <StyledComponent
                           forwardedComponent={
@@ -408,15 +410,38 @@ exports[`Card should match the snapshot 1`] = `
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-dnqmqq",
-                                "isStatic": true,
-                                "lastClassName": "bDsesi",
-                                "rules": Array [],
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": false,
+                                "lastClassName": "ccFJau",
+                                "rules": Array [
+                                  "
+  display: inline-block;
+  width: ",
+                                  [Function],
+                                  ";
+  border-right: ",
+                                  [Function],
+                                  ";
+  border-left: ",
+                                  [Function],
+                                  ";
+  color: ",
+                                  [Function],
+                                  ";
+  font-size: ",
+                                  [Function],
+                                  ";
+  transform: ",
+                                  [Function],
+                                  ";
+  cursor: pointer;
+",
+                                ],
                               },
                               "displayName": "styled.div",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "sc-dnqmqq",
+                              "styledComponentId": "sc-bwzfXH",
                               "target": "div",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -424,60 +449,48 @@ exports[`Card should match the snapshot 1`] = `
                             }
                           }
                           forwardedRef={null}
+                          iconColor="#d1b03b"
                           onClick={[Function]}
                           onKeyDown={[Function]}
                           role="button"
                           tabIndex="0"
+                          type="button"
                         >
                           <div
-                            className="sc-dnqmqq bDsesi"
+                            className="sc-bwzfXH hjkLtl"
                             onClick={[Function]}
                             onKeyDown={[Function]}
                             role="button"
                             tabIndex="0"
+                            type="button"
                           >
-                            746
-                            <styled.div
-                              iconColor="#d1b03b"
+                            <button
+                              type="button"
                             >
+                              aaa
+                            </button>
+                            <styled.div>
                               <StyledComponent
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bwzfXH",
-                                      "isStatic": false,
-                                      "lastClassName": "ccFJau",
+                                      "componentId": "sc-dnqmqq",
+                                      "isStatic": true,
+                                      "lastClassName": "hemShJ",
                                       "rules": Array [
                                         "
-  display: inline-block;
-  width: ",
-                                        [Function],
-                                        ";
-  border-right: ",
-                                        [Function],
-                                        ";
-  border-left: ",
-                                        [Function],
-                                        ";
-  color: ",
-                                        [Function],
-                                        ";
-  font-size: ",
-                                        [Function],
-                                        ";
-  transform: ",
-                                        [Function],
-                                        ";
-  cursor: pointer;
+color: black;
+display: inline;
+line-height: 1.5rem;
 ",
                                       ],
                                     },
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bwzfXH",
+                                    "styledComponentId": "sc-dnqmqq",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -485,17 +498,17 @@ exports[`Card should match the snapshot 1`] = `
                                   }
                                 }
                                 forwardedRef={null}
-                                iconColor="#d1b03b"
                               >
                                 <div
-                                  className="sc-bwzfXH hjkLtl"
+                                  className="sc-dnqmqq hemShJ"
                                 >
-                                  <i
-                                    className="icon-star-empty"
-                                  />
+                                  746
                                 </div>
                               </StyledComponent>
                             </styled.div>
+                            <i
+                              className="icon-star-empty"
+                            />
                           </div>
                         </StyledComponent>
                       </styled.div>
@@ -784,6 +797,7 @@ exports[`Card should match the snapshot 1`] = `
                   onKeyDown={[Function]}
                   role="button"
                   tabIndex="0"
+                  type="button"
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -838,6 +852,7 @@ exports[`Card should match the snapshot 1`] = `
                     onKeyDown={[Function]}
                     role="button"
                     tabIndex="0"
+                    type="button"
                   >
                     <div
                       className="sc-bwzfXH jDegui"
@@ -845,6 +860,7 @@ exports[`Card should match the snapshot 1`] = `
                       onKeyDown={[Function]}
                       role="button"
                       tabIndex="0"
+                      type="button"
                     >
                       <i
                         className="icon-heart"
@@ -862,6 +878,7 @@ exports[`Card should match the snapshot 1`] = `
                   onKeyDown={[Function]}
                   role="button"
                   tabIndex="0"
+                  type="button"
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -917,6 +934,7 @@ exports[`Card should match the snapshot 1`] = `
                     onKeyDown={[Function]}
                     role="button"
                     tabIndex="0"
+                    type="button"
                   >
                     <div
                       className="sc-bwzfXH cPXuaM"
@@ -924,6 +942,7 @@ exports[`Card should match the snapshot 1`] = `
                       onKeyDown={[Function]}
                       role="button"
                       tabIndex="0"
+                      type="button"
                     >
                       <i
                         className="icon-heart"
@@ -937,6 +956,7 @@ exports[`Card should match the snapshot 1`] = `
                   iconWidth="33%"
                   role="button"
                   tabIndex="0"
+                  type="button"
                 >
                   <StyledComponent
                     forwardedComponent={
@@ -988,11 +1008,13 @@ exports[`Card should match the snapshot 1`] = `
                     iconWidth="33%"
                     role="button"
                     tabIndex="0"
+                    type="button"
                   >
                     <div
                       className="sc-bwzfXH ccFJau"
                       role="button"
                       tabIndex="0"
+                      type="button"
                     >
                       <i
                         className="icon-comment"
