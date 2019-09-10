@@ -18,7 +18,22 @@ import Top from "./tabContent/Top";
 const Navigation = () => {
   const classes = styles();
   const { nav, tab } = classes;
-  const [currentTab, setCurrentTab] = useState(0);
+  const initialTab = () => {
+    const { pathname } = window.location;
+    switch (true) {
+      case /^\/$/.test(pathname):
+      case /^\/top\/?$/.test(pathname):
+        return 0;
+      case /^\/fresh\/?$/.test(pathname):
+        return 1;
+      case /^\/random\/?$/.test(pathname):
+        return 2;
+      default:
+        return false;
+    }
+  };
+
+  const [currentTab, setCurrentTab] = useState(() => initialTab());
 
   const handleChange = (event, newValue) => {
     setCurrentTab(newValue);
@@ -43,9 +58,9 @@ const Navigation = () => {
         </AppBar>
         <Switch>
           <Redirect exact from="/" to="/top" />
-          <Route path="/top" component={Top} />
-          <Route path="/fresh" component={Fresh} />
-          <Route path="/random" component={Random} />
+          <Route exact from="/top" component={Top} />
+          <Route exact from="/fresh" component={Fresh} />
+          <Route exact from="/random" component={Random} />
           <Route component={NoMatch} />
         </Switch>
       </div>
