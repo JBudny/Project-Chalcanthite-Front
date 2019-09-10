@@ -4,7 +4,13 @@ exports[`TitlePanel props should match the snapshot 1`] = `
 Object {
   "author": "5d5c4546a6bab91d887207c7",
   "favorites": 224,
-  "tags": "non eiusmod, cupidatat sit, ex, sint, in",
+  "tags": Array [
+    "non eiusmod",
+    "cupidatat sit",
+    "ex",
+    "sint",
+    "in",
+  ],
   "title": "est tempor do anim irure culpa voluptate laboris",
 }
 `;
@@ -56,6 +62,31 @@ exports[`TitlePanel should match the snapshot 1`] = `
   font-weight: 500;
 }
 
+.c2> span {
+  color: #636363;
+}
+
+.c2 a {
+  font-weight: 400;
+  color: #636363;
+}
+
+.c2 a:link {
+  color: #636363;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 a:visited {
+  color: #9c9c9c;
+}
+
+.c2 a:hover {
+  color: #9c9c9c;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c5 {
   display: inline-block;
   color: #d1b03b;
@@ -65,7 +96,15 @@ exports[`TitlePanel should match the snapshot 1`] = `
 <TitlePanel
   author="5d5c4546a6bab91d887207c7"
   favorites={224}
-  tags="non eiusmod, cupidatat sit, ex, sint, in"
+  tags={
+    Array [
+      "non eiusmod",
+      "cupidatat sit",
+      "ex",
+      "sint",
+      "in",
+    ]
+  }
   title="est tempor do anim irure culpa voluptate laboris"
 >
   <styled.div>
@@ -137,7 +176,9 @@ exports[`TitlePanel should match the snapshot 1`] = `
             </div>
           </StyledComponent>
         </styled.div>
-        <styled.div>
+        <styled.div
+          id="tags"
+        >
           <StyledComponent
             forwardedComponent={
               Object {
@@ -150,6 +191,25 @@ exports[`TitlePanel should match the snapshot 1`] = `
                   "rules": Array [
                     "
   font-weight: 500;
+  &> span {
+    color: #636363;
+  }
+  a {
+    font-weight: 400;
+    color: #636363;
+  }
+  
+  a:link {
+    color: #636363;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #9c9c9c;
+  }
+  a:hover {
+    color: #9c9c9c;
+    text-decoration: underline;
+  }
 ",
                   ],
                 },
@@ -164,11 +224,50 @@ exports[`TitlePanel should match the snapshot 1`] = `
               }
             }
             forwardedRef={null}
+            id="tags"
           >
             <div
               className="c2"
+              id="tags"
             >
-              Tags: non eiusmod, cupidatat sit, ex, sint, in
+              Tags: 
+              <a
+                href="/tag/non eiusmod"
+              >
+                non eiusmod
+              </a>
+              <span>
+                , 
+              </span>
+              <a
+                href="/tag/cupidatat sit"
+              >
+                cupidatat sit
+              </a>
+              <span>
+                , 
+              </span>
+              <a
+                href="/tag/ex"
+              >
+                ex
+              </a>
+              <span>
+                , 
+              </span>
+              <a
+                href="/tag/sint"
+              >
+                sint
+              </a>
+              <span>
+                , 
+              </span>
+              <a
+                href="/tag/in"
+              >
+                in
+              </a>
             </div>
           </StyledComponent>
         </styled.div>
@@ -248,7 +347,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                   >
                     By: 
                     <a
-                      href="/#"
+                      href="/user/5d5c4546a6bab91d887207c7"
                     >
                       5d5c4546a6bab91d887207c7
                     </a>

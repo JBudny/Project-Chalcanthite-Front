@@ -10,6 +10,10 @@ import Author from "../simpleElements/Author/Author.styles";
 import Title from "../simpleElements/Title/Title.styles";
 import Tags from "../simpleElements/Tags/Tags.styles";
 import IconBox from "../simpleElements/IconBox/IconBox.styles";
+import {
+  createLink,
+  createLinksList
+} from "../../../../../utils/createLinks/createLinks";
 
 const TitlePanel = (props: TitlePanelProps) => {
   const [star, setStar] = useState(false);
@@ -24,11 +28,14 @@ const TitlePanel = (props: TitlePanelProps) => {
   return (
     <TitlePanelWrapper>
       <Title>{title}</Title>
-      <Tags>{`Tags: ${tags}`}</Tags>
+      <Tags id="tags">
+        {`Tags: `}
+        {createLinksList("/tag", tags)}
+      </Tags>
       <EvenlyDistributed>
         <Author>
           {`By: `}
-          <a href="/#">{author}</a>
+          {createLink("/user", author)}
         </Author>
         <Favourites
           tabIndex="0"

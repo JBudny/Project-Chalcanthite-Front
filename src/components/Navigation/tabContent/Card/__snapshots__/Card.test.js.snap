@@ -254,7 +254,9 @@ exports[`Card should match the snapshot 1`] = `
                     </div>
                   </StyledComponent>
                 </styled.div>
-                <styled.div>
+                <styled.div
+                  id="tags"
+                >
                   <StyledComponent
                     forwardedComponent={
                       Object {
@@ -263,10 +265,29 @@ exports[`Card should match the snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-VigVT",
                           "isStatic": true,
-                          "lastClassName": "fxsaNH",
+                          "lastClassName": "hGMFWG",
                           "rules": Array [
                             "
   font-weight: 500;
+  &> span {
+    color: #636363;
+  }
+  a {
+    font-weight: 400;
+    color: #636363;
+  }
+  
+  a:link {
+    color: #636363;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #9c9c9c;
+  }
+  a:hover {
+    color: #9c9c9c;
+    text-decoration: underline;
+  }
 ",
                           ],
                         },
@@ -281,11 +302,13 @@ exports[`Card should match the snapshot 1`] = `
                       }
                     }
                     forwardedRef={null}
+                    id="tags"
                   >
                     <div
-                      className="sc-VigVT fxsaNH"
+                      className="sc-VigVT hGMFWG"
+                      id="tags"
                     >
-                      Tags: non eiusmod, cupidatat sit, ex, sint, in
+                      Tags: 
                     </div>
                   </StyledComponent>
                 </styled.div>
@@ -365,7 +388,7 @@ exports[`Card should match the snapshot 1`] = `
                           >
                             By: 
                             <a
-                              href="/#"
+                              href="/user/5d5c4546a6bab91d887208f7"
                             >
                               5d5c4546a6bab91d887208f7
                             </a>
@@ -646,10 +669,10 @@ exports[`Card should match the snapshot 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "sc-ifAKCX",
                               "isStatic": true,
-                              "lastClassName": "eTalMu",
+                              "lastClassName": "iADRVJ",
                               "rules": Array [
                                 "
-margin: 0 0.4rem;
+  margin: 0 0.4rem;
 ",
                               ],
                             },
@@ -666,7 +689,7 @@ margin: 0 0.4rem;
                         forwardedRef={null}
                       >
                         <div
-                          className="sc-ifAKCX eTalMu"
+                          className="sc-ifAKCX iADRVJ"
                         >
                           Culpa exercitation irure consectetur irure cillum.
                         </div>

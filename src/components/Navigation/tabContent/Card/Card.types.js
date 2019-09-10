@@ -1,4 +1,5 @@
 // @flow
+
 type Post = {
   tags: Array<string>,
   thumbnail: string,
@@ -10,22 +11,12 @@ type Post = {
   actualCode: string
 };
 
-type ProcessedPost = {
-  ...Post,
-  tags: string
-};
-
-type Props = {
+export type Props = {
   post: Post
 };
 
-export type ProcessedProps = {
-  ...Props,
-  post: ProcessedPost
-};
-
 export type TitlePanelProps = {
-  tags: string,
+  tags: Array<string>,
   favorites: number,
   author: string,
   title: string

@@ -7,9 +7,9 @@ import MorePanel from "./MorePanel/MorePanel";
 import Points from "./Points/Points";
 import TitlePanel from "./TitlePanel/TitlePanel";
 import CardWrapper from "./Card.styles";
-import type { ProcessedProps } from "./Card.types";
+import type { Props } from "./Card.types";
 
-const Card = (props: ProcessedProps) => {
+const Card = (props: Props) => {
   const { post } = props;
 
   const {

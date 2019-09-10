@@ -14,14 +14,7 @@ const TabContainer = () => {
   return (
     <Typography component="div" className={wrapper}>
       {posts
-        ? posts.map(post => {
-            const processedPost = JSON.parse(JSON.stringify(post));
-            processedPost.tags = processedPost.tags.join(", ");
-
-            return (
-              <Card key={keyExtractor(processedPost)} post={processedPost} />
-            );
-          })
+        ? posts.map(post => <Card key={keyExtractor(post)} post={post} />)
         : null}
     </Typography>
   );

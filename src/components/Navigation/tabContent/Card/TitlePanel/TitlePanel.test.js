@@ -31,7 +31,13 @@ describe(`TitlePanel`, () => {
   });
 
   it(`should render author link`, () => {
-    expect(titlePanelTree.find("a").props()).toHaveProperty("children", author);
+    expect(
+      titlePanelTree
+        .find("div")
+        .at(4)
+        .find("a")
+        .props()
+    ).toHaveProperty("children", author);
   });
 
   it(`should toggle 'icon-star-empty' class to 'icon-star' after click on star button`, () => {
