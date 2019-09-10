@@ -16,7 +16,7 @@ const ModeBox = (props: ModeBoxProps) => {
       <figure>
         <Picture thumbnailUrl={thumbnail} alt="Mode picture">
           <CopyToClipboard text={actualCode}>
-            <Code tabIndex="0" role="button">
+            <Code tabIndex="0" type="button">
               {actualCode}
             </Code>
           </CopyToClipboard>

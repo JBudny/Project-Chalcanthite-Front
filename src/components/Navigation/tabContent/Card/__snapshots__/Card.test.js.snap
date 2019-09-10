@@ -225,13 +225,13 @@ exports[`Card should match the snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-gqjmRU",
                           "isStatic": true,
-                          "lastClassName": "iuJJpu",
+                          "lastClassName": "bgpEEL",
                           "rules": Array [
                             "
   text-transform: uppercase;
   font-weight: 500;
   color: #4472ca;
-  font-size: 18px;
+  font-size: 1.125rem;
 ",
                           ],
                         },
@@ -248,7 +248,7 @@ exports[`Card should match the snapshot 1`] = `
                     forwardedRef={null}
                   >
                     <div
-                      className="sc-gqjmRU iuJJpu"
+                      className="sc-gqjmRU bgpEEL"
                     >
                       id quis consectetur veniam nisi magna duis fugiat
                     </div>
@@ -265,18 +265,18 @@ exports[`Card should match the snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-VigVT",
                           "isStatic": true,
-                          "lastClassName": "hGMFWG",
+                          "lastClassName": "dBBgQA",
                           "rules": Array [
                             "
   font-weight: 500;
-  &> span {
+  & > span {
     color: #636363;
   }
   a {
     font-weight: 400;
     color: #636363;
   }
-  
+
   a:link {
     color: #636363;
     text-decoration: none;
@@ -305,7 +305,7 @@ exports[`Card should match the snapshot 1`] = `
                     id="tags"
                   >
                     <div
-                      className="sc-VigVT hGMFWG"
+                      className="sc-VigVT dBBgQA"
                       id="tags"
                     >
                       Tags: 
@@ -353,10 +353,11 @@ exports[`Card should match the snapshot 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "sc-gZMcBi",
                                 "isStatic": true,
-                                "lastClassName": "bNXyHm",
+                                "lastClassName": "efmejp",
                                 "rules": Array [
                                   "
   font-weight: 500;
+  font-size: 1rem;
   a:link {
     color: #4472ca;
     text-decoration: none;
@@ -384,7 +385,7 @@ exports[`Card should match the snapshot 1`] = `
                           forwardedRef={null}
                         >
                           <div
-                            className="sc-gZMcBi bNXyHm"
+                            className="sc-gZMcBi efmejp"
                           >
                             By: 
                             <a
@@ -590,10 +591,10 @@ exports[`Card should match the snapshot 1`] = `
                         <CopyToClipboard
                           text="htXjj"
                         >
-                          <styled.div
+                          <styled.button
                             onClick={[Function]}
-                            role="button"
                             tabIndex="0"
+                            type="button"
                           >
                             <StyledComponent
                               forwardedComponent={
@@ -603,26 +604,25 @@ exports[`Card should match the snapshot 1`] = `
                                   "componentStyle": ComponentStyle {
                                     "componentId": "sc-EHOje",
                                     "isStatic": true,
-                                    "lastClassName": "gVoWmh",
+                                    "lastClassName": "cLoIax",
                                     "rules": Array [
                                       "
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: auto;
-  width: 110px;
-  height: 45px;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  width: 6.87rem;
+  height: 2.81rem;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   cursor: pointer;
   background-color: rgba(208, 216, 232, 0.32);
   user-select: none;
+  border: none;
+  transition: transform 0.05s;
   &:active {
     transform: scale(0.96);
   }
@@ -630,11 +630,11 @@ exports[`Card should match the snapshot 1`] = `
 ",
                                     ],
                                   },
-                                  "displayName": "styled.div",
+                                  "displayName": "styled.button",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
                                   "styledComponentId": "sc-EHOje",
-                                  "target": "div",
+                                  "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
@@ -642,19 +642,19 @@ exports[`Card should match the snapshot 1`] = `
                               }
                               forwardedRef={null}
                               onClick={[Function]}
-                              role="button"
                               tabIndex="0"
+                              type="button"
                             >
-                              <div
-                                className="sc-EHOje gVoWmh"
+                              <button
+                                className="sc-EHOje cLoIax"
                                 onClick={[Function]}
-                                role="button"
                                 tabIndex="0"
+                                type="button"
                               >
                                 htXjj
-                              </div>
+                              </button>
                             </StyledComponent>
-                          </styled.div>
+                          </styled.button>
                         </CopyToClipboard>
                       </div>
                     </StyledComponent>

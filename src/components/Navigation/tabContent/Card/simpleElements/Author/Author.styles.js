@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Author = styled.div`
   font-weight: 500;
+  font-size: 1rem;
   a:link {
     color: #4472ca;
     text-decoration: none;

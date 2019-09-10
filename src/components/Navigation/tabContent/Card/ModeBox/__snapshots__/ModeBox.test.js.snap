@@ -28,28 +28,16 @@ exports[`ModeBox should match the snapshot 1`] = `
 }
 
 .c2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin: auto;
-  width: 110px;
-  height: 45px;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  width: 6.87rem;
+  height: 2.81rem;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   cursor: pointer;
   background-color: rgba(208,216,232,0.32);
@@ -57,6 +45,10 @@ exports[`ModeBox should match the snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border: none;
+  -webkit-transition: -webkit-transform 0.05s;
+  -webkit-transition: transform 0.05s;
+  transition: transform 0.05s;
   -webkit-transition: -webkit-transform 0.05s;
   -webkit-transition: transform 0.05s;
   transition: transform 0.05s;
@@ -153,10 +145,10 @@ exports[`ModeBox should match the snapshot 1`] = `
                 <CopyToClipboard
                   text="htXjj"
                 >
-                  <styled.div
+                  <styled.button
                     onClick={[Function]}
-                    role="button"
                     tabIndex="0"
+                    type="button"
                   >
                     <StyledComponent
                       forwardedComponent={
@@ -169,23 +161,22 @@ exports[`ModeBox should match the snapshot 1`] = `
                             "lastClassName": "c2",
                             "rules": Array [
                               "
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: auto;
-  width: 110px;
-  height: 45px;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  width: 6.87rem;
+  height: 2.81rem;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   cursor: pointer;
   background-color: rgba(208, 216, 232, 0.32);
   user-select: none;
+  border: none;
+  transition: transform 0.05s;
   &:active {
     transform: scale(0.96);
   }
@@ -193,11 +184,11 @@ exports[`ModeBox should match the snapshot 1`] = `
 ",
                             ],
                           },
-                          "displayName": "styled.div",
+                          "displayName": "styled.button",
                           "foldedComponentIds": Array [],
                           "render": [Function],
                           "styledComponentId": "sc-bxivhb",
-                          "target": "div",
+                          "target": "button",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
@@ -205,19 +196,19 @@ exports[`ModeBox should match the snapshot 1`] = `
                       }
                       forwardedRef={null}
                       onClick={[Function]}
-                      role="button"
                       tabIndex="0"
+                      type="button"
                     >
-                      <div
+                      <button
                         className="c2"
                         onClick={[Function]}
-                        role="button"
                         tabIndex="0"
+                        type="button"
                       >
                         htXjj
-                      </div>
+                      </button>
                     </StyledComponent>
-                  </styled.div>
+                  </styled.button>
                 </CopyToClipboard>
               </div>
             </StyledComponent>

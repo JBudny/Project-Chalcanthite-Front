@@ -33,6 +33,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
 
 .c4 {
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .c4 a:link {
@@ -55,14 +56,14 @@ exports[`TitlePanel should match the snapshot 1`] = `
   text-transform: uppercase;
   font-weight: 500;
   color: #4472ca;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .c2 {
   font-weight: 500;
 }
 
-.c2> span {
+.c2 > span {
   color: #636363;
 }
 
@@ -153,7 +154,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
   text-transform: uppercase;
   font-weight: 500;
   color: #4472ca;
-  font-size: 18px;
+  font-size: 1.125rem;
 ",
                   ],
                 },
@@ -191,14 +192,14 @@ exports[`TitlePanel should match the snapshot 1`] = `
                   "rules": Array [
                     "
   font-weight: 500;
-  &> span {
+  & > span {
     color: #636363;
   }
   a {
     font-weight: 400;
     color: #636363;
   }
-  
+
   a:link {
     color: #636363;
     text-decoration: none;
@@ -316,6 +317,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                         "rules": Array [
                           "
   font-weight: 500;
+  font-size: 1rem;
   a:link {
     color: #4472ca;
     text-decoration: none;

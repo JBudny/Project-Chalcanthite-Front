@@ -24,7 +24,7 @@ describe(`ModeBox`, () => {
   });
 
   it(`should render code button with an actualCode inside`, () => {
-    expect(modeBox.find('div[role="button"]').props()).toHaveProperty(
+    expect(modeBox.find('button[type="button"]').props()).toHaveProperty(
       "children",
       actualCode
     );
