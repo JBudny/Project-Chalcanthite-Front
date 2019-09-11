@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MorePanel props should match the snapshot 1`] = `Object {}`;
+
+exports[`MorePanel should match the snapshot 1`] = `
+.c0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1 {
+  display: inline-block;
+  color: #1F2023;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+<MorePanel>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-family: \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div
+          iconColor="#1F2023"
+          iconSize="1.25rem"
+          role="button"
+          tabIndex="0"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: ",
+                    [Function],
+                    ";
+  border-right: ",
+                    [Function],
+                    ";
+  border-left: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  transform: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconColor="#1F2023"
+            iconSize="1.25rem"
+            role="button"
+            tabIndex="0"
+          >
+            <div
+              className="c1"
+              role="button"
+              tabIndex="0"
+            >
+              <i
+                className="icon-ellipsis"
+              />
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</MorePanel>
+`;

@@ -1,0 +1,33 @@
+// @flow
+
+type Post = {
+  tags: Array<string>,
+  thumbnail: string,
+  favorites: number,
+  points: number,
+  author: string,
+  title: string,
+  shortDescription: string,
+  actualCode: string
+};
+
+export type Props = {
+  post: Post
+};
+
+export type TitlePanelProps = {
+  tags: Array<string>,
+  favorites: number,
+  author: string,
+  title: string
+};
+
+export type ModeBoxProps = {
+  thumbnail: string,
+  shortDescription: string,
+  actualCode: string
+};
+
+export type PointsProps = {
+  points: number
+};

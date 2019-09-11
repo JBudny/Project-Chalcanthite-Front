@@ -12,7 +12,7 @@ const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 const { REACT_APP_API_URL } = process.env;
 const quantity = 5;
-const URL = `${REACT_APP_API_URL}/modes/top/${quantity}`;
+const URL = `${REACT_APP_API_URL}/mode/top/${quantity}`;
 const mockedData = [
   {
     tags: [],
