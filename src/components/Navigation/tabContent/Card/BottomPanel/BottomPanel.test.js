@@ -6,11 +6,10 @@ import BottomPanel from "./BottomPanel";
 
 describe(`BottomPanel`, () => {
   let bottomPanelTree;
-
-  beforeEach(() => (bottomPanelTree = mount(<BottomPanel />)));
-
   const selectedNodesEqualTo = (sel, val) =>
     expect(bottomPanelTree.find(sel).length).toBe(val);
+
+  beforeEach(() => (bottomPanelTree = mount(<BottomPanel />)));
 
   it(`should match the snapshot`, () => {
     expect(toJson(bottomPanelTree)).toMatchSnapshot();
