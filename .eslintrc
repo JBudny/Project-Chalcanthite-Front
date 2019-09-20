@@ -8,7 +8,16 @@
 		"allowImportExportEverywhere": false,
 		"codeFrame": false
 	},
-	"extends": [ "airbnb", "airbnb/hooks", "prettier", "plugin:jsx-a11y/recommended" ],
+	"extends": [ 
+		"airbnb", 
+		"airbnb/hooks", 
+		"prettier", 
+		"plugin:jsx-a11y/recommended",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"prettier/babel",
+		"prettier/flowtype",
+		"prettier/react" ],
 	"env": {
 		"browser": true,
 		"jest": true
