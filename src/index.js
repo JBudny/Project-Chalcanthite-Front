@@ -6,6 +6,7 @@ import reduxThunk from "redux-thunk";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 import getModesByDateInitial from "./reducers/getModesByDateInitial";
+import "typeface-roboto";
 
 const store = createStore(getModesByDateInitial, applyMiddleware(reduxThunk));
 
