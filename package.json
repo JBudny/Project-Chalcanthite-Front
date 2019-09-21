@@ -21,9 +21,10 @@
     "uuid": "^3.3.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "testOnce": "yarn test --watchAll=false --bail",
+    "build": "yarn testOnce && react-scripts build",
+    "start": "yarn testOnce && react-scripts start",
     "eject": "react-scripts eject",
     "flow": "flow"
   },
