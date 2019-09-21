@@ -1,8 +1,9 @@
 {
-    "src/**/*.{js,jsx}": [
+  "linters": {
+    "src/**/!(serviceWorker).{js,jsx}": [
       "eslint",
       "pretty-quick --staged",
       "git add"
-    ],
-    "ignore": ["node_modules", "dist", "yarn.lock", "serviceWorker.js"]
+    ]
+  }
 }
