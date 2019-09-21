@@ -1,6 +1,7 @@
-import { combineReducers } from "redux";
-import getModesByDateInitial from "./getModesByDateInitial";
+import { combineReducers } from 'redux';
+
+import getModesByDateInitial from './getModesByDateInitial';
 
 export default combineReducers({
-  getModesByDateInitial
+  getModesByDateInitial,
 });

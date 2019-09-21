@@ -1,12 +1,14 @@
 // @flow
-import "../../../../../utils/fontello/css/fontello.css";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import React from "react";
-import Picture from "../simpleElements/Picture/Picture.styles";
-import ModeBoxWrapper from "./ModeBox.styles";
-import Text from "../simpleElements/Text/Text.styles";
-import Code from "../simpleElements/Code/Code.styles";
-import type { ModeBoxProps } from "../Card.types";
+import '../../../../../utils/fontello/css/fontello.css';
+
+import React from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
+import type { ModeBoxProps } from '../Card.types';
+import Code from '../simpleElements/Code/Code.styles';
+import Picture from '../simpleElements/Picture/Picture.styles';
+import Text from '../simpleElements/Text/Text.styles';
+import ModeBoxWrapper from './ModeBox.styles';
 
 const ModeBox = (props: ModeBoxProps) => {
   const { thumbnail, actualCode, shortDescription } = props;

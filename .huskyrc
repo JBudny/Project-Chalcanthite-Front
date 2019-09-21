@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "yarn test --watchAll=false && lint-staged"
+    "pre-commit": "pretty-quick --staged && lint-staged && yarn test --watchAll=false"
   }
 }

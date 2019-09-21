@@ -1,9 +1,9 @@
 // @flow
-import type { ComponentType } from "react";
-import styled from "styled-components";
+import type { ComponentType } from 'react';
+import styled from 'styled-components';
 
 type Props = {
-  thumbnailUrl: string
+  thumbnailUrl: string,
 };
 
 const Picture: ComponentType<Props> = styled.div`

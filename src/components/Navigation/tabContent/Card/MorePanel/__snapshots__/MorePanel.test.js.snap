@@ -3,8 +3,15 @@
 exports[`MorePanel props should match the snapshot 1`] = `Object {}`;
 
 exports[`MorePanel should match the snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  color: #1F2023;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
 .c0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,13 +22,6 @@ exports[`MorePanel should match the snapshot 1`] = `
   justify-content: flex-end;
 }
 
-.c1 {
-  display: inline-block;
-  color: #1F2023;
-  font-size: 1.25rem;
-  cursor: pointer;
-}
-
 <MorePanel>
   <styled.div>
     <StyledComponent
@@ -30,12 +30,12 @@ exports[`MorePanel should match the snapshot 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-bwzfXH",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
               "
-  font-family: \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: flex-end;
 ",
@@ -44,7 +44,7 @@ exports[`MorePanel should match the snapshot 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-bwzfXH",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -68,7 +68,7 @@ exports[`MorePanel should match the snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
+                  "componentId": "sc-bdVaJa",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -99,7 +99,7 @@ exports[`MorePanel should match the snapshot 1`] = `
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
+                "styledComponentId": "sc-bdVaJa",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],

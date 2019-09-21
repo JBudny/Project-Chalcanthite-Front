@@ -1,20 +1,20 @@
-import { createLink, createLinksList } from "./createLinks";
-import dummyTitlePanelProps from "../dummyCardProps/dummyTitlePanelProps";
+import dummyTitlePanelProps from '../dummyCardProps/dummyTitlePanelProps';
+import { createLink, createLinksList } from './createLinks';
 
-describe(`createLink function`, () => {
+describe('createLink function', () => {
   const { author } = dummyTitlePanelProps;
-  const linkElement = createLink("/user", author);
+  const linkElement = createLink('/user', author);
 
-  it(`should match the snapshot`, () => {
+  it('should match the snapshot', () => {
     expect(linkElement).toMatchSnapshot();
   });
 });
 
-describe(`createLinksList function`, () => {
+describe('createLinksList function', () => {
   const { tags } = dummyTitlePanelProps;
-  const linksList = createLinksList("/tag", tags);
+  const linksList = createLinksList('/tag', tags);
 
-  it(`should match the snapshot`, () => {
+  it('should match the snapshot', () => {
     expect(linksList).toMatchSnapshot();
   });
 });

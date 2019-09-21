@@ -1,19 +1,14 @@
-import React, { useState } from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Tab from "@material-ui/core/Tab";
-import Tabs from "@material-ui/core/Tabs";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from "react-router-dom";
-import Fresh from "./tabContent/Fresh";
-import NoMatch from "./tabContent/NoMatch";
-import Random from "./tabContent/Random";
-import styles from "./Navigation.styles";
-import Top from "./tabContent/Top";
+import AppBar from '@material-ui/core/AppBar';
+import Tab from '@material-ui/core/Tab';
+import Tabs from '@material-ui/core/Tabs';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Link, Redirect, Route, Switch } from 'react-router-dom';
+
+import styles from './Navigation.styles';
+import Fresh from './tabContent/Fresh';
+import NoMatch from './tabContent/NoMatch';
+import Random from './tabContent/Random';
+import Top from './tabContent/Top';
 
 const Navigation = () => {
   const classes = styles();

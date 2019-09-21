@@ -1,9 +1,11 @@
 // @flow
-import "../../../../../utils/fontello/css/fontello.css";
-import isEqual from "lodash/isEqual";
-import React, { useState } from "react";
-import BottomPanelWrapper from "./BottomPanel.styles";
-import IconBox from "../simpleElements/IconBox/IconBox.styles";
+import '../../../../../utils/fontello/css/fontello.css';
+
+import isEqual from 'lodash/isEqual';
+import React, { useState } from 'react';
+
+import IconBox from '../simpleElements/IconBox/IconBox.styles';
+import BottomPanelWrapper from './BottomPanel.styles';
 
 const BottomPanel = () => {
   const [likeHeart, setLikeHeart] = useState(false);
@@ -19,8 +21,7 @@ const BottomPanel = () => {
     setDislikeHeart(!dislikeHeart);
   };
 
-  const switchHeart = (action: boolean) =>
-    action ? switchLikeHeart() : switchDislikeHeart();
+  const switchHeart = (action: boolean) => (action ? switchLikeHeart() : switchDislikeHeart());
 
   const handleClick = (action: boolean) => switchHeart(action);
   const handleKeyDown = (e: KeyboardEvent, action: boolean) =>
@@ -39,7 +40,7 @@ const BottomPanel = () => {
         onKeyDown={e => handleKeyDown(e, true)}
         onClick={() => handleClick(true)}
       >
-        <i className={likeHeart ? "icon-heart-filled" : "icon-heart"} />
+        <i className={likeHeart ? 'icon-heart-filled' : 'icon-heart'} />
       </IconBox>
       <IconBox
         tabIndex="0"
@@ -53,7 +54,7 @@ const BottomPanel = () => {
         onKeyDown={e => handleKeyDown(e, false)}
         onClick={() => handleClick(false)}
       >
-        <i className={dislikeHeart ? "icon-heart-filled" : "icon-heart"} />
+        <i className={dislikeHeart ? 'icon-heart-filled' : 'icon-heart'} />
       </IconBox>
       <IconBox
         tabIndex="0"

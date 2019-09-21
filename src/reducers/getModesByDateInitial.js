@@ -1,13 +1,13 @@
 import {
-  GET_MODES_BY_DATE_INITIAL_REQUESTED,
   GET_MODES_BY_DATE_INITIAL_DONE,
-  GET_MODES_BY_DATE_INITIAL_FAILED
-} from "../actions/postActions";
+  GET_MODES_BY_DATE_INITIAL_FAILED,
+  GET_MODES_BY_DATE_INITIAL_REQUESTED,
+} from '../actions/postActions';
 
 const initState = {
   isLoading: false,
   isError: false,
-  posts: []
+  posts: [],
 };
 
 const getModesByDateInitial = (state = initState, action) => {

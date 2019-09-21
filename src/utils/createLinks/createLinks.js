@@ -1,9 +1,9 @@
 // @flow
-import React from "react";
-import v4 from "uuid/v4";
-import type { Element, Node } from "react";
+import type { Element, Node } from 'react';
+import React from 'react';
+import v4 from 'uuid/v4';
 
-export const createLink = (url: string, text: string): Element<"a"> => (
+export const createLink = (url: string, text: string): Element<'a'> => (
   <a href={`${url}/${text}`}>{text}</a>
 );
 

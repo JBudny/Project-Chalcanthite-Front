@@ -3,5 +3,6 @@
       "eslint",
       "pretty-quick --staged",
       "git add"
-    ]
+    ],
+    "ignore": ["node_modules", "dist", "yarn.lock", "serviceWorker.js"]
 }

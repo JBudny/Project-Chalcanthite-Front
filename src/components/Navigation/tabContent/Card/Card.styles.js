@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const CardWrapper = styled.div`
   padding: 0 0 0.4rem 0;

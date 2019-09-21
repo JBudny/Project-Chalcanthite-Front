@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import TabContainer from "../TabContainer";
-import { getModesByDateInitial } from "../../../actions/postActions";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { getModesByDateInitial } from '../../../actions/postActions';
+import TabContainer from '../TabContainer';
 
 const Fresh = () => {
   const dispatch = useDispatch();
@@ -13,8 +14,8 @@ const Fresh = () => {
   const isLoading = useSelector(state => state.isLoading);
   const isError = useSelector(state => state.isError);
 
-  if (isLoading) return `Loading...`;
-  if (isError) return `Error`;
+  if (isLoading) return 'Loading...';
+  if (isError) return 'Error';
   return <TabContainer />;
 };
 

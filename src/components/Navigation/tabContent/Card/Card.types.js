@@ -8,26 +8,26 @@ type Post = {
   author: string,
   title: string,
   shortDescription: string,
-  actualCode: string
+  actualCode: string,
 };
 
 export type Props = {
-  post: Post
+  post: Post,
 };
 
 export type TitlePanelProps = {
   tags: Array<string>,
   favorites: number,
   author: string,
-  title: string
+  title: string,
 };
 
 export type ModeBoxProps = {
   thumbnail: string,
   shortDescription: string,
-  actualCode: string
+  actualCode: string,
 };
 
 export type PointsProps = {
-  points: number
+  points: number,
 };

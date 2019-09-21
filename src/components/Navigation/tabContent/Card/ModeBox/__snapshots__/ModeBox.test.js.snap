@@ -9,24 +9,6 @@ Object {
 `;
 
 exports[`ModeBox should match the snapshot 1`] = `
-.c1 {
-  position: relative;
-  min-height: 150px;
-  margin: 0 0 5px 0;
-  background: #1f2023;
-  background: url(/path/to/default.img);
-  background-size: cover;
-  background-position: center;
-}
-
-.c0 {
-  margin: 5px 0;
-}
-
-.c3 {
-  margin: 0 0.4rem;
-}
-
 .c2 {
   margin: auto;
   position: absolute;
@@ -60,6 +42,24 @@ exports[`ModeBox should match the snapshot 1`] = `
   transform: scale(0.96);
 }
 
+.c1 {
+  position: relative;
+  min-height: 150px;
+  margin: 0 0 5px 0;
+  background: #1f2023;
+  background: url(/path/to/default.img);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  margin: 0 0.4rem;
+}
+
+.c0 {
+  margin: 5px 0;
+}
+
 <ModeBox
   actualCode="htXjj"
   shortDescription="Culpa exercitation irure consectetur irure cillum."
@@ -72,7 +72,7 @@ exports[`ModeBox should match the snapshot 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
+            "componentId": "sc-bxivhb",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -84,7 +84,7 @@ exports[`ModeBox should match the snapshot 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
+          "styledComponentId": "sc-bxivhb",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -108,7 +108,7 @@ exports[`ModeBox should match the snapshot 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bdVaJa",
+                    "componentId": "sc-bwzfXH",
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
@@ -128,7 +128,7 @@ exports[`ModeBox should match the snapshot 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bdVaJa",
+                  "styledComponentId": "sc-bwzfXH",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -156,7 +156,7 @@ exports[`ModeBox should match the snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bxivhb",
+                            "componentId": "sc-bdVaJa",
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
@@ -187,7 +187,7 @@ exports[`ModeBox should match the snapshot 1`] = `
                           "displayName": "styled.button",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bxivhb",
+                          "styledComponentId": "sc-bdVaJa",
                           "target": "button",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],

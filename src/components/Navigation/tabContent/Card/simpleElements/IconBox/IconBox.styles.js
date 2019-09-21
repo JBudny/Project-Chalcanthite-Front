@@ -1,11 +1,11 @@
 // @flow
-import type { ComponentType } from "react";
-import styled from "styled-components";
+import type { ComponentType } from 'react';
+import styled from 'styled-components';
 
 type Props = {
-  iconRightBorder?: "1px solid #A3BAC3",
-  iconLeftBorder?: "1px solid #A3BAC3",
-  iconColor: "#3d73bf" | "#d1b03b"
+  iconRightBorder?: '1px solid #A3BAC3',
+  iconLeftBorder?: '1px solid #A3BAC3',
+  iconColor: '#3d73bf' | '#d1b03b',
 };
 
 const IconBox: ComponentType<Props> = styled.div`
