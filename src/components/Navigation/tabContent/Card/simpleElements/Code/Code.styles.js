@@ -20,7 +20,6 @@ const Code = styled.button`
   &:active {
     transform: scale(0.96);
   }
-  transition: transform 0.05s;
 `;
 
 export default Code;
