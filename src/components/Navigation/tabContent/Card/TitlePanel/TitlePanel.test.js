@@ -12,12 +12,11 @@ describe('TitlePanel', () => {
 
   let titlePanelTree;
 
-  beforeEach(
-    () =>
-      (titlePanelTree = mount(
-        <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />,
-      )),
-  );
+  beforeEach(() => {
+    titlePanelTree = mount(
+      <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />,
+    );
+  });
 
   it('should match the snapshot', () => {
     expect(toJson(titlePanelTree)).toMatchSnapshot();

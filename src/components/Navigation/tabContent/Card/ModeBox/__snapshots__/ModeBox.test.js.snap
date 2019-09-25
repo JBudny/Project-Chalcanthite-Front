@@ -50,6 +50,8 @@ exports[`ModeBox should match the snapshot 1`] = `
 }
 
 .c3 {
+  color: inherit;
+  font-size: inherit;
   margin: 0 0.4rem;
 }
 
@@ -154,7 +156,7 @@ exports[`ModeBox should match the snapshot 1`] = `
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "sc-bdVaJa",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "
@@ -164,15 +166,27 @@ exports[`ModeBox should match the snapshot 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  width: 6.87rem;
-  height: 2.81rem;
-  color: #fff;
-  font-size: 1.25rem;
+  width: ",
+                              [Function],
+                              ";
+  height: ",
+                              [Function],
+                              ";
+  color: ",
+                              [Function],
+                              ";
+  font-size: ",
+                              [Function],
+                              ";
   font-weight: 500;
   cursor: pointer;
-  background-color: rgba(208, 216, 232, 0.32);
+  background-color: ",
+                              [Function],
+                              ";
   user-select: none;
-  border: none;
+  border: ",
+                              [Function],
+                              ";
   transition: transform 0.05s;
   &:active {
     transform: scale(0.96);
@@ -218,10 +232,16 @@ exports[`ModeBox should match the snapshot 1`] = `
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-htpNat",
-                      "isStatic": true,
+                      "isStatic": false,
                       "lastClassName": "c3",
                       "rules": Array [
                         "
+  color: ",
+                        [Function],
+                        ";
+  font-size: ",
+                        [Function],
+                        ";
   margin: 0 0.4rem;
 ",
                       ],

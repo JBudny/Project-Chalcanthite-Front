@@ -1,6 +1,6 @@
 {
   "linters": {
-    "src/**/!(serviceWorker).{js,jsx}": [
+    "./src/**/!(serviceWorker).{js,jsx}": [
       "eslint",
       "pretty-quick --staged",
       "git add"

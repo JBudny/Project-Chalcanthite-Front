@@ -7,14 +7,19 @@ exports[`BottomPanel should match the snapshot 1`] = `
   display: inline-block;
   width: 33%;
   border-right: 1px solid #A3BAC3;
+  border-left: none none #A3BAC3;
   color: #3d73bf;
   font-size: 1.25rem;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
   cursor: pointer;
 }
 
 .c2 {
   display: inline-block;
   width: 33%;
+  border-right: none none #A3BAC3;
   border-left: 1px solid #A3BAC3;
   color: #3d73bf;
   font-size: 1.25rem;
@@ -27,8 +32,13 @@ exports[`BottomPanel should match the snapshot 1`] = `
 .c3 {
   display: inline-block;
   width: 33%;
+  border-right: none none #A3BAC3;
+  border-left: none none #A3BAC3;
   color: #3d73bf;
   font-size: 1.25rem;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
   cursor: pointer;
 }
 
@@ -156,7 +166,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
           iconColor="#3d73bf"
           iconLeftBorder="1px solid #A3BAC3"
           iconSize="1.25rem"
-          iconTransfer="rotate(180deg)"
+          iconTransform="rotate(180deg)"
           iconWidth="33%"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -212,7 +222,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
             iconColor="#3d73bf"
             iconLeftBorder="1px solid #A3BAC3"
             iconSize="1.25rem"
-            iconTransfer="rotate(180deg)"
+            iconTransform="rotate(180deg)"
             iconWidth="33%"
             onClick={[Function]}
             onKeyDown={[Function]}

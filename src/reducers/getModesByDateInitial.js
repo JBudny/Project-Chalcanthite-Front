@@ -1,8 +1,11 @@
+// @flow
+
 import {
   GET_MODES_BY_DATE_INITIAL_DONE,
   GET_MODES_BY_DATE_INITIAL_FAILED,
   GET_MODES_BY_DATE_INITIAL_REQUESTED,
 } from '../actions/postActions';
+import type { Action, State } from '../types/redux.types';
 
 const initState = {
   isLoading: false,
@@ -10,7 +13,7 @@ const initState = {
   posts: [],
 };
 
-const getModesByDateInitial = (state = initState, action) => {
+const getModesByDateInitial = (state: State = initState, action: Action): State => {
   switch (action.type) {
     case GET_MODES_BY_DATE_INITIAL_REQUESTED:
       return { ...state, isLoading: true };

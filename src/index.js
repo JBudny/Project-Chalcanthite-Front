@@ -12,11 +12,14 @@ import * as serviceWorker from './serviceWorker';
 
 const store = createStore(getModesByDateInitial, applyMiddleware(reduxThunk));
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root'),
-);
+const root = document.getElementById('root');
+
+if (root)
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    root,
+  );
 
 serviceWorker.register();

@@ -5,8 +5,14 @@ exports[`MorePanel props should match the snapshot 1`] = `Object {}`;
 exports[`MorePanel should match the snapshot 1`] = `
 .c1 {
   display: inline-block;
+  width: auto;
+  border-right: none none #A3BAC3;
+  border-left: none none #A3BAC3;
   color: #1F2023;
   font-size: 1.25rem;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
   cursor: pointer;
 }
 

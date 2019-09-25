@@ -10,7 +10,9 @@ describe('BottomPanel', () => {
   let bottomPanelTree;
   const selectedNodesEqualTo = (sel, val) => expect(bottomPanelTree.find(sel).length).toBe(val);
 
-  beforeEach(() => (bottomPanelTree = mount(<BottomPanel />)));
+  beforeEach(() => {
+    bottomPanelTree = mount(<BottomPanel />);
+  });
 
   it('should match the snapshot', () => {
     expect(toJson(bottomPanelTree)).toMatchSnapshot();
@@ -63,7 +65,9 @@ describe('BottomPanel', () => {
   });
 
   describe(': clicked dislike button ', () => {
-    beforeEach(() => (bottomPanelTree = mount(<BottomPanel />)));
+    beforeEach(() => {
+      bottomPanelTree = mount(<BottomPanel />);
+    });
 
     it("should toggle 'icon-heart' class to 'icon-heart-filled'", () => {
       bottomPanelTree

@@ -36,17 +36,19 @@ const TitlePanel = (props: TitlePanelProps) => {
           {`By: `}
           {createLink('/user', author)}
         </Author>
-        <IconBox
-          iconColor="#d1b03b"
-          tabIndex="0"
-          role="button"
-          type="button"
-          onKeyDown={handleFavouritesKeyDown}
-          onClick={handleFavouritesClick}
-        >
-          <Favourites>{favorites}</Favourites>
-          <i className={star ? 'icon-star' : 'icon-star-empty'} />
-        </IconBox>
+        <Favourites>
+          {favorites}
+          <IconBox
+            iconColor="#d1b03b"
+            tabIndex="0"
+            role="button"
+            type="button"
+            onKeyDown={handleFavouritesKeyDown}
+            onClick={handleFavouritesClick}
+          >
+            <i className={star ? 'icon-star' : 'icon-star-empty'} />
+          </IconBox>
+        </Favourites>
       </EvenlyDistributed>
     </TitlePanelWrapper>
   );

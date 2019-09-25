@@ -19,8 +19,8 @@ const Card = (props: Props) => {
   return (
     <CardWrapper>
       <MorePanel />
-      <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />
-      <ModeBox thumbnail={thumbnail} shortDescription={shortDescription} actualCode={actualCode} />
+      <TitlePanel title={title} tags={tags} author={author} favorites={favorites} />
+      <ModeBox thumbnail={thumbnail} actualCode={actualCode} shortDescription={shortDescription} />
       <Points points={points} />
       <BottomPanel />
     </CardWrapper>

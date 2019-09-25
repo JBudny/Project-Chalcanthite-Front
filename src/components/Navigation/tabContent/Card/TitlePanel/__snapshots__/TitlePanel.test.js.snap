@@ -18,10 +18,11 @@ Object {
 exports[`TitlePanel should match the snapshot 1`] = `
 .c4 {
   font-weight: 500;
+  color: inherit;
   font-size: 1rem;
 }
 
-.c4 a:link {
+.c4 a {
   color: #4472ca;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -37,6 +38,10 @@ exports[`TitlePanel should match the snapshot 1`] = `
   text-decoration: underline;
 }
 
+.c4 a:active {
+  color: #9999ca;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -48,32 +53,39 @@ exports[`TitlePanel should match the snapshot 1`] = `
   justify-content: space-between;
 }
 
-.c6 {
-  color: black;
+.c5 {
+  color: inherit;
+  font-size: inherit;
   display: inline;
   line-height: 1.5rem;
 }
 
-.c5 {
+.c6 {
   display: inline-block;
+  width: auto;
+  border-right: none none #A3BAC3;
+  border-left: none none #A3BAC3;
   color: #d1b03b;
+  font-size: medium;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
   cursor: pointer;
 }
 
 .c2 {
   font-weight: 500;
+  color: inherit;
+  font-size: inherit;
 }
 
-.c2 > span {
+.c2 span {
   color: #636363;
+  font-weight: 500;
 }
 
 .c2 a {
   font-weight: 400;
-  color: #636363;
-}
-
-.c2 a:link {
   color: #636363;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -87,6 +99,10 @@ exports[`TitlePanel should match the snapshot 1`] = `
   color: #9c9c9c;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c2 a:active {
+  color: #9c9c9c;
 }
 
 .c1 {
@@ -153,14 +169,18 @@ exports[`TitlePanel should match the snapshot 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-EHOje",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     "
   text-transform: uppercase;
   font-weight: 500;
-  color: #4472ca;
-  font-size: 1.125rem;
+  color: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
 ",
                   ],
                 },
@@ -193,29 +213,50 @@ exports[`TitlePanel should match the snapshot 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-ifAKCX",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c2",
                   "rules": Array [
                     "
   font-weight: 500;
-  & > span {
-    color: #636363;
-  }
-  a {
-    font-weight: 400;
-    color: #636363;
+  color: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+
+  span {
+    color: ",
+                    [Function],
+                    ";
+    font-weight: 500;
   }
 
-  a:link {
-    color: #636363;
+  a {
+    font-weight: 400;
+    color: ",
+                    [Function],
+                    ";
     text-decoration: none;
   }
+
   a:visited {
-    color: #9c9c9c;
+    color: ",
+                    [Function],
+                    ";
   }
+
   a:hover {
-    color: #9c9c9c;
+    color: ",
+                    [Function],
+                    ";
     text-decoration: underline;
+  }
+
+  a:active {
+    color: ",
+                    [Function],
+                    ";
   }
 ",
                   ],
@@ -318,22 +359,42 @@ exports[`TitlePanel should match the snapshot 1`] = `
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bdVaJa",
-                        "isStatic": true,
+                        "isStatic": false,
                         "lastClassName": "c4",
                         "rules": Array [
                           "
   font-weight: 500;
-  font-size: 1rem;
-  a:link {
-    color: #4472ca;
+  color: ",
+                          [Function],
+                          ";
+  font-size: ",
+                          [Function],
+                          ";
+
+  a {
+    color: ",
+                          [Function],
+                          ";
     text-decoration: none;
   }
+
   a:visited {
-    color: #9999ca;
+    color: ",
+                          [Function],
+                          ";
   }
+
   a:hover {
-    color: #9999ca;
+    color: ",
+                          [Function],
+                          ";
     text-decoration: underline;
+  }
+
+  a:active {
+    color: ",
+                          [Function],
+                          ";
   }
 ",
                         ],
@@ -362,52 +423,33 @@ exports[`TitlePanel should match the snapshot 1`] = `
                   </div>
                 </StyledComponent>
               </styled.div>
-              <styled.div
-                iconColor="#d1b03b"
-                onClick={[Function]}
-                onKeyDown={[Function]}
-                role="button"
-                tabIndex="0"
-                type="button"
-              >
+              <styled.div>
                 <StyledComponent
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-bxivhb",
+                        "componentId": "sc-htpNat",
                         "isStatic": false,
                         "lastClassName": "c5",
                         "rules": Array [
                           "
-  display: inline-block;
-  width: ",
-                          [Function],
-                          ";
-  border-right: ",
-                          [Function],
-                          ";
-  border-left: ",
-                          [Function],
-                          ";
   color: ",
                           [Function],
                           ";
   font-size: ",
                           [Function],
                           ";
-  transform: ",
-                          [Function],
-                          ";
-  cursor: pointer;
+  display: inline;
+  line-height: 1.5rem;
 ",
                         ],
                       },
                       "displayName": "styled.div",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "sc-bxivhb",
+                      "styledComponentId": "sc-htpNat",
                       "target": "div",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -415,43 +457,57 @@ exports[`TitlePanel should match the snapshot 1`] = `
                     }
                   }
                   forwardedRef={null}
-                  iconColor="#d1b03b"
-                  onClick={[Function]}
-                  onKeyDown={[Function]}
-                  role="button"
-                  tabIndex="0"
-                  type="button"
                 >
                   <div
                     className="c5"
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
-                    role="button"
-                    tabIndex="0"
-                    type="button"
                   >
-                    <styled.div>
+                    224
+                    <styled.div
+                      iconColor="#d1b03b"
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      role="button"
+                      tabIndex="0"
+                      type="button"
+                    >
                       <StyledComponent
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-htpNat",
-                              "isStatic": true,
+                              "componentId": "sc-bxivhb",
+                              "isStatic": false,
                               "lastClassName": "c6",
                               "rules": Array [
                                 "
-  color: black;
-  display: inline;
-  line-height: 1.5rem;
+  display: inline-block;
+  width: ",
+                                [Function],
+                                ";
+  border-right: ",
+                                [Function],
+                                ";
+  border-left: ",
+                                [Function],
+                                ";
+  color: ",
+                                [Function],
+                                ";
+  font-size: ",
+                                [Function],
+                                ";
+  transform: ",
+                                [Function],
+                                ";
+  cursor: pointer;
 ",
                               ],
                             },
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-htpNat",
+                            "styledComponentId": "sc-bxivhb",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -459,17 +515,27 @@ exports[`TitlePanel should match the snapshot 1`] = `
                           }
                         }
                         forwardedRef={null}
+                        iconColor="#d1b03b"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex="0"
+                        type="button"
                       >
                         <div
                           className="c6"
+                          onClick={[Function]}
+                          onKeyDown={[Function]}
+                          role="button"
+                          tabIndex="0"
+                          type="button"
                         >
-                          224
+                          <i
+                            className="icon-star-empty"
+                          />
                         </div>
                       </StyledComponent>
                     </styled.div>
-                    <i
-                      className="icon-star-empty"
-                    />
                   </div>
                 </StyledComponent>
               </styled.div>

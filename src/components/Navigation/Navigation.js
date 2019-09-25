@@ -53,9 +53,9 @@ const Navigation = () => {
         </AppBar>
         <Switch>
           <Redirect exact from="/" to="/top" />
-          <Route exact from="/top" component={Top} />
-          <Route exact from="/fresh" component={Fresh} />
-          <Route exact from="/random" component={Random} />
+          <Route exact path="/top" component={Top} />
+          <Route exact path="/fresh" component={Fresh} />
+          <Route exact path="/random" component={Random} />
           <Route component={NoMatch} />
         </Switch>
       </div>

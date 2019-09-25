@@ -50,7 +50,7 @@ const BottomPanel = () => {
         iconSize="1.25rem"
         iconColor="#3d73bf"
         iconLeftBorder="1px solid #A3BAC3"
-        iconTransfer="rotate(180deg)"
+        iconTransform="rotate(180deg)"
         onKeyDown={e => handleKeyDown(e, false)}
         onClick={() => handleClick(false)}
       >

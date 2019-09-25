@@ -1,17 +1,18 @@
 // @flow
-import type { ComponentType } from 'react';
+
+import type { StyledComponent } from 'styled-components';
 import styled from 'styled-components';
 
 type Props = {
   thumbnailUrl: string,
 };
 
-const Picture: ComponentType<Props> = styled.div`
+const Picture: StyledComponent<Props, any, HTMLDivElement> = styled.div`
   position: relative;
   min-height: 150px;
   margin: 0 0 5px 0;
   background: #1f2023;
-  background: url(${props => props.thumbnailUrl});
+  background: url(${({ thumbnailUrl }) => thumbnailUrl});
   background-size: cover;
   background-position: center;
 `;

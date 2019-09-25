@@ -1,18 +1,38 @@
+// @flow
+
+import type { StyledComponent } from 'styled-components';
 import styled from 'styled-components';
 
-const Author = styled.div`
+type Props = {
+  textColor?: string,
+  fontSize?: string,
+  linkColor?: string,
+  visitedColor?: string,
+  activeColor?: string,
+  hoverColor?: string,
+};
+
+const Author: StyledComponent<Props, any, HTMLDivElement> = styled.div`
   font-weight: 500;
-  font-size: 1rem;
-  a:link {
-    color: #4472ca;
+  color: ${({ textColor }) => textColor || 'inherit'};
+  font-size: ${({ fontSize }) => fontSize || '1rem'};
+
+  a {
+    color: ${({ linkColor }) => linkColor || '#4472ca'};
     text-decoration: none;
   }
+
   a:visited {
-    color: #9999ca;
+    color: ${({ visitedColor }) => visitedColor || '#9999ca'};
   }
+
   a:hover {
-    color: #9999ca;
+    color: ${({ hoverColor }) => hoverColor || '#9999ca'};
     text-decoration: underline;
+  }
+
+  a:active {
+    color: ${({ activeColor }) => activeColor || '#9999ca'};
   }
 `;
 
