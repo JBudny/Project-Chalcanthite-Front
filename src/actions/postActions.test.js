@@ -34,7 +34,7 @@ describe('actions should create an action to', () => {
 });
 
 describe('async action should dispatch an action to', () => {
-  const store = mockStore();
+  let store = mockStore();
 
   afterEach(() => {
     fetchMock.restore();
@@ -58,15 +58,9 @@ describe('async action should dispatch an action to', () => {
     const actions = store.getActions();
     expect(actions[1]).toMatchSnapshot();
   });
-});
-
-describe('async action should dispatch an action to', () => {
-  afterEach(() => {
-    fetchMock.restore();
-  });
 
   it('return an error', async () => {
-    const store = mockStore();
+    store = mockStore();
 
     fetchMock.mock(URL, () => {
       throw new Error(ERROR_MESSAGE);
