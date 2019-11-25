@@ -1,4 +1,5 @@
 import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import InputBase from '@material-ui/core/InputBase';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -35,6 +36,9 @@ const SearchAppBar = () => {
               }}
             />
           </div>
+          <Button color="inherit" variant="outlined" className={menuButton}>
+            Log in
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

@@ -7,6 +7,8 @@ const styles = makeStyles(theme => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    textAlign: 'center',
+    flex: '0 0 auto',
   },
   title: {
     flexGrow: 1,
@@ -16,6 +18,7 @@ const styles = makeStyles(theme => ({
     },
   },
   search: {
+    marginRight: theme.spacing(2),
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
