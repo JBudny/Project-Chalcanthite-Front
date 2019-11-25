@@ -16,9 +16,6 @@ export const GET_MODES_BY_DATE_INITIAL_DONE = 'GET_MODES_BY_DATE_INITIAL_DONE';
 
 export const GET_MODES_BY_DATE_INITIAL_FAILED = 'GET_MODES_BY_DATE_INITIAL_FAILED';
 
-if (!process.env.REACT_APP_API_URL) throw new Error('REACT_APP_API_URL missing');
-const { REACT_APP_API_URL } = process.env;
-
 export const getModesByDateInitialRequested = (): GetModesByDateInitialRequested => ({
   type: 'GET_MODES_BY_DATE_INITIAL_REQUESTED',
 });
@@ -35,6 +32,8 @@ export const getModesByDateInitialFailed = (error: string): GetModesByDateInitia
 
 export const getModesByDateInitial = (quantity: number) => (dispatch: Dispatch<Action>) => {
   dispatch(getModesByDateInitialRequested());
+  if (!process.env.REACT_APP_API_URL) throw new Error('REACT_APP_API_URL missing');
+  const { REACT_APP_API_URL } = process.env;
   return fetch(`${REACT_APP_API_URL}/mode/top/${quantity}`)
     .then(posts => posts.json())
     .then(posts => dispatch(getModesByDateInitialDone(posts)))

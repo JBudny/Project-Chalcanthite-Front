@@ -11,13 +11,9 @@ import {
   getModesByDateInitialRequested,
 } from './postActions';
 
-if (!process.env.REACT_APP_API_URL) throw new Error('REACT_APP_API_URL missing');
-const { REACT_APP_API_URL } = process.env;
-
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 const quantity = 5;
-const URL = `${REACT_APP_API_URL}/mode/top/${quantity}`;
 
 describe('actions should create an action to', () => {
   it('request for modes', () => {
@@ -35,6 +31,10 @@ describe('actions should create an action to', () => {
 
 describe('async action should dispatch an action to', () => {
   let store = mockStore();
+
+  if (!process.env.REACT_APP_API_URL) throw new Error('REACT_APP_API_URL missing');
+  const { REACT_APP_API_URL } = process.env;
+  const URL = `${REACT_APP_API_URL}/mode/top/${quantity}`;
 
   afterEach(() => {
     fetchMock.restore();
