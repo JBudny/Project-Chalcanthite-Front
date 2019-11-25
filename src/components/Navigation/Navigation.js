@@ -4,6 +4,7 @@ import Tabs from '@material-ui/core/Tabs';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link, Redirect, Route, Switch } from 'react-router-dom';
 
+import { fresh, home, random, top } from '../../utils/regexps/navigation';
 import styles from './Navigation.styles';
 import Fresh from './tabContent/Fresh';
 import NoMatch from './tabContent/NoMatch';
@@ -16,12 +17,12 @@ const Navigation = () => {
   const initialTab = () => {
     const { pathname } = window.location;
     switch (true) {
-      case /^\/$/.test(pathname):
-      case /^\/top\/?$/.test(pathname):
+      case home.test(pathname):
+      case top.test(pathname):
         return 0;
-      case /^\/fresh\/?$/.test(pathname):
+      case fresh.test(pathname):
         return 1;
-      case /^\/random\/?$/.test(pathname):
+      case random.test(pathname):
         return 2;
       default:
         return false;
