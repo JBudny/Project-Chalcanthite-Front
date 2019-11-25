@@ -1,12 +1,13 @@
-import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
-import MenuIcon from "@material-ui/icons/Menu";
-import SearchIcon from "@material-ui/icons/Search";
-import styles from "./SearchBar.styles";
+import AppBar from '@material-ui/core/AppBar';
+import IconButton from '@material-ui/core/IconButton';
+import InputBase from '@material-ui/core/InputBase';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import MenuIcon from '@material-ui/icons/Menu';
+import SearchIcon from '@material-ui/icons/Search';
+import React from 'react';
+
+import styles from './SearchBar.styles';
 
 const SearchAppBar = () => {
   const classes = styles();
@@ -30,7 +31,7 @@ const SearchAppBar = () => {
               placeholder="Search…"
               classes={{
                 root: inputRoot,
-                input: inputInput
+                input: inputInput,
               }}
             />
           </div>

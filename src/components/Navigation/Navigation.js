@@ -1,18 +1,35 @@
-import React, { useState } from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
-import styles from "./Navigation.styles";
-import Top from "./tab_content/Top";
-import Fresh from "./tab_content/Fresh";
-import Random from "./tab_content/Random";
-import NoMatch from "./tab_content/NoMatch";
+import AppBar from '@material-ui/core/AppBar';
+import Tab from '@material-ui/core/Tab';
+import Tabs from '@material-ui/core/Tabs';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Link, Redirect, Route, Switch } from 'react-router-dom';
+
+import { fresh, home, random, top } from '../../utils/regexps/navigation';
+import styles from './Navigation.styles';
+import Fresh from './tabContent/Fresh';
+import NoMatch from './tabContent/NoMatch';
+import Random from './tabContent/Random';
+import Top from './tabContent/Top';
 
 const Navigation = () => {
   const classes = styles();
   const { nav, tab } = classes;
-  const [currentTab, setCurrentTab] = useState(0);
+  const initialTab = () => {
+    const { pathname } = window.location;
+    switch (true) {
+      case home.test(pathname):
+      case top.test(pathname):
+        return 0;
+      case fresh.test(pathname):
+        return 1;
+      case random.test(pathname):
+        return 2;
+      default:
+        return false;
+    }
+  };
+
+  const [currentTab, setCurrentTab] = useState(() => initialTab());
 
   const handleChange = (event, newValue) => {
     setCurrentTab(newValue);
@@ -37,9 +54,9 @@ const Navigation = () => {
         </AppBar>
         <Switch>
           <Redirect exact from="/" to="/top" />
-          <Route path="/top" component={Top} />
-          <Route path="/fresh" component={Fresh} />
-          <Route path="/random" component={Random} />
+          <Route exact path="/top" component={Top} />
+          <Route exact path="/fresh" component={Fresh} />
+          <Route exact path="/random" component={Random} />
           <Route component={NoMatch} />
         </Switch>
       </div>

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createLink function should match the snapshot 1`] = `
+<a
+  href="/user/5d5c4546a6bab91d887207c7"
+>
+  5d5c4546a6bab91d887207c7
+</a>
+`;
+
+exports[`createLinksList function should match the snapshot 1`] = `
+Array [
+  <React.Fragment>
+    <a
+      href="/tag/non eiusmod"
+    >
+      non eiusmod
+    </a>
+    <span>
+      , 
+    </span>
+  </React.Fragment>,
+  <React.Fragment>
+    <a
+      href="/tag/cupidatat sit"
+    >
+      cupidatat sit
+    </a>
+    <span>
+      , 
+    </span>
+  </React.Fragment>,
+  <React.Fragment>
+    <a
+      href="/tag/ex"
+    >
+      ex
+    </a>
+    <span>
+      , 
+    </span>
+  </React.Fragment>,
+  <React.Fragment>
+    <a
+      href="/tag/sint"
+    >
+      sint
+    </a>
+    <span>
+      , 
+    </span>
+  </React.Fragment>,
+  <React.Fragment>
+    <a
+      href="/tag/in"
+    >
+      in
+    </a>
+  </React.Fragment>,
+]
+`;

@@ -1,9 +1,10 @@
-import React from "react";
-import { ThemeProvider } from "@material-ui/styles";
-import theme from "./muiTheme";
-import Navigation from "./Navigation/Navigation";
-import SearchAppBar from "./SearchBar/SearchBar";
-import GlobalStyle from "./App.styles";
+import { ThemeProvider } from '@material-ui/styles';
+import React from 'react';
+
+import GlobalStyle from './App.styles';
+import theme from './muiTheme';
+import Navigation from './Navigation/Navigation';
+import SearchAppBar from './SearchBar/SearchBar';
 
 const App = () => (
   <>

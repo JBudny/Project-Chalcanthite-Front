@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomPanel props should match the snapshot 1`] = `Object {}`;
+
+exports[`BottomPanel should match the snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  width: 33%;
+  border-right: 1px solid #A3BAC3;
+  border-left: none none #A3BAC3;
+  color: #3d73bf;
+  font-size: 1.25rem;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  cursor: pointer;
+}
+
+.c2 {
+  display: inline-block;
+  width: 33%;
+  border-right: none none #A3BAC3;
+  border-left: 1px solid #A3BAC3;
+  color: #3d73bf;
+  font-size: 1.25rem;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.c3 {
+  display: inline-block;
+  width: 33%;
+  border-right: none none #A3BAC3;
+  border-left: none none #A3BAC3;
+  color: #3d73bf;
+  font-size: 1.25rem;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  cursor: pointer;
+}
+
+.c0 {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0.4rem;
+}
+
+<BottomPanel>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0.4rem;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div
+          iconColor="#3d73bf"
+          iconRightBorder="1px solid #A3BAC3"
+          iconSize="1.25rem"
+          iconWidth="33%"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          tabIndex="0"
+          type="button"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: ",
+                    [Function],
+                    ";
+  border-right: ",
+                    [Function],
+                    ";
+  border-left: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  transform: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconColor="#3d73bf"
+            iconRightBorder="1px solid #A3BAC3"
+            iconSize="1.25rem"
+            iconWidth="33%"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex="0"
+            type="button"
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+              type="button"
+            >
+              <i
+                className="icon-heart"
+              />
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          iconColor="#3d73bf"
+          iconLeftBorder="1px solid #A3BAC3"
+          iconSize="1.25rem"
+          iconTransform="rotate(180deg)"
+          iconWidth="33%"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          tabIndex="0"
+          type="button"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: ",
+                    [Function],
+                    ";
+  border-right: ",
+                    [Function],
+                    ";
+  border-left: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  transform: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconColor="#3d73bf"
+            iconLeftBorder="1px solid #A3BAC3"
+            iconSize="1.25rem"
+            iconTransform="rotate(180deg)"
+            iconWidth="33%"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex="0"
+            type="button"
+          >
+            <div
+              className="c2"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+              type="button"
+            >
+              <i
+                className="icon-heart"
+              />
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div
+          iconColor="#3d73bf"
+          iconSize="1.25rem"
+          iconWidth="33%"
+          role="button"
+          tabIndex="0"
+          type="button"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  width: ",
+                    [Function],
+                    ";
+  border-right: ",
+                    [Function],
+                    ";
+  border-left: ",
+                    [Function],
+                    ";
+  color: ",
+                    [Function],
+                    ";
+  font-size: ",
+                    [Function],
+                    ";
+  transform: ",
+                    [Function],
+                    ";
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconColor="#3d73bf"
+            iconSize="1.25rem"
+            iconWidth="33%"
+            role="button"
+            tabIndex="0"
+            type="button"
+          >
+            <div
+              className="c3"
+              role="button"
+              tabIndex="0"
+              type="button"
+            >
+              <i
+                className="icon-comment"
+              />
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</BottomPanel>
+`;

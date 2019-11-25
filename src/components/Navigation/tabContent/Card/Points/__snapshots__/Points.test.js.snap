@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Points props should match the snapshot 1`] = `
+Object {
+  "points": 9894,
+}
+`;
+
+exports[`Points should match the snapshot 1`] = `
+.c0 {
+  color: inherit;
+  font-size: inherit;
+  margin: 0 0.4rem;
+}
+
+<Points
+  points={9894}
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  color: ",
+              [Function],
+              ";
+  font-size: ",
+              [Function],
+              ";
+  margin: 0 0.4rem;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        9894
+         Points
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Points>
+`;

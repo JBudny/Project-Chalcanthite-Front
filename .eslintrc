@@ -5,17 +5,56 @@
 		"allowImportExportEverywhere": false,
 		"codeFrame": false
 	},
-	"extends": [ "airbnb", "prettier" ],
+	"plugins": [
+		"jsx-a11y",
+		"flowtype",
+		"simple-import-sort",
+		"prettier"
+	  ],
+	"extends": [ 
+		"airbnb", 
+		"airbnb/hooks", 
+		"plugin:jsx-a11y/recommended",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:flowtype/recommended",
+		"plugin:prettier/recommended",
+		"prettier/babel",
+		"prettier/flowtype",
+		"prettier/react"
+	],
 	"env": {
 		"browser": true,
 		"jest": true
 	},
 	"rules": {
-		"max-len": [ "error", { "code": 100 } ],
+		"strict": 0,
 		"prefer-promise-reject-errors": [ "off" ],
 		"react/jsx-filename-extension": [ "off" ],
 		"react/prop-types": [ "warn" ],
 		"no-return-assign": [ "off" ],
-		"import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+		"import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+		"sort-imports": "off",
+		"import/order": "off",
+		"simple-import-sort/sort": "error",
+		"prettier/prettier": "error",
+		"react/jsx-closing-bracket-location": "off",
+		"react/jsx-closing-tag-location": "off",
+		"react/jsx-curly-newline": "off",
+		"react/jsx-curly-spacing": "off",
+		"react/jsx-equals-spacing": "off",
+		"react/jsx-first-prop-new-line": "off",
+		"react/jsx-indent": "off",
+		"react/jsx-indent-props": "off",
+		"react/jsx-max-props-per-line": "off",
+		"react/jsx-one-expression-per-line": "off",
+		"react/jsx-props-no-multi-spaces": "off",
+		"react/jsx-tag-spacing": "off",
+		"react/jsx-wrap-multilines": "off"
+	},
+	"settings": {
+		"flowtype": {
+		  "onlyFilesWithFlowAnnotation": true
+		}
 	}
 }

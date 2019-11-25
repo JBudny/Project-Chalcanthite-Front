@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions should create an action to fetch modes 1`] = `
+Object {
+  "payload": Array [
+    Object {
+      "_id": "5d6edd43749c8818147fe9ba",
+      "actualCode": "eZCg1",
+      "author": "5a2539b41c574006c46f1a07",
+      "createdAt": "2019-05-28T03:33:13.119Z",
+      "favorites": 732,
+      "gallery": Array [],
+      "points": 9902,
+      "shortDescription": "Culpa proident velit eiusmod nisi fugiat aliquip ad sunt eiusmod veniam quis culpa mollit ipsum aliqua.",
+      "tags": Array [
+        "laborum commodo",
+        "consectetur ullamco",
+        "laboris",
+        "officia",
+        "fugiat",
+      ],
+      "thumbnail": "/path/to/default.img",
+      "title": "fugiat magna laborum ad aliqua minim",
+    },
+    Object {
+      "_id": "5d6edd43749c8818147fea94",
+      "actualCode": "7a0GZ",
+      "author": "5a2539b41c574006c46f1a07",
+      "createdAt": "2019-07-22T22:01:27.347Z",
+      "favorites": 191,
+      "gallery": Array [],
+      "points": 9852,
+      "shortDescription": "Aute laboris pariatur pariatur ad aliquip labore fugiat elit ea deserunt consectetur commodo voluptate qui culpa. Ea consequat excepteur mollit aliquip excepteur veniam officia duis sunt nostrud ut irure. Duis nostrud commodo minim occaecat dolore laboris occaecat veniam qui consequat.",
+      "tags": Array [
+        "excepteur",
+        "tempor proident",
+        "officia",
+        "culpa quis",
+        "nulla cillum",
+        "mollit veniam",
+      ],
+      "thumbnail": "/path/to/default.img",
+      "title": "do ex",
+    },
+  ],
+  "type": "GET_MODES_BY_DATE_INITIAL_DONE",
+}
+`;
+
+exports[`actions should create an action to request for modes 1`] = `
+Object {
+  "type": "GET_MODES_BY_DATE_INITIAL_REQUESTED",
+}
+`;
+
+exports[`actions should create an action to return an error 1`] = `
+Object {
+  "payload": "ERROR: TypeError: Failed to fetch",
+  "type": "GET_MODES_BY_DATE_INITIAL_FAILED",
+}
+`;
+
+exports[`async action should dispatch an action to fetch modes 1`] = `
+Object {
+  "payload": Object {
+    "posts": Array [
+      Object {
+        "_id": "5d6edd43749c8818147fe9ba",
+        "actualCode": "eZCg1",
+        "author": "5a2539b41c574006c46f1a07",
+        "createdAt": "2019-05-28T03:33:13.119Z",
+        "favorites": 732,
+        "gallery": Array [],
+        "points": 9902,
+        "shortDescription": "Culpa proident velit eiusmod nisi fugiat aliquip ad sunt eiusmod veniam quis culpa mollit ipsum aliqua.",
+        "tags": Array [
+          "laborum commodo",
+          "consectetur ullamco",
+          "laboris",
+          "officia",
+          "fugiat",
+        ],
+        "thumbnail": "/path/to/default.img",
+        "title": "fugiat magna laborum ad aliqua minim",
+      },
+      Object {
+        "_id": "5d6edd43749c8818147fea94",
+        "actualCode": "7a0GZ",
+        "author": "5a2539b41c574006c46f1a07",
+        "createdAt": "2019-07-22T22:01:27.347Z",
+        "favorites": 191,
+        "gallery": Array [],
+        "points": 9852,
+        "shortDescription": "Aute laboris pariatur pariatur ad aliquip labore fugiat elit ea deserunt consectetur commodo voluptate qui culpa. Ea consequat excepteur mollit aliquip excepteur veniam officia duis sunt nostrud ut irure. Duis nostrud commodo minim occaecat dolore laboris occaecat veniam qui consequat.",
+        "tags": Array [
+          "excepteur",
+          "tempor proident",
+          "officia",
+          "culpa quis",
+          "nulla cillum",
+          "mollit veniam",
+        ],
+        "thumbnail": "/path/to/default.img",
+        "title": "do ex",
+      },
+    ],
+  },
+  "type": "GET_MODES_BY_DATE_INITIAL_DONE",
+}
+`;
+
+exports[`async action should dispatch an action to request modes 1`] = `
+Object {
+  "type": "GET_MODES_BY_DATE_INITIAL_REQUESTED",
+}
+`;
+
+exports[`async action should dispatch an action to return an error 1`] = `
+Object {
+  "payload": "ERROR: Error: TypeError: Failed to fetch",
+  "type": "GET_MODES_BY_DATE_INITIAL_FAILED",
+}
+`;
