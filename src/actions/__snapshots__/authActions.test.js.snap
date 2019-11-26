@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`authActions should create an action to set authorization 1`] = `
+Object {
+  "type": "SET_AUTH",
+}
+`;
+
+exports[`authActions should create an action to unset authorization 1`] = `
+Object {
+  "type": "UNSET_AUTH",
+}
+`;
