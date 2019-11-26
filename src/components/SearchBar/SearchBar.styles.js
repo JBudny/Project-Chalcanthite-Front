@@ -7,8 +7,6 @@ const styles = makeStyles(theme => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    textAlign: 'center',
-    flex: '0 0 auto',
   },
   title: {
     flexGrow: 1,

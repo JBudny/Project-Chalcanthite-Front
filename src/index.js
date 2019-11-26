@@ -7,10 +7,10 @@ import { applyMiddleware, createStore } from 'redux';
 import reduxThunk from 'redux-thunk';
 
 import App from './components/App';
-import getModesByDateInitial from './reducers/getModesByDateInitial';
+import index from './reducers/index';
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(getModesByDateInitial, applyMiddleware(reduxThunk));
+const store = createStore(index, applyMiddleware(reduxThunk));
 
 const root = document.getElementById('root');
 

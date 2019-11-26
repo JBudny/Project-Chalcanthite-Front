@@ -11,8 +11,8 @@ const Fresh = () => {
     dispatch(getModesByDateInitial(5));
   }, [dispatch]);
 
-  const isLoading = useSelector(state => state.isLoading);
-  const isError = useSelector(state => state.isError);
+  const isLoading = useSelector(state => state.posts.isLoading);
+  const isError = useSelector(state => state.posts.isError);
 
   if (isLoading) return 'Loading...';
   if (isError) return 'Error';

@@ -14,10 +14,22 @@ export type Posts = Array<{
   +actualCode: string,
 }>;
 
-export type State = {
+export type postsState = {
   +isLoading: boolean,
   +isError: boolean,
   +posts: Posts,
+};
+
+export type authState = {
+  +auth: boolean,
+};
+
+export type UnsetAuth = {
+  type: 'UNSET_AUTH',
+};
+
+export type SetAuth = {
+  type: 'SET_AUTH',
 };
 
 export type GetModesByDateInitialRequested = {
@@ -38,4 +50,6 @@ export type Action =
   | $Shape<{ type: null }>
   | GetModesByDateInitialRequested
   | GetModesByDateInitialDone
-  | GetModesByDateInitialFailed;
+  | GetModesByDateInitialFailed
+  | SetAuth
+  | UnsetAuth;

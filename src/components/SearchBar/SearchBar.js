@@ -1,5 +1,4 @@
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import InputBase from '@material-ui/core/InputBase';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -9,9 +8,11 @@ import SearchIcon from '@material-ui/icons/Search';
 import React from 'react';
 
 import styles from './SearchBar.styles';
+import UserPanel from './UserPanel/UserPanel';
 
 const SearchAppBar = () => {
   const classes = styles();
+
   const { header, menuButton, title, search, searchIcon, inputRoot, inputInput } = classes;
 
   return (
@@ -36,9 +37,7 @@ const SearchAppBar = () => {
               }}
             />
           </div>
-          <Button color="inherit" variant="outlined" className={menuButton}>
-            Log in
-          </Button>
+          <UserPanel />
         </Toolbar>
       </AppBar>
     </div>
