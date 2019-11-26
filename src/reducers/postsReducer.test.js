@@ -6,7 +6,7 @@ import {
   getModesByDateInitialRequested,
 } from '../actions/postActions';
 import dummyPosts from '../utils/dummyCardProps/dummyPosts';
-import reducer from './getModesByDateInitial';
+import postsReducer from './postsReducer';
 
 const initState = {
   isLoading: false,
@@ -17,20 +17,20 @@ const ERROR_MESSAGE = 'TypeError: Failed to fetch';
 
 describe('reducer', () => {
   it('should return the initial state', () => {
-    expect(reducer(undefined, { type: null })).toMatchSnapshot();
+    expect(postsReducer(undefined, { type: null })).toMatchSnapshot();
   });
 
   it('should handle GET_MODES_BY_DATE_INITIAL_REQUESTED', () => {
-    expect(reducer(initState, getModesByDateInitialRequested())).toMatchSnapshot();
+    expect(postsReducer(initState, getModesByDateInitialRequested())).toMatchSnapshot();
   });
 
   it('should handle GET_MODES_BY_DATE_INITIAL_DONE', () => {
-    expect(reducer(initState, getModesByDateInitialDone(dummyPosts))).toMatchSnapshot();
+    expect(postsReducer(initState, getModesByDateInitialDone(dummyPosts))).toMatchSnapshot();
   });
 
   it('should handle GET_MODES_BY_DATE_INITIAL_FAILED', () => {
     expect(
-      reducer(initState, getModesByDateInitialFailed(`ERROR: ${ERROR_MESSAGE}`)),
+      postsReducer(initState, getModesByDateInitialFailed(`ERROR: ${ERROR_MESSAGE}`)),
     ).toMatchSnapshot();
   });
 });

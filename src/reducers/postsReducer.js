@@ -13,7 +13,7 @@ const initState = {
   posts: [],
 };
 
-const getModesByDateInitial = (state: postsState = initState, action: Action): postsState => {
+const postsReducer = (state: postsState = initState, action: Action): postsState => {
   switch (action.type) {
     case GET_MODES_BY_DATE_INITIAL_REQUESTED:
       return { ...state, isLoading: true };
@@ -26,4 +26,4 @@ const getModesByDateInitial = (state: postsState = initState, action: Action): p
   }
 };
 
-export default getModesByDateInitial;
+export default postsReducer;

@@ -2,10 +2,10 @@
 import { combineReducers } from 'redux';
 
 import type { Action } from '../types/redux.types';
-import auth from './authReducer';
-import getModesByDateInitial from './getModesByDateInitial';
+import authReducer from './authReducer';
+import postsReducer from './postsReducer';
 
 export default combineReducers<Object, Action>({
-  posts: getModesByDateInitial,
-  auth,
+  posts: postsReducer,
+  auth: authReducer,
 });
