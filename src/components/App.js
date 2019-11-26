@@ -4,13 +4,13 @@ import React from 'react';
 import GlobalStyle from './App.styles';
 import theme from './muiTheme';
 import Navigation from './Navigation/Navigation';
-import SearchAppBar from './SearchBar/SearchBar';
+import TopAppBar from './TopAppBar/TopAppBar';
 
 const App = () => (
   <>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
-      <SearchAppBar />
+      <TopAppBar />
       <Navigation />
     </ThemeProvider>
   </>

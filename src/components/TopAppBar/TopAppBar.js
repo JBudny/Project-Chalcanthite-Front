@@ -7,10 +7,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import React from 'react';
 
-import styles from './SearchBar.styles';
+import styles from './TopAppBar.styles';
 import UserPanel from './UserPanel/UserPanel';
 
-const SearchAppBar = () => {
+const TopAppBar = () => {
   const classes = styles();
 
   const { header, menuButton, title, search, searchIcon, inputRoot, inputInput } = classes;
@@ -44,4 +44,4 @@ const SearchAppBar = () => {
   );
 };
 
-export default SearchAppBar;
+export default TopAppBar;
