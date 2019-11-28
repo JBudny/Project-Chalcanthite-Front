@@ -8,7 +8,7 @@ import Navigation from './Navigation/Navigation';
 import TopAppBar from './TopAppBar/TopAppBar';
 
 const App = () => {
-  const preventScrolling = useSelector(state => state.auth.showModal);
+  const preventScrolling = useSelector(state => state.loginModal.showModal);
 
   return (
     <>

@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
     body {
       height: ${({ preventScrolling }) => (preventScrolling ? '100vh' : 'auto')};
       overflow-y: ${({ preventScrolling }) => (preventScrolling ? 'hidden' : 'auto')};
-      padding-right: ${({ preventScrolling }) => (preventScrolling ? '15px' : '0')};
     }
   }
 

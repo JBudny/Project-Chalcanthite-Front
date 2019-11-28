@@ -12,6 +12,7 @@ const LoginModal = () => {
   const handleClose = () => {
     dispatch(closeLoginModal());
   };
+
   return <LoginModalWrapper role="dialog" modalDisplay={modalDisplay} onClick={handleClose} />;
 };
 
