@@ -9,7 +9,7 @@ type Props = {
 
 const LoginModalWrapper: StyledComponent<Props, any, HTMLDivElement> = styled.div`
   display: ${({ modalDisplay }) => modalDisplay || 'none'};
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;

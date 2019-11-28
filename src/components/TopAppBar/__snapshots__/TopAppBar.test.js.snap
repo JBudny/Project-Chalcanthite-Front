@@ -86,7 +86,7 @@ exports[`TopAppBar component should render properly 1`] = `
           />
         </button>
         <div
-          class="sc-bdVaJa esclsi"
+          class="sc-bdVaJa hMigvA"
           role="dialog"
         />
       </div>

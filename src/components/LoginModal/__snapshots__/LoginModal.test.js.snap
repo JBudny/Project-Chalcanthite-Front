@@ -3,7 +3,7 @@
 exports[`LoginModal component should render properly 1`] = `
 .c0 {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
