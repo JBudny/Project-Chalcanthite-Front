@@ -1,19 +1,9 @@
 import '@testing-library/jest-dom/extend-expect';
 
-import { render } from '@testing-library/react';
 import React from 'react';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
 
-import index from '../../../reducers/index';
+import renderWithRedux from '../../../utils/tests/renderWithRedux';
 import UserPanel from './UserPanel';
-
-const renderWithRedux = (ui, { initialState, store = createStore(index, initialState) } = {}) => {
-  return {
-    ...render(<Provider store={store}>{ui}</Provider>),
-    store,
-  };
-};
 
 test('UserPanel component should render Log in button when user is not logged in', () => {
   const initialState = {

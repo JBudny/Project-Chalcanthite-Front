@@ -2,7 +2,8 @@ import Button from '@material-ui/core/Button';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { setAuth } from '../../../actions/authActions';
+import { openLoginModal } from '../../../actions/loginModalActions';
+import LoginModal from '../../LoginModal/LoginModal';
 import styles from './UserPanel.styles';
 
 const LoginButton = () => {
@@ -12,20 +13,23 @@ const LoginButton = () => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch(setAuth());
+    dispatch(openLoginModal());
   };
 
   return (
-    <Button
-      color="inherit"
-      variant="outlined"
-      className={loginButton}
-      checked={auth}
-      onClick={handleClick}
-      aria-label="login button"
-    >
-      Log in
-    </Button>
+    <>
+      <Button
+        color="inherit"
+        variant="outlined"
+        className={loginButton}
+        checked={auth}
+        onClick={handleClick}
+        aria-label="login button"
+      >
+        Log in
+      </Button>
+      <LoginModal />
+    </>
   );
 };
 

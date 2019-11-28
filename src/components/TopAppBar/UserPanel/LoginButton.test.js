@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 
-import { setAuth } from '../../../actions/authActions';
+import { openLoginModal } from '../../../actions/loginModalActions';
 import LoginButton from './LoginButton';
 
 const mockStore = configureStore([]);
@@ -14,6 +14,7 @@ describe('LoginButton component should', () => {
 
   beforeEach(() => {
     store = mockStore({
+      loginModal: { showModal: false },
       auth: { auth: false },
     });
 
@@ -30,11 +31,11 @@ describe('LoginButton component should', () => {
     expect(loginButton.toJSON()).toMatchSnapshot();
   });
 
-  it('dispatch setAuth action when clicked', () => {
+  it('dispatch openLoginModal action when clicked', () => {
     renderer.act(() => {
       loginButton.root.findByType('button').props.onClick();
     });
     expect(store.dispatch).toHaveBeenCalledTimes(1);
-    expect(store.dispatch).toHaveBeenCalledWith(setAuth());
+    expect(store.dispatch).toHaveBeenCalledWith(openLoginModal());
   });
 });

@@ -9,11 +9,24 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
-*,
- *::before,
- *::after {
-   box-sizing: inherit;
-}
+  @media (min-width: 576px) {
+    body {
+      height: ${({ preventScrolling }) => (preventScrolling ? '100vh' : 'auto')};
+      overflow-y: ${({ preventScrolling }) => (preventScrolling ? 'hidden' : 'auto')};
+      padding-right: ${({ preventScrolling }) => (preventScrolling ? '15px' : '0')};
+    }
+  }
+
+  @media (max-width: 576px) {
+    body {
+      width: 100%;
+      position: ${({ preventScrolling }) => (preventScrolling ? 'fixed' : 'static')};
+    }
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
 `;
 
 export default GlobalStyle;

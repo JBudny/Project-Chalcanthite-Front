@@ -85,6 +85,10 @@ exports[`TopAppBar component should render properly 1`] = `
             class="MuiTouchRipple-root"
           />
         </button>
+        <div
+          class="sc-bdVaJa esclsi"
+          role="dialog"
+        />
       </div>
     </header>
   </div>

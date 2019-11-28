@@ -14,14 +14,18 @@ export type Posts = Array<{
   +actualCode: string,
 }>;
 
-export type postsState = {
+export type PostsState = {
   +isLoading: boolean,
   +isError: boolean,
   +posts: Posts,
 };
 
-export type authState = {
+export type AuthState = {
   +auth: boolean,
+};
+
+export type LoginModalState = {
+  +showModal: boolean,
 };
 
 export type UnsetAuth = {
@@ -30,6 +34,14 @@ export type UnsetAuth = {
 
 export type SetAuth = {
   type: 'SET_AUTH',
+};
+
+export type OpenLoginModal = {
+  type: 'OPEN_LOGIN_MODAL',
+};
+
+export type CloseLoginModal = {
+  type: 'CLOSE_LOGIN_MODAL',
 };
 
 export type GetModesByDateInitialRequested = {
@@ -52,4 +64,6 @@ export type Action =
   | GetModesByDateInitialDone
   | GetModesByDateInitialFailed
   | SetAuth
-  | UnsetAuth;
+  | UnsetAuth
+  | OpenLoginModal
+  | CloseLoginModal;
