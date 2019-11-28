@@ -12,6 +12,10 @@ const UserAccountButton = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleLogOut = () => {
     dispatch(unsetAuth());
     setAnchorEl(null);
   };
@@ -41,7 +45,7 @@ const UserAccountButton = () => {
       >
         <MenuItem>Profile</MenuItem>
         <MenuItem>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Log out</MenuItem>
+        <MenuItem onClick={handleLogOut}>Log out</MenuItem>
       </Menu>
     </>
   );
