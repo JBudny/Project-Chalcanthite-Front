@@ -21,7 +21,7 @@ const UserAccountButton = () => {
   };
 
   return (
-    <div>
+    <>
       <IconButton
         edge="end"
         aria-label="account of current user"
@@ -43,7 +43,7 @@ const UserAccountButton = () => {
         <MenuItem>My account</MenuItem>
         <MenuItem onClick={handleClose}>Log out</MenuItem>
       </Menu>
-    </div>
+    </>
   );
 };
 

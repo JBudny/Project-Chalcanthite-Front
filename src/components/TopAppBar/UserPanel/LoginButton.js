@@ -8,7 +8,7 @@ import styles from './UserPanel.styles';
 const LoginButton = () => {
   const classes = styles();
   const { loginButton } = classes;
-  const auth = useSelector(state => state.auth);
+  const auth = useSelector(state => state.auth.auth);
   const dispatch = useDispatch();
 
   const handleClick = () => {
