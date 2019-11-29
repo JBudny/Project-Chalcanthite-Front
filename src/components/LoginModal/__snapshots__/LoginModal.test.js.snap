@@ -1,13 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginModal component should render properly 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  background-color: #fff;
+}
+
 .c0 {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: rgba(0,0,0,0.5);
   overflow-y: hidden;
   z-index: 1;
@@ -16,5 +36,10 @@ exports[`LoginModal component should render properly 1`] = `
 <div
   class="c0"
   role="dialog"
-/>
+>
+  <div
+    class="c1"
+    role="grid"
+  />
+</div>
 `;

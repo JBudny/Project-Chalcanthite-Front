@@ -24,7 +24,7 @@
     "test": "react-scripts test --env=jsdom",
     "testOnce": "yarn test --watchAll=false --bail",
     "build": "yarn testOnce && react-scripts build",
-    "start": "yarn testOnce && react-scripts start",
+    "start": "react-scripts start",
     "eject": "react-scripts eject",
     "flow": "flow",
     "lintStyles": "yarn stylelint \"src/**/*/*.styles.js\""

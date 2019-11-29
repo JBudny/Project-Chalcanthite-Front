@@ -86,9 +86,14 @@ exports[`TopAppBar component should render properly 1`] = `
           />
         </button>
         <div
-          class="sc-bdVaJa hMigvA"
+          class="sc-bwzfXH iEqZXq"
           role="dialog"
-        />
+        >
+          <div
+            class="sc-bdVaJa csVbKZ"
+            role="grid"
+          />
+        </div>
       </div>
     </header>
   </div>

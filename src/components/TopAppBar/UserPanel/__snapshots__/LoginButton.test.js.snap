@@ -29,9 +29,14 @@ Array [
     </span>
   </button>,
   <div
-    className="sc-bdVaJa hMigvA"
+    className="sc-bwzfXH iEqZXq"
     onClick={[Function]}
     role="dialog"
-  />,
+  >
+    <div
+      className="sc-bdVaJa csVbKZ"
+      role="grid"
+    />
+  </div>,
 ]
 `;

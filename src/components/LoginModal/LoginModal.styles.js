@@ -14,6 +14,8 @@ const LoginModalWrapper: StyledComponent<Props, any, HTMLDivElement> = styled.di
   height: 100vh;
   top: 0;
   left: 0;
+  justify-content: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.5);
   overflow-y: hidden;
   z-index: 1;
