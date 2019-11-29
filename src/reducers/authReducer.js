@@ -1,13 +1,13 @@
 // @flow
 
 import { SET_AUTH, UNSET_AUTH } from '../actions/authActions';
-import type { Action, AuthState } from '../types/redux.types';
+import type { Action, AuthReducer } from '../types/redux.types';
 
 const initState = {
   auth: false,
 };
 
-const authReducer = (state: AuthState = initState, action: Action): AuthState => {
+const authReducer = (state: AuthReducer = initState, action: Action): AuthReducer => {
   switch (action.type) {
     case SET_AUTH:
       return { ...state, auth: true };

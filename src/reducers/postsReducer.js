@@ -5,7 +5,7 @@ import {
   GET_MODES_BY_DATE_INITIAL_FAILED,
   GET_MODES_BY_DATE_INITIAL_REQUESTED,
 } from '../actions/postActions';
-import type { Action, PostsState } from '../types/redux.types';
+import type { Action, PostsReducer } from '../types/redux.types';
 
 const initState = {
   isLoading: false,
@@ -13,7 +13,7 @@ const initState = {
   posts: [],
 };
 
-const postsReducer = (state: PostsState = initState, action: Action): PostsState => {
+const postsReducer = (state: PostsReducer = initState, action: Action): PostsReducer => {
   switch (action.type) {
     case GET_MODES_BY_DATE_INITIAL_REQUESTED:
       return { ...state, isLoading: true };

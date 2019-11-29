@@ -14,18 +14,42 @@ export type Posts = Array<{
   +actualCode: string,
 }>;
 
-export type PostsState = {
+export type PostsReducer = {
   +isLoading: boolean,
   +isError: boolean,
   +posts: Posts,
 };
 
-export type AuthState = {
-  +auth: boolean,
+export type LoginModalReducer = {
+  +showModal: boolean,
 };
 
+export type AuthReducer = { +auth: boolean };
+
+export type PostsState = {|
+  posts: {
+    +isLoading: boolean,
+    +isError: boolean,
+    +posts: Posts,
+  },
+|};
+
+export type AuthState = {| +auth: { auth: boolean } |};
+
 export type LoginModalState = {
-  +showModal: boolean,
+  +loginModal: {
+    +showModal: boolean,
+  },
+};
+
+export type AppState = {
+  ...LoginModalState,
+  ...AuthState,
+  ...PostsState,
+  /*
+  +loginModal?: LoginModalState,
+  +auth?: AuthState,
+  +posts?: PostsState, */
 };
 
 export type UnsetAuth = {

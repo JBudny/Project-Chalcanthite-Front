@@ -5,7 +5,7 @@ import {
   getModesByDateInitialFailed,
   getModesByDateInitialRequested,
 } from '../actions/postActions';
-import dummyPosts from '../utils/dummyCardProps/dummyPosts';
+import dummyPosts from '../utils/testUtils/dummyData/dummyPosts';
 import postsReducer from './postsReducer';
 
 const initState = {

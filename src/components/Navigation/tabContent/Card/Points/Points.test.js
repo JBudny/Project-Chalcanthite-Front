@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
 
-import dummyPointsProps from '../../../../../utils/dummyCardProps/dummyPointsProps';
+import dummyPointsProps from '../../../../../utils/testUtils/dummyData/dummyPointsProps';
 import Points from './Points';
 
 describe('Points', () => {

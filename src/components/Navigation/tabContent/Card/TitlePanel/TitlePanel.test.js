@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
 
-import dummyTitlePanelProps from '../../../../../utils/dummyCardProps/dummyTitlePanelProps';
+import dummyTitlePanelProps from '../../../../../utils/testUtils/dummyData/dummyTitlePanelProps';
 import TitlePanel from './TitlePanel';
 
 describe('TitlePanel', () => {

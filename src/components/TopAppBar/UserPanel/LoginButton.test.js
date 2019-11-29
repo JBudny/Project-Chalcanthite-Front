@@ -1,41 +1,27 @@
+import { fireEvent } from '@testing-library/react';
 import React from 'react';
-import { Provider } from 'react-redux';
-import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 
 import { openLoginModal } from '../../../actions/loginModalActions';
+import dummyInitialState from '../../../utils/testUtils/dummyData/dummyInitialState';
+import renderWithRedux from '../../../utils/testUtils/renderWithRedux';
 import LoginButton from './LoginButton';
 
-const mockStore = configureStore([]);
+test('LoginButton component should render Log in button properly', () => {
+  const initialState = { ...dummyInitialState, loginModal: { showModal: true } };
 
-describe('LoginButton component should', () => {
-  let store;
-  let loginButton;
+  const { asFragment } = renderWithRedux(<LoginButton />, { initialState });
+  expect(asFragment()).toMatchSnapshot();
+});
 
-  beforeEach(() => {
-    store = mockStore({
-      loginModal: { showModal: false },
-      auth: { auth: false },
-    });
+test('LoginButton component should dispatch openLoginModal action when clicked', () => {
+  const mockStore = configureStore([]);
+  const store = mockStore({ ...dummyInitialState });
 
-    store.dispatch = jest.fn();
+  store.dispatch = jest.fn();
+  const { getByText } = renderWithRedux(<LoginButton />, { store });
 
-    loginButton = renderer.create(
-      <Provider store={store}>
-        <LoginButton />
-      </Provider>,
-    );
-  });
-
-  it('render Log in button properly', () => {
-    expect(loginButton.toJSON()).toMatchSnapshot();
-  });
-
-  it('dispatch openLoginModal action when clicked', () => {
-    renderer.act(() => {
-      loginButton.root.findByType('button').props.onClick();
-    });
-    expect(store.dispatch).toHaveBeenCalledTimes(1);
-    expect(store.dispatch).toHaveBeenCalledWith(openLoginModal());
-  });
+  fireEvent.click(getByText('Log in'));
+  expect(store.dispatch).toHaveBeenCalledTimes(1);
+  expect(store.dispatch).toHaveBeenCalledWith(openLoginModal());
 });

@@ -2,7 +2,7 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
 
-import dummyProcessedPost from '../../../../utils/dummyCardProps/dummyPost';
+import dummyProcessedPost from '../../../../utils/testUtils/dummyData/dummyPost';
 import Card from './Card';
 
 describe('Card', () => {

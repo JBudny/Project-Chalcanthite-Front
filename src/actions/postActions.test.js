@@ -2,8 +2,8 @@ import fetchMock from 'fetch-mock';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import dummyPosts from '../utils/dummyCardProps/dummyPosts';
-import ERROR_MESSAGE from '../utils/dummyCardProps/errorMessage';
+import dummyPosts from '../utils/testUtils/dummyData/dummyPosts';
+import ERROR_MESSAGE from '../utils/testUtils/dummyData/errorMessage';
 import {
   getModesByDateInitial,
   getModesByDateInitialDone,

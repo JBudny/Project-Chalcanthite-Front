@@ -1,3 +1,5 @@
+// @flow
+
 import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -20,8 +22,8 @@ const UserAccountButton = () => {
     setAnchorEl(null);
   };
 
-  const handleProfileMenuOpen = event => {
-    setAnchorEl(event.currentTarget);
+  const handleProfileMenuOpen = (e: Event) => {
+    setAnchorEl(e.currentTarget);
   };
 
   return (

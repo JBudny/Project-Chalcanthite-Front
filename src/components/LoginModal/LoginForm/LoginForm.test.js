@@ -1,10 +1,14 @@
-import { render } from '@testing-library/react';
+import 'jest-styled-components';
+
 import React from 'react';
 
+import dummyInitialState from '../../../utils/testUtils/dummyData/dummyInitialState';
+import renderWithRedux from '../../../utils/testUtils/renderWithRedux';
 import LoginForm from './LoginForm';
 
 test('LoginForm component should render properly', () => {
-  const { getByRole } = render(<LoginForm />);
+  const initialState = { ...dummyInitialState, loginModal: { showModal: true } };
 
-  expect(getByRole('grid')).toMatchSnapshot();
+  const { asFragment } = renderWithRedux(<LoginForm />, { initialState });
+  expect(asFragment()).toMatchSnapshot();
 });

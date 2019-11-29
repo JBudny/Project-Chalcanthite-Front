@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginForm component should render properly 1`] = `
+exports[`CloseButton component render properly 1`] = `
 <DocumentFragment>
-  .c1 {
+  .c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13,31 +13,21 @@ exports[`LoginForm component should render properly 1`] = `
   justify-content: flex-end;
 }
 
-.c1 button {
+.c0 button {
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
   background-color: transparent;
 }
 
-.c0 {
-  display: block;
-  padding: 0.75rem;
-  background-color: #fff;
-}
-
 <div
     class="c0"
   >
-    <div
-      class="c1"
+    <button
+      type="button"
     >
-      <button
-        type="button"
-      >
-        ✖
-      </button>
-    </div>
+      ✖
+    </button>
   </div>
 </DocumentFragment>
 `;

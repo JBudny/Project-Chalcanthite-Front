@@ -86,13 +86,23 @@ exports[`TopAppBar component should render properly 1`] = `
           />
         </button>
         <div
-          class="sc-bwzfXH iEqZXq"
+          aria-labelledby="Login"
+          class="sc-htpNat jkLYyR"
           role="dialog"
         >
           <div
-            class="sc-bdVaJa csVbKZ"
-            role="grid"
-          />
+            class="sc-bwzfXH bnjrsz"
+          >
+            <div
+              class="sc-bdVaJa UJfRn"
+            >
+              <button
+                type="button"
+              >
+                ✖
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </header>

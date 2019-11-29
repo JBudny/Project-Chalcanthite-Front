@@ -2,15 +2,14 @@ import '@testing-library/jest-dom/extend-expect';
 
 import React from 'react';
 
-import renderWithRedux from '../../../utils/tests/renderWithRedux';
+import dummyInitialState from '../../../utils/testUtils/dummyData/dummyInitialState';
+import renderWithRedux from '../../../utils/testUtils/renderWithRedux';
 import UserAccountButton from './UserAccountButton';
 
 test('UserAccountButton component should render properly', () => {
-  const initialState = {
-    auth: { auth: false },
-  };
-  let store;
-  const { getByRole } = renderWithRedux(<UserAccountButton />, { initialState, store });
+  const initialState = { ...dummyInitialState };
+
+  const { getByRole } = renderWithRedux(<UserAccountButton />, { initialState });
 
   expect(getByRole('button')).toMatchSnapshot();
 });
