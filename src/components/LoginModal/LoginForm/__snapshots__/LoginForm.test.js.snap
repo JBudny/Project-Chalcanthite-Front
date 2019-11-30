@@ -11,6 +11,7 @@ exports[`LoginForm component should render properly 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  margin: 0.5rem 0;
 }
 
 .c1 button {
@@ -26,6 +27,17 @@ exports[`LoginForm component should render properly 1`] = `
   background-color: #fff;
 }
 
+.c3 {
+  margin: 0.5rem 0;
+  color: #999;
+}
+
+.c2 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 <div
     class="c0"
   >
@@ -38,6 +50,17 @@ exports[`LoginForm component should render properly 1`] = `
         ✖
       </button>
     </div>
+    <h2
+      class="c2"
+      id="Login"
+    >
+      Login
+    </h2>
+    <p
+      class="c3"
+    >
+      Connect with facebook account.
+    </p>
   </div>
 </DocumentFragment>
 `;

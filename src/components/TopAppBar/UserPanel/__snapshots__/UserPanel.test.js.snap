@@ -19,14 +19,14 @@ exports[`UserPanel component should render Log in button when user is not logged
   </button>
   <div
     aria-labelledby="Login"
-    class="sc-htpNat jkLYyR"
+    class="sc-ifAKCX nUoME"
     role="dialog"
   >
     <div
       class="sc-bwzfXH bnjrsz"
     >
       <div
-        class="sc-bdVaJa UJfRn"
+        class="sc-bdVaJa ScFAK"
       >
         <button
           type="button"
@@ -34,6 +34,17 @@ exports[`UserPanel component should render Log in button when user is not logged
           ✖
         </button>
       </div>
+      <h2
+        class="sc-bxivhb lhBhQM"
+        id="Login"
+      >
+        Login
+      </h2>
+      <p
+        class="sc-htpNat gcwpxS"
+      >
+        Connect with facebook account.
+      </p>
     </div>
   </div>
 </DocumentFragment>

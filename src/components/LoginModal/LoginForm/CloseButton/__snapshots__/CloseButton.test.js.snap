@@ -11,6 +11,7 @@ exports[`CloseButton component render properly 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  margin: 0.5rem 0;
 }
 
 .c0 button {
