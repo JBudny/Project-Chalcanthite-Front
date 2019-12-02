@@ -9,8 +9,8 @@ import LoginForm from './LoginForm/LoginForm';
 import LoginModalWrapper from './LoginModal.styles';
 
 const LoginModal = () => {
-  const dispatch = useDispatch();
   const showModal = useSelector((state: AppState) => state.loginModal.showModal);
+  const dispatch = useDispatch();
 
   const modalDisplay = showModal ? 'flex' : 'none';
 

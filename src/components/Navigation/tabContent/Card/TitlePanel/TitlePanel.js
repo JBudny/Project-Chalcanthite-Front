@@ -3,6 +3,7 @@ import '../../../../../utils/fontello/css/fontello.css';
 
 import isEqual from 'lodash/isEqual';
 import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import { createLink, createLinksList } from '../../../../../utils/createLinks/createLinks';
 import type { TitlePanelProps } from '../Card.types';
@@ -28,12 +29,20 @@ const TitlePanel = (props: TitlePanelProps) => {
     <TitlePanelWrapper>
       <Title>{title}</Title>
       <Tags id="tags">
-        {`Tags: `}
+        <FormattedMessage
+          id="card.tags"
+          description="Tags describing the mode"
+          defaultMessage="Tags: "
+        />
         {createLinksList('/tag', tags)}
       </Tags>
       <EvenlyDistributed>
         <Author>
-          {`By: `}
+          <FormattedMessage
+            id="card.author"
+            description="Author of the mode"
+            defaultMessage="Author: "
+          />
           {createLink('/user', author)}
         </Author>
         <Favourites>

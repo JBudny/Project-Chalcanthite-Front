@@ -11,7 +11,7 @@
 [lints]
 
 [options]
-all=true
+all=false
 
 module.system.node.resolve_dirname=node_modules
 

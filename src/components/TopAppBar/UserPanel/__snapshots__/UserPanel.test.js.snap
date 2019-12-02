@@ -43,7 +43,7 @@ exports[`UserPanel component should render Log in button when user is not logged
       <p
         class="sc-htpNat gcwpxS"
       >
-        Connect with facebook account.
+        Connect with Facebook.
       </p>
     </div>
   </div>

@@ -1,14 +1,22 @@
 // @flow
 
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
-import type { TextProps } from '../../LoginModal.types';
 import TextWrapper from './Text.styles';
 
-const Text = (props: TextProps) => {
-  const { text } = props;
-
-  return <TextWrapper>{text}</TextWrapper>;
+const Text = () => {
+  return (
+    <TextWrapper>
+      {
+        <FormattedMessage
+          id="loginModal.loginForm.description"
+          description="Login form description"
+          defaultMessage="Connect with Facebook."
+        />
+      }
+    </TextWrapper>
+  );
 };
 
 export default Text;

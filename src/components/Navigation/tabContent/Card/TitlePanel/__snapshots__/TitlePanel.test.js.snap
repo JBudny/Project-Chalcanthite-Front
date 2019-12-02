@@ -278,7 +278,14 @@ exports[`TitlePanel should match the snapshot 1`] = `
               className="c2"
               id="tags"
             >
-              Tags: 
+              <FormattedMessage
+                defaultMessage="Tags: "
+                description="Tags describing the mode"
+                id="card.tags"
+                values={Object {}}
+              >
+                Tags: 
+              </FormattedMessage>
               <a
                 href="/tag/non eiusmod"
               >
@@ -414,7 +421,14 @@ exports[`TitlePanel should match the snapshot 1`] = `
                   <div
                     className="c4"
                   >
-                    By: 
+                    <FormattedMessage
+                      defaultMessage="Author: "
+                      description="Author of the mode"
+                      id="card.author"
+                      values={Object {}}
+                    >
+                      Author: 
+                    </FormattedMessage>
                     <a
                       href="/user/5d5c4546a6bab91d887207c7"
                     >

@@ -59,7 +59,7 @@ exports[`LoginForm component should render properly 1`] = `
     <p
       class="c3"
     >
-      Connect with facebook account.
+      Connect with Facebook.
     </p>
   </div>
 </DocumentFragment>

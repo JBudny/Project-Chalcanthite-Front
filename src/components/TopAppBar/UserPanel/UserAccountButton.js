@@ -5,6 +5,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import React, { useState } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { useDispatch } from 'react-redux';
 
 import { unsetAuth } from '../../../actions/authActions';
@@ -45,9 +46,27 @@ const UserAccountButton = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem>Profile</MenuItem>
-        <MenuItem>My account</MenuItem>
-        <MenuItem onClick={handleLogOut}>Log out</MenuItem>
+        <MenuItem>
+          <FormattedMessage
+            id="topAppBar.userPanel.profileButton.option.profile"
+            description="Profile option"
+            defaultMessage="Profile"
+          />
+        </MenuItem>
+        <MenuItem>
+          <FormattedMessage
+            id="topAppBar.userPanel.profileButton.option.myAccount"
+            description="My account option"
+            defaultMessage="My account"
+          />
+        </MenuItem>
+        <MenuItem onClick={handleLogOut}>
+          <FormattedMessage
+            id="topAppBar.userPanel.profileButton.option.logOut"
+            description="Log out option"
+            defaultMessage="Log out"
+          />
+        </MenuItem>
       </Menu>
     </>
   );

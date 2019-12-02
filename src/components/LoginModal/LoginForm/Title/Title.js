@@ -1,14 +1,20 @@
 // @flow
 
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
-import type { TitleProps } from '../../LoginModal.types';
 import TitleWrapper from './Title.styles';
 
-const Title = (props: TitleProps) => {
-  const { title } = props;
-
-  return <TitleWrapper id="Login">{title}</TitleWrapper>;
+const Title = () => {
+  return (
+    <TitleWrapper id="Login">
+      <FormattedMessage
+        id="loginModal.loginForm.titleText"
+        description="Login form title"
+        defaultMessage="Login"
+      />
+    </TitleWrapper>
+  );
 };
 
 export default Title;

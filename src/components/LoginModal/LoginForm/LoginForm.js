@@ -7,14 +7,11 @@ import Text from './Text/Text';
 import Title from './Title/Title';
 
 const LoginForm = () => {
-  const title = 'Login';
-  const text = 'Connect with facebook account.';
-
   return (
     <LoginFormWrapper>
       <CloseButton />
-      <Title title={title} />
-      <Text text={text} />
+      <Title />
+      <Text />
     </LoginFormWrapper>
   );
 };

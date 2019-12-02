@@ -355,7 +355,14 @@ exports[`Card should match the snapshot 1`] = `
                       className="sc-gqjmRU blCGel"
                       id="tags"
                     >
-                      Tags: 
+                      <FormattedMessage
+                        defaultMessage="Tags: "
+                        description="Tags describing the mode"
+                        id="card.tags"
+                        values={Object {}}
+                      >
+                        Tags: 
+                      </FormattedMessage>
                       <a
                         href="/tag/non eiusmod"
                       >
@@ -491,7 +498,14 @@ exports[`Card should match the snapshot 1`] = `
                           <div
                             className="sc-dnqmqq iwZzme"
                           >
-                            By: 
+                            <FormattedMessage
+                              defaultMessage="Author: "
+                              description="Author of the mode"
+                              id="card.author"
+                              values={Object {}}
+                            >
+                              Author: 
+                            </FormattedMessage>
                             <a
                               href="/user/5d5c4546a6bab91d887208f7"
                             >
@@ -876,7 +890,14 @@ exports[`Card should match the snapshot 1`] = `
                 className="sc-htoDjs eJqJuM"
               >
                 9894
-                 Points
+                <FormattedMessage
+                  defaultMessage=" Points"
+                  description="Points collected"
+                  id="card.points"
+                  values={Object {}}
+                >
+                   Points
+                </FormattedMessage>
               </div>
             </StyledComponent>
           </styled.div>

@@ -1,0 +1,20 @@
+{
+  "loginModal.loginForm.titleText": "Zaloguj się",
+  "loginModal.loginForm.description": "Połącz z Facebookiem.",
+  "topAppBar.titleText": "OverShop",
+  "topAppBar.searchPlaceholder": "Wyszukaj...",
+  "topAppBar.userPanel.logInButton": "Zaloguj się",
+  "topAppBar.userPanel.profileButton.option.profile": "Profil",
+  "topAppBar.userPanel.profileButton.option.myAccount": "Moje konto",
+  "topAppBar.userPanel.profileButton.option.logOut": "Wyloguj",
+  "navigation.tabs.top": "TOP",
+  "navigation.tabs.fresh": "NOWE",
+  "navigation.tabs.random": "LOSUJ",
+  "navigation.tabs.loading": "Wczytywanie...",
+  "navigation.tabs.error": "Błąd: Nie można wczytać trybów.",
+  "navigation.tabs.noMatch.code": "Błąd 404",
+  "navigation.tabs.noMatch.description": "Strona o podanym adresie nie istnieje. Upewnij się, że podany adres jest poprawny.",
+  "card.tags": "Tagi: ",
+  "card.author": "Autor: ",
+  "card.points": " Punktów"
+}

@@ -1,6 +1,7 @@
 // @flow
 
 import React, { useEffect } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getModesByDateInitial } from '../../../actions/postActions';
@@ -17,8 +18,22 @@ const Fresh = () => {
   const isLoading = useSelector((state: AppState) => state.posts.isLoading);
   const isError = useSelector((state: AppState) => state.posts.isError);
 
-  if (isLoading) return 'Loading...';
-  if (isError) return 'Error';
+  if (isLoading)
+    return (
+      <FormattedMessage
+        id="navigation.tabs.loading"
+        description="Tab loading message"
+        defaultMessage="Loading..."
+      />
+    );
+  if (isError)
+    return (
+      <FormattedMessage
+        id="navigation.tabs.error"
+        description="Tab loading error message"
+        defaultMessage="Error: Can't load modes."
+      />
+    );
   return <TabContainer />;
 };
 

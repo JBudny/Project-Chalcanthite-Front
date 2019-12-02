@@ -24,6 +24,7 @@ const BottomPanel = () => {
   const switchHeart = (action: boolean) => (action ? switchLikeHeart() : switchDislikeHeart());
 
   const handleClick = (action: boolean) => switchHeart(action);
+
   const handleKeyDown = (e: KeyboardEvent, action: boolean) =>
     isEqual(e.keyCode, 13) ? switchHeart(action) : null;
 

@@ -64,7 +64,7 @@ exports[`TopAppBar component should render properly 1`] = `
           >
             <input
               class="MuiInputBase-input makeStyles-inputInput-7"
-              placeholder="Search…"
+              placeholder="Search..."
               type="text"
               value=""
             />
@@ -111,7 +111,7 @@ exports[`TopAppBar component should render properly 1`] = `
             <p
               class="sc-htpNat gcwpxS"
             >
-              Connect with facebook account.
+              Connect with Facebook.
             </p>
           </div>
         </div>

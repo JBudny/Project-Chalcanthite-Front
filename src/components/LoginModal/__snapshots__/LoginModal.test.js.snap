@@ -87,7 +87,7 @@ exports[`LoginModal component should render properly 1`] = `
     <p
       class="c4"
     >
-      Connect with facebook account.
+      Connect with Facebook.
     </p>
   </div>
 </div>

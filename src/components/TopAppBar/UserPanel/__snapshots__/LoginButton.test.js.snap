@@ -43,7 +43,7 @@ exports[`LoginButton component should render Log in button properly 1`] = `
       <p
         class="sc-htpNat gcwpxS"
       >
-        Connect with facebook account.
+        Connect with Facebook.
       </p>
     </div>
   </div>

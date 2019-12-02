@@ -10,7 +10,7 @@ exports[`Text component should render properly 1`] = `
 <p
     class="c0"
   >
-    Connect with facebook account.
+    Connect with Facebook.
   </p>
 </DocumentFragment>
 `;

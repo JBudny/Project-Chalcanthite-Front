@@ -1,0 +1,20 @@
+{
+  "loginModal.loginForm.titleText": "Login",
+  "loginModal.loginForm.description": "Connect with Facebook.",
+  "topAppBar.titleText": "OverShop",
+  "topAppBar.searchPlaceholder": "Search...",
+  "topAppBar.userPanel.logInButton": "Log in",
+  "topAppBar.userPanel.profileButton.option.profile": "Profile",
+  "topAppBar.userPanel.profileButton.option.myAccount": "My account",
+  "topAppBar.userPanel.profileButton.option.logOut": "Log out",
+  "navigation.tabs.top": "TOP",
+  "navigation.tabs.fresh": "FRESH",
+  "navigation.tabs.random": "RANDOM",
+  "navigation.tabs.loading": "Loading...",
+  "navigation.tabs.error": "Error: Can't load modes.",
+  "navigation.tabs.noMatch.code": "404 Not Found",
+  "navigation.tabs.noMatch.description": "The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.",
+  "card.tags": "Tags: ",
+  "card.author": "Author: ",
+  "card.points": " Points"
+}

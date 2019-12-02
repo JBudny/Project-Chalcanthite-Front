@@ -13,7 +13,6 @@ import TitlePanel from './TitlePanel/TitlePanel';
 
 const Card = (props: Props) => {
   const { post } = props;
-
   const { tags, thumbnail, favorites, points, author, title, shortDescription, actualCode } = post;
 
   return (

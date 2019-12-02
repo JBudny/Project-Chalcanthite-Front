@@ -54,7 +54,14 @@ exports[`Points should match the snapshot 1`] = `
         className="c0"
       >
         9894
-         Points
+        <FormattedMessage
+          defaultMessage=" Points"
+          description="Points collected"
+          id="card.points"
+          values={Object {}}
+        >
+           Points
+        </FormattedMessage>
       </div>
     </StyledComponent>
   </styled.div>

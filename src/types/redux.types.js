@@ -46,10 +46,6 @@ export type AppState = {
   ...LoginModalState,
   ...AuthState,
   ...PostsState,
-  /*
-  +loginModal?: LoginModalState,
-  +auth?: AuthState,
-  +posts?: PostsState, */
 };
 
 export type UnsetAuth = {

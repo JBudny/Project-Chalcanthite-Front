@@ -2,6 +2,7 @@
 
 import Button from '@material-ui/core/Button';
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { openLoginModal } from '../../../actions/loginModalActions';
@@ -10,10 +11,11 @@ import LoginModal from '../../LoginModal/LoginModal';
 import styles from './UserPanel.styles';
 
 const LoginButton = () => {
-  const classes = styles();
-  const { loginButton } = classes;
   const auth = useSelector((state: AppState) => state.auth.auth);
   const dispatch = useDispatch();
+
+  const classes = styles();
+  const { loginButton } = classes;
 
   const handleClick = () => {
     dispatch(openLoginModal());
@@ -29,7 +31,11 @@ const LoginButton = () => {
         onClick={handleClick}
         aria-label="login button"
       >
-        Log in
+        <FormattedMessage
+          id="topAppBar.userPanel.logInButton"
+          description="Log in button"
+          defaultMessage="Log in"
+        />
       </Button>
       <LoginModal />
     </>

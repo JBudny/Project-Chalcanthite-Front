@@ -1,11 +1,14 @@
 import 'jest-styled-components';
 
-import { render } from '@testing-library/react';
 import React from 'react';
 
+import dummyInitialState from '../../../../utils/testUtils/dummyData/dummyInitialState';
+import renderWithRedux from '../../../../utils/testUtils/renderWithRedux';
 import Title from './Title';
 
 test('Title component should render properly', () => {
-  const { asFragment } = render(<Title title="Login" />);
+  const initialState = { ...dummyInitialState };
+  const { asFragment } = renderWithRedux(<Title />, { initialState });
+
   expect(asFragment()).toMatchSnapshot();
 });
