@@ -3,18 +3,27 @@ import 'jest-styled-components';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
+import { IntlProvider } from 'react-intl';
 
+import messagesEn from '../../../../../translations/en.json';
 import dummyTitlePanelProps from '../../../../../utils/testUtils/dummyData/dummyTitlePanelProps';
 import TitlePanel from './TitlePanel';
 
 describe('TitlePanel', () => {
+  const language = 'en';
+  const messages = {
+    en: messagesEn,
+  };
+
   const { tags, favorites, author, title } = dummyTitlePanelProps;
 
   let titlePanelTree;
 
   beforeEach(() => {
     titlePanelTree = mount(
-      <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />,
+      <IntlProvider locale={language} messages={messages[language]}>
+        <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />
+      </IntlProvider>,
     );
   });
 

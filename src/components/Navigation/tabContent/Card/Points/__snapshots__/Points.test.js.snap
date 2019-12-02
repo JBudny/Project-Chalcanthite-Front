@@ -2,7 +2,36 @@
 
 exports[`Points props should match the snapshot 1`] = `
 Object {
-  "points": 9894,
+  "children": <Points
+    points={9894}
+  />,
+  "defaultFormats": Object {},
+  "defaultLocale": "en",
+  "formats": Object {},
+  "locale": "en",
+  "messages": Object {
+    "card.author": "Author: ",
+    "card.points": " Points",
+    "card.tags": "Tags: ",
+    "loginModal.loginForm.description": "Connect with Facebook.",
+    "loginModal.loginForm.titleText": "Login",
+    "navigation.tabs.error": "Error: Can't load modes.",
+    "navigation.tabs.fresh": "FRESH",
+    "navigation.tabs.loading": "Loading...",
+    "navigation.tabs.noMatch.code": "404 Not Found",
+    "navigation.tabs.noMatch.description": "The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.",
+    "navigation.tabs.random": "RANDOM",
+    "navigation.tabs.top": "TOP",
+    "topAppBar.searchPlaceholder": "Search...",
+    "topAppBar.titleText": "OverShop",
+    "topAppBar.userPanel.logInButton": "Log in",
+    "topAppBar.userPanel.profileButton.option.logOut": "Log out",
+    "topAppBar.userPanel.profileButton.option.myAccount": "My account",
+    "topAppBar.userPanel.profileButton.option.profile": "Profile",
+  },
+  "onError": [Function],
+  "textComponent": Symbol(react.fragment),
+  "timeZone": undefined,
 }
 `;
 
@@ -13,57 +42,88 @@ exports[`Points should match the snapshot 1`] = `
   margin: 0 0.4rem;
 }
 
-<Points
-  points={9894}
+<IntlProvider
+  defaultFormats={Object {}}
+  defaultLocale="en"
+  formats={Object {}}
+  locale="en"
+  messages={
+    Object {
+      "card.author": "Author: ",
+      "card.points": " Points",
+      "card.tags": "Tags: ",
+      "loginModal.loginForm.description": "Connect with Facebook.",
+      "loginModal.loginForm.titleText": "Login",
+      "navigation.tabs.error": "Error: Can't load modes.",
+      "navigation.tabs.fresh": "FRESH",
+      "navigation.tabs.loading": "Loading...",
+      "navigation.tabs.noMatch.code": "404 Not Found",
+      "navigation.tabs.noMatch.description": "The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.",
+      "navigation.tabs.random": "RANDOM",
+      "navigation.tabs.top": "TOP",
+      "topAppBar.searchPlaceholder": "Search...",
+      "topAppBar.titleText": "OverShop",
+      "topAppBar.userPanel.logInButton": "Log in",
+      "topAppBar.userPanel.profileButton.option.logOut": "Log out",
+      "topAppBar.userPanel.profileButton.option.myAccount": "My account",
+      "topAppBar.userPanel.profileButton.option.profile": "Profile",
+    }
+  }
+  onError={[Function]}
+  textComponent={Symbol(react.fragment)}
 >
-  <styled.div>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+  <Points
+    points={9894}
+  >
+    <styled.div>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "
   color: ",
-              [Function],
-              ";
+                [Function],
+                ";
   font-size: ",
-              [Function],
-              ";
+                [Function],
+                ";
   margin: 0 0.4rem;
 ",
-            ],
-          },
-          "displayName": "styled.div",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-    >
-      <div
-        className="c0"
+        forwardedRef={null}
       >
-        9894
-        <FormattedMessage
-          defaultMessage=" Points"
-          description="Points collected"
-          id="card.points"
-          values={Object {}}
+        <div
+          className="c0"
         >
-           Points
-        </FormattedMessage>
-      </div>
-    </StyledComponent>
-  </styled.div>
-</Points>
+          9894
+          <FormattedMessage
+            defaultMessage=" Points"
+            description="Points collected"
+            id="card.points"
+            values={Object {}}
+          >
+             Points
+          </FormattedMessage>
+        </div>
+      </StyledComponent>
+    </styled.div>
+  </Points>
+</IntlProvider>
 `;
