@@ -1,6 +1,7 @@
 {
   "loginModal.loginForm.titleText": "Zaloguj się",
   "loginModal.loginForm.description": "Połącz z Facebookiem.",
+  "loginModal.loginForm.loginButtonFb.FbText": "Połącz z facebook",
   "topAppBar.titleText": "OverShop",
   "topAppBar.searchPlaceholder": "Wyszukaj...",
   "topAppBar.userPanel.logInButton": "Zaloguj się",

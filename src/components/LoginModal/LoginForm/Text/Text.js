@@ -8,13 +8,11 @@ import TextWrapper from './Text.styles';
 const Text = () => {
   return (
     <TextWrapper>
-      {
-        <FormattedMessage
-          id="loginModal.loginForm.description"
-          description="Login form description"
-          defaultMessage="Connect with Facebook."
-        />
-      }
+      <FormattedMessage
+        id="loginModal.loginForm.description"
+        description="Login form description"
+        defaultMessage="Connect with Facebook."
+      />
     </TextWrapper>
   );
 };

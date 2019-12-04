@@ -21,6 +21,38 @@ exports[`LoginForm component should render properly 1`] = `
   background-color: transparent;
 }
 
+.c4 {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  padding: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.3);
+  border: none;
+  background: #1877f2;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+}
+
+.c4:hover {
+  background: #188fff;
+}
+
+.c5 {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.c6 {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
 .c0 {
   display: block;
   padding: 0.75rem;
@@ -61,6 +93,19 @@ exports[`LoginForm component should render properly 1`] = `
     >
       Connect with Facebook.
     </p>
+    <button
+      class="c4"
+      type="button"
+    >
+      <span
+        class="fab fa-facebook c5"
+      />
+      <span
+        class="c6"
+      >
+        Continue with facebook
+      </span>
+    </button>
   </div>
 </DocumentFragment>
 `;

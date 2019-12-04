@@ -87,11 +87,11 @@ exports[`TopAppBar component should render properly 1`] = `
         </button>
         <div
           aria-labelledby="Login"
-          class="sc-ifAKCX nUoME"
+          class="sc-gzVnrw dhEwYS"
           role="dialog"
         >
           <div
-            class="sc-bwzfXH bnjrsz"
+            class="sc-ifAKCX dvocBo"
           >
             <div
               class="sc-bdVaJa ScFAK"
@@ -103,16 +103,29 @@ exports[`TopAppBar component should render properly 1`] = `
               </button>
             </div>
             <h2
-              class="sc-bxivhb lhBhQM"
+              class="sc-bZQynM ilYdOB"
               id="Login"
             >
               Login
             </h2>
             <p
-              class="sc-htpNat gcwpxS"
+              class="sc-EHOje fPktvz"
             >
               Connect with Facebook.
             </p>
+            <button
+              class="sc-bwzfXH leNkam"
+              type="button"
+            >
+              <span
+                class="fab fa-facebook sc-htpNat dhOtIv"
+              />
+              <span
+                class="sc-bxivhb iDXNmz"
+              >
+                Continue with facebook
+              </span>
+            </button>
           </div>
         </div>
       </div>
