@@ -1,14 +1,16 @@
 // @flow
+
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
+import { REACT_APP_AUTH_FACEBOOK } from '../../../../utils/env/typedEnv';
 import LoginButtonFbWrapper from './LoginButtonFb.styles';
 import FbIcon from './simpleElements/FbIcon';
 import FbText from './simpleElements/FbText';
 
 const LoginButtonFb = () => {
   const login = () => {
-    window.location.replace('http://localhost:8080/auth/facebook');
+    window.location.replace(REACT_APP_AUTH_FACEBOOK);
   };
 
   return (

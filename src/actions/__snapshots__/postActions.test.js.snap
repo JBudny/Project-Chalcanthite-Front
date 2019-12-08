@@ -4,12 +4,12 @@ exports[`actions should create an action to fetch modes 1`] = `
 Object {
   "payload": Array [
     Object {
-      "_id": "5d6edd43749c8818147fe9ba",
       "actualCode": "eZCg1",
       "author": "5a2539b41c574006c46f1a07",
       "createdAt": "2019-05-28T03:33:13.119Z",
       "favorites": 732,
       "gallery": Array [],
+      "id": "5d6edd43749c8818147fe9ba",
       "points": 9902,
       "shortDescription": "Culpa proident velit eiusmod nisi fugiat aliquip ad sunt eiusmod veniam quis culpa mollit ipsum aliqua.",
       "tags": Array [
@@ -23,12 +23,12 @@ Object {
       "title": "fugiat magna laborum ad aliqua minim",
     },
     Object {
-      "_id": "5d6edd43749c8818147fea94",
       "actualCode": "7a0GZ",
       "author": "5a2539b41c574006c46f1a07",
       "createdAt": "2019-07-22T22:01:27.347Z",
       "favorites": 191,
       "gallery": Array [],
+      "id": "5d6edd43749c8818147fea94",
       "points": 9852,
       "shortDescription": "Aute laboris pariatur pariatur ad aliquip labore fugiat elit ea deserunt consectetur commodo voluptate qui culpa. Ea consequat excepteur mollit aliquip excepteur veniam officia duis sunt nostrud ut irure. Duis nostrud commodo minim occaecat dolore laboris occaecat veniam qui consequat.",
       "tags": Array [
@@ -55,7 +55,7 @@ Object {
 
 exports[`actions should create an action to return an error 1`] = `
 Object {
-  "payload": "ERROR: TypeError: Failed to fetch",
+  "payload": "TypeError: Failed to fetch",
   "type": "GET_MODES_BY_DATE_INITIAL_FAILED",
 }
 `;
@@ -65,12 +65,12 @@ Object {
   "payload": Object {
     "posts": Array [
       Object {
-        "_id": "5d6edd43749c8818147fe9ba",
         "actualCode": "eZCg1",
         "author": "5a2539b41c574006c46f1a07",
         "createdAt": "2019-05-28T03:33:13.119Z",
         "favorites": 732,
         "gallery": Array [],
+        "id": "5d6edd43749c8818147fe9ba",
         "points": 9902,
         "shortDescription": "Culpa proident velit eiusmod nisi fugiat aliquip ad sunt eiusmod veniam quis culpa mollit ipsum aliqua.",
         "tags": Array [
@@ -84,12 +84,12 @@ Object {
         "title": "fugiat magna laborum ad aliqua minim",
       },
       Object {
-        "_id": "5d6edd43749c8818147fea94",
         "actualCode": "7a0GZ",
         "author": "5a2539b41c574006c46f1a07",
         "createdAt": "2019-07-22T22:01:27.347Z",
         "favorites": 191,
         "gallery": Array [],
+        "id": "5d6edd43749c8818147fea94",
         "points": 9852,
         "shortDescription": "Aute laboris pariatur pariatur ad aliquip labore fugiat elit ea deserunt consectetur commodo voluptate qui culpa. Ea consequat excepteur mollit aliquip excepteur veniam officia duis sunt nostrud ut irure. Duis nostrud commodo minim occaecat dolore laboris occaecat veniam qui consequat.",
         "tags": Array [
@@ -117,7 +117,7 @@ Object {
 
 exports[`async action should dispatch an action to return an error 1`] = `
 Object {
-  "payload": "ERROR: Error: TypeError: Failed to fetch",
+  "payload": [Error: TypeError: Failed to fetch],
   "type": "GET_MODES_BY_DATE_INITIAL_FAILED",
 }
 `;

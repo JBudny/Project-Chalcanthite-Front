@@ -2,16 +2,17 @@
 
 exports[`reducer should handle GET_MODES_BY_DATE_INITIAL_DONE 1`] = `
 Object {
+  "error": Object {},
   "isError": false,
   "isLoading": false,
   "posts": Array [
     Object {
-      "_id": "5d6edd43749c8818147fe9ba",
       "actualCode": "eZCg1",
       "author": "5a2539b41c574006c46f1a07",
       "createdAt": "2019-05-28T03:33:13.119Z",
       "favorites": 732,
       "gallery": Array [],
+      "id": "5d6edd43749c8818147fe9ba",
       "points": 9902,
       "shortDescription": "Culpa proident velit eiusmod nisi fugiat aliquip ad sunt eiusmod veniam quis culpa mollit ipsum aliqua.",
       "tags": Array [
@@ -25,12 +26,12 @@ Object {
       "title": "fugiat magna laborum ad aliqua minim",
     },
     Object {
-      "_id": "5d6edd43749c8818147fea94",
       "actualCode": "7a0GZ",
       "author": "5a2539b41c574006c46f1a07",
       "createdAt": "2019-07-22T22:01:27.347Z",
       "favorites": 191,
       "gallery": Array [],
+      "id": "5d6edd43749c8818147fea94",
       "points": 9852,
       "shortDescription": "Aute laboris pariatur pariatur ad aliquip labore fugiat elit ea deserunt consectetur commodo voluptate qui culpa. Ea consequat excepteur mollit aliquip excepteur veniam officia duis sunt nostrud ut irure. Duis nostrud commodo minim occaecat dolore laboris occaecat veniam qui consequat.",
       "tags": Array [
@@ -50,7 +51,7 @@ Object {
 
 exports[`reducer should handle GET_MODES_BY_DATE_INITIAL_FAILED 1`] = `
 Object {
-  "error": "ERROR: TypeError: Failed to fetch",
+  "error": "TypeError: Failed to fetch",
   "isError": true,
   "isLoading": false,
   "posts": Array [],
@@ -59,6 +60,7 @@ Object {
 
 exports[`reducer should handle GET_MODES_BY_DATE_INITIAL_REQUESTED 1`] = `
 Object {
+  "error": Object {},
   "isError": false,
   "isLoading": true,
   "posts": Array [],
@@ -67,6 +69,7 @@ Object {
 
 exports[`reducer should return the initial state 1`] = `
 Object {
+  "error": Object {},
   "isError": false,
   "isLoading": false,
   "posts": Array [],

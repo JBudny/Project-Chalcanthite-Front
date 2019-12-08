@@ -5,12 +5,12 @@ Object {
   "children": <Card
     post={
       Object {
-        "_id": "5d5c4546a6bab91d887208f6",
         "actualCode": "htXjj",
         "author": "5d5c4546a6bab91d887208f7",
         "createdAt": "2019-02-14T00:14:55.048Z",
         "favorites": 746,
         "gallery": Array [],
+        "id": "5d5c4546a6bab91d887208f6",
         "points": 9894,
         "shortDescription": "Culpa exercitation irure consectetur irure cillum.",
         "tags": Array [
@@ -326,12 +326,12 @@ exports[`Card should match the snapshot 1`] = `
   <Card
     post={
       Object {
-        "_id": "5d5c4546a6bab91d887208f6",
         "actualCode": "htXjj",
         "author": "5d5c4546a6bab91d887208f7",
         "createdAt": "2019-02-14T00:14:55.048Z",
         "favorites": 746,
         "gallery": Array [],
+        "id": "5d5c4546a6bab91d887208f6",
         "points": 9894,
         "shortDescription": "Culpa exercitation irure consectetur irure cillum.",
         "tags": Array [

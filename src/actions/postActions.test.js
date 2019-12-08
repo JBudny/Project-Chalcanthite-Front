@@ -2,8 +2,9 @@ import fetchMock from 'fetch-mock';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
+import { REACT_APP_MODE_TOP } from '../utils/env/typedEnv';
 import dummyPosts from '../utils/testUtils/dummyData/dummyPosts';
-import ERROR_MESSAGE from '../utils/testUtils/dummyData/errorMessage';
+import { FETCH_ERROR } from '../utils/testUtils/dummyData/errors';
 import {
   getModesByDateInitial,
   getModesByDateInitialDone,
@@ -25,16 +26,13 @@ describe('actions should create an action to', () => {
   });
 
   it('return an error', () => {
-    expect(getModesByDateInitialFailed(`ERROR: ${ERROR_MESSAGE}`)).toMatchSnapshot();
+    expect(getModesByDateInitialFailed(FETCH_ERROR)).toMatchSnapshot();
   });
 });
 
 describe('async action should dispatch an action to', () => {
   let store = mockStore();
-
-  if (!process.env.REACT_APP_API_URL) throw new Error('REACT_APP_API_URL missing');
-  const { REACT_APP_API_URL } = process.env;
-  const URL = `${REACT_APP_API_URL}/mode/top/${quantity}`;
+  const URL = `${REACT_APP_MODE_TOP}/${quantity}`;
 
   afterEach(() => {
     fetchMock.restore();
@@ -44,6 +42,7 @@ describe('async action should dispatch an action to', () => {
     fetchMock.getOnce(URL, {
       posts: dummyPosts,
     });
+
     await store.dispatch(getModesByDateInitial(quantity));
     const actions = store.getActions();
     expect(actions[0]).toMatchSnapshot();
@@ -63,7 +62,7 @@ describe('async action should dispatch an action to', () => {
     store = mockStore();
 
     fetchMock.mock(URL, () => {
-      throw new Error(ERROR_MESSAGE);
+      throw new Error(FETCH_ERROR);
     });
 
     await store.dispatch(getModesByDateInitial(quantity));

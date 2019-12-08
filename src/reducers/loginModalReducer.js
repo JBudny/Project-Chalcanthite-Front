@@ -1,14 +1,14 @@
 // @flow
 
 import { CLOSE_LOGIN_MODAL, OPEN_LOGIN_MODAL } from '../actions/loginModalActions';
-import type { Action, LoginModalReducer } from '../types/redux.types';
+import type { Action, LoginModalInitialState, LoginModalReducer } from '../types/redux.types';
 
 const initState = {
   showModal: false,
 };
 
 const loginModalReducer = (
-  state: LoginModalReducer = initState,
+  state: LoginModalInitialState = initState,
   action: Action,
 ): LoginModalReducer => {
   switch (action.type) {

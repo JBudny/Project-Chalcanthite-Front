@@ -1,19 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`reducer should handle SET_AUTH action 1`] = `
+exports[`reducer should handle SET_AUTH_DONE action 1`] = `
 Object {
   "auth": true,
+  "error": Object {},
+  "isError": false,
+  "isLoading": false,
+  "userName": "Jeffrey Lebowski",
 }
 `;
 
-exports[`reducer should handle UNSET_AUTH action 1`] = `
+exports[`reducer should handle SET_AUTH_FAILED action 1`] = `
 Object {
   "auth": false,
+  "error": Object {
+    "message": "Unauthorized",
+    "status": 401,
+  },
+  "isError": true,
+  "isLoading": false,
+  "userName": "anonymous",
+}
+`;
+
+exports[`reducer should handle SET_AUTH_REQUESTED action 1`] = `
+Object {
+  "auth": false,
+  "error": Object {},
+  "isError": false,
+  "isLoading": true,
+  "userName": "anonymous",
+}
+`;
+
+exports[`reducer should handle UNSET_AUTH_DONE action 1`] = `
+Object {
+  "auth": false,
+  "error": Object {},
+  "isError": false,
+  "isLoading": false,
+  "userName": "anonymous",
+}
+`;
+
+exports[`reducer should handle UNSET_AUTH_FAILED action 1`] = `
+Object {
+  "auth": false,
+  "error": Object {
+    "message": "Unauthorized",
+    "status": 401,
+  },
+  "isError": false,
+  "isLoading": false,
+  "userName": "anonymous",
+}
+`;
+
+exports[`reducer should handle UNSET_AUTH_REQUESTED action 1`] = `
+Object {
+  "auth": false,
+  "error": Object {},
+  "isError": false,
+  "isLoading": true,
+  "userName": "anonymous",
 }
 `;
 
 exports[`reducer should return the initial state 1`] = `
 Object {
   "auth": false,
+  "error": Object {},
+  "isError": false,
+  "isLoading": false,
+  "userName": "anonymous",
 }
 `;

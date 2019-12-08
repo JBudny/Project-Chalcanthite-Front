@@ -5,15 +5,16 @@ import {
   GET_MODES_BY_DATE_INITIAL_FAILED,
   GET_MODES_BY_DATE_INITIAL_REQUESTED,
 } from '../actions/postActions';
-import type { Action, PostsReducer } from '../types/redux.types';
+import type { Action, PostsInitialState, PostsReducer } from '../types/redux.types';
 
 const initState = {
   isLoading: false,
   isError: false,
   posts: [],
+  error: {},
 };
 
-const postsReducer = (state: PostsReducer = initState, action: Action): PostsReducer => {
+const postsReducer = (state: PostsInitialState = initState, action: Action): PostsReducer => {
   switch (action.type) {
     case GET_MODES_BY_DATE_INITIAL_REQUESTED:
       return { ...state, isLoading: true };

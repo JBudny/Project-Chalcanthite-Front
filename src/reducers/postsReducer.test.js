@@ -5,17 +5,14 @@ import {
   getModesByDateInitialFailed,
   getModesByDateInitialRequested,
 } from '../actions/postActions';
+import dummyInitialState from '../utils/testUtils/dummyData/dummyInitialState';
 import dummyPosts from '../utils/testUtils/dummyData/dummyPosts';
+import { FETCH_ERROR } from '../utils/testUtils/dummyData/errors';
 import postsReducer from './postsReducer';
 
-const initState = {
-  isLoading: false,
-  isError: false,
-  posts: [],
-};
-const ERROR_MESSAGE = 'TypeError: Failed to fetch';
-
 describe('reducer', () => {
+  const initState = dummyInitialState.posts;
+
   it('should return the initial state', () => {
     expect(postsReducer(undefined, { type: null })).toMatchSnapshot();
   });
@@ -29,8 +26,6 @@ describe('reducer', () => {
   });
 
   it('should handle GET_MODES_BY_DATE_INITIAL_FAILED', () => {
-    expect(
-      postsReducer(initState, getModesByDateInitialFailed(`ERROR: ${ERROR_MESSAGE}`)),
-    ).toMatchSnapshot();
+    expect(postsReducer(initState, getModesByDateInitialFailed(FETCH_ERROR))).toMatchSnapshot();
   });
 });

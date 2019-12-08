@@ -3,9 +3,16 @@ const dummyInitialState = {
     isLoading: false,
     isError: false,
     posts: [],
+    error: {},
   },
   loginModal: { showModal: false },
-  auth: { auth: false },
+  auth: {
+    isLoading: false,
+    isError: false,
+    auth: false,
+    error: {},
+    userName: 'anonymous',
+  },
 };
 
 export default dummyInitialState;
