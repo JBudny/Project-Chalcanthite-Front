@@ -16,6 +16,7 @@ const styles = makeStyles(theme => ({
     },
   },
   search: {
+    marginRight: theme.spacing(2),
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),

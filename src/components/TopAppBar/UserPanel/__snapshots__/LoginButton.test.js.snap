@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginButton component should render Log in button properly 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="login button"
+    class="MuiButtonBase-root MuiButton-root makeStyles-loginButton-1 MuiButton-outlined MuiButton-colorInherit"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      Log in
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+  <div
+    aria-labelledby="Login"
+    class="sc-gzVnrw cyuIhn"
+    role="dialog"
+  >
+    <div
+      class="sc-ifAKCX dvocBo"
+    >
+      <div
+        class="sc-bdVaJa ScFAK"
+      >
+        <button
+          type="button"
+        >
+          ✖
+        </button>
+      </div>
+      <h2
+        class="sc-bZQynM ilYdOB"
+        id="Login"
+      >
+        Login
+      </h2>
+      <p
+        class="sc-EHOje fPktvz"
+      >
+        Connect with Facebook.
+      </p>
+      <button
+        class="sc-bwzfXH leNkam"
+        type="button"
+      >
+        <span
+          class="fab fa-facebook sc-htpNat dhOtIv"
+        />
+        <span
+          class="sc-bxivhb iDXNmz"
+        >
+          Continue with facebook
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

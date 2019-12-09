@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginButtonFb component should render properly 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  padding: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.3);
+  border: none;
+  background: #1877f2;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+}
+
+.c0:hover {
+  background: #188fff;
+}
+
+.c1 {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+<button
+    class="c0"
+    type="button"
+  >
+    <span
+      class="fab fa-facebook c1"
+    />
+    <span
+      class="c2"
+    >
+      Continue with facebook
+    </span>
+  </button>
+</DocumentFragment>
+`;

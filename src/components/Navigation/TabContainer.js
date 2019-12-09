@@ -8,7 +8,7 @@ import Card from './tabContent/Card/Card';
 const TabContainer = () => {
   const classes = styles();
   const { wrapper } = classes;
-  const posts = useSelector(state => state.posts);
+  const posts = useSelector(state => state.posts.posts);
   // eslint-disable-next-line no-underscore-dangle
   const keyExtractor = post => post._id;
 

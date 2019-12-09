@@ -1,4 +1,4 @@
-import dummyTitlePanelProps from '../dummyCardProps/dummyTitlePanelProps';
+import dummyTitlePanelProps from '../testUtils/dummyData/dummyTitlePanelProps';
 import { createLink, createLinksList } from './createLinks';
 
 describe('createLink function', () => {

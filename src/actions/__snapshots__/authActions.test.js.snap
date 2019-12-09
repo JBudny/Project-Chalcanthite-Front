@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Async setAuth action creator should dispatch setAuthDone action when it fetched data without errors 1`] = `
+Object {
+  "payload": "Jeffrey Lebowski",
+  "type": "SET_AUTH_DONE",
+}
+`;
+
+exports[`Async setAuth action creator should dispatch setAuthFailed action when it catches an error 1`] = `
+Object {
+  "payload": [Error: TypeError: Failed to fetch],
+  "type": "SET_AUTH_FAILED",
+}
+`;
+
+exports[`Async setAuth action creator should dispatch setAuthFailed action when there is an error in response 1`] = `
+Object {
+  "payload": [Error: {"message":"Unauthorized","status":401}],
+  "type": "SET_AUTH_FAILED",
+}
+`;
+
+exports[`Async setAuth action creator should dispatch setAuthRequested action when it starts fetching data 1`] = `
+Object {
+  "type": "SET_AUTH_REQUESTED",
+}
+`;
+
+exports[`Async unsetAuth action creator should dispatch unsetAuthDone action when it fetched data without errors 1`] = `
+Object {
+  "type": "UNSET_AUTH_DONE",
+}
+`;
+
+exports[`Async unsetAuth action creator should dispatch unsetAuthFailed action when it catches an error 1`] = `
+Object {
+  "payload": [Error: TypeError: Failed to fetch],
+  "type": "UNSET_AUTH_FAILED",
+}
+`;
+
+exports[`Async unsetAuth action creator should dispatch unsetAuthFailed action when there is an error in response 1`] = `
+Object {
+  "payload": [Error: {"message":"Unauthorized","status":401}],
+  "type": "UNSET_AUTH_FAILED",
+}
+`;
+
+exports[`Async unsetAuth action creator should dispatch unsetAuthRequested action when it starts fetching data 1`] = `
+Object {
+  "type": "UNSET_AUTH_REQUESTED",
+}
+`;
+
+exports[`authActions should create setAuthDone action 1`] = `
+Object {
+  "payload": "Jeffrey Lebowski",
+  "type": "SET_AUTH_DONE",
+}
+`;
+
+exports[`authActions should create setAuthFailed action 1`] = `
+Object {
+  "payload": Object {
+    "message": "Unauthorized",
+    "status": 401,
+  },
+  "type": "SET_AUTH_FAILED",
+}
+`;
+
+exports[`authActions should create setAuthRequested action 1`] = `
+Object {
+  "type": "SET_AUTH_REQUESTED",
+}
+`;
+
+exports[`authActions should create unsetAuthDone action 1`] = `
+Object {
+  "type": "UNSET_AUTH_DONE",
+}
+`;
+
+exports[`authActions should create unsetAuthFailed action 1`] = `
+Object {
+  "payload": Object {
+    "message": "Unauthorized",
+    "status": 401,
+  },
+  "type": "UNSET_AUTH_FAILED",
+}
+`;
+
+exports[`authActions should create unsetAuthRequested action 1`] = `
+Object {
+  "type": "UNSET_AUTH_REQUESTED",
+}
+`;

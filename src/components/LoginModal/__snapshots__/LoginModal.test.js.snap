@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginModal component should render properly 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 0.5rem 0;
+}
+
+.c2 button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+
+.c5 {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  padding: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.3);
+  border: none;
+  background: #1877f2;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+}
+
+.c5:hover {
+  background: #188fff;
+}
+
+.c6 {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.c7 {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.c1 {
+  display: block;
+  padding: 0.75rem;
+  background-color: #fff;
+}
+
+.c4 {
+  margin: 0.5rem 0;
+  color: #999;
+}
+
+.c3 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  color: #000;
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+<div
+  aria-labelledby="Login"
+  class="c0"
+  role="dialog"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <button
+        type="button"
+      >
+        ✖
+      </button>
+    </div>
+    <h2
+      class="c3"
+      id="Login"
+    >
+      Login
+    </h2>
+    <p
+      class="c4"
+    >
+      Connect with Facebook.
+    </p>
+    <button
+      class="c5"
+      type="button"
+    >
+      <span
+        class="fab fa-facebook c6"
+      />
+      <span
+        class="c7"
+      >
+        Continue with facebook
+      </span>
+    </button>
+  </div>
+</div>
+`;

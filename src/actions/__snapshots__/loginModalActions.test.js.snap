@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loginModalActions should create closeLoginModal action 1`] = `
+Object {
+  "type": "CLOSE_LOGIN_MODAL",
+}
+`;
+
+exports[`loginModalActions should create openLoginModal action 1`] = `
+Object {
+  "type": "OPEN_LOGIN_MODAL",
+}
+`;

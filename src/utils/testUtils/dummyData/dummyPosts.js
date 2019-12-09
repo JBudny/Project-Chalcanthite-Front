@@ -5,7 +5,7 @@ const dummyPosts = [
     favorites: 732,
     points: 9902,
     gallery: [],
-    _id: '5d6edd43749c8818147fe9ba',
+    id: '5d6edd43749c8818147fe9ba',
     createdAt: '2019-05-28T03:33:13.119Z',
     title: 'fugiat magna laborum ad aliqua minim',
     shortDescription:
@@ -26,7 +26,7 @@ const dummyPosts = [
     favorites: 191,
     points: 9852,
     gallery: [],
-    _id: '5d6edd43749c8818147fea94',
+    id: '5d6edd43749c8818147fea94',
     createdAt: '2019-07-22T22:01:27.347Z',
     title: 'do ex',
     shortDescription:
