@@ -12,7 +12,9 @@ type Props = {
   iconTransform?: string,
 };
 
-const IconBox: StyledComponent<Props, any, HTMLDivElement> = styled.div`
+const IconBox: StyledComponent<Props, any, HTMLButtonElement> = styled.button`
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ${({ iconWidth }) => iconWidth || 'auto'};
   border-right: ${({ iconRightBorder }) => iconRightBorder || 'none none #A3BAC3'};

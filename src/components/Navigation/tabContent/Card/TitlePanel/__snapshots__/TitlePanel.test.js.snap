@@ -93,6 +93,8 @@ exports[`TitlePanel should match the snapshot 1`] = `
 }
 
 .c6 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: auto;
   border-right: none none #A3BAC3;
@@ -539,7 +541,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                       className="c5"
                     >
                       224
-                      <styled.div
+                      <styled.button
                         iconColor="#d1b03b"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -558,6 +560,8 @@ exports[`TitlePanel should match the snapshot 1`] = `
                                 "lastClassName": "c6",
                                 "rules": Array [
                                   "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                                   [Function],
@@ -581,11 +585,11 @@ exports[`TitlePanel should match the snapshot 1`] = `
 ",
                                 ],
                               },
-                              "displayName": "styled.div",
+                              "displayName": "styled.button",
                               "foldedComponentIds": Array [],
                               "render": [Function],
                               "styledComponentId": "sc-bxivhb",
-                              "target": "div",
+                              "target": "button",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -599,7 +603,7 @@ exports[`TitlePanel should match the snapshot 1`] = `
                           tabIndex="0"
                           type="button"
                         >
-                          <div
+                          <button
                             className="c6"
                             onClick={[Function]}
                             onKeyDown={[Function]}
@@ -610,9 +614,9 @@ exports[`TitlePanel should match the snapshot 1`] = `
                             <i
                               className="icon-star-empty"
                             />
-                          </div>
+                          </button>
                         </StyledComponent>
-                      </styled.div>
+                      </styled.button>
                     </div>
                   </StyledComponent>
                 </styled.div>

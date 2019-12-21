@@ -4,6 +4,8 @@ exports[`BottomPanel props should match the snapshot 1`] = `Object {}`;
 
 exports[`BottomPanel should match the snapshot 1`] = `
 .c1 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: 33%;
   border-right: 1px solid #A3BAC3;
@@ -17,6 +19,8 @@ exports[`BottomPanel should match the snapshot 1`] = `
 }
 
 .c2 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: 33%;
   border-right: none none #A3BAC3;
@@ -30,6 +34,8 @@ exports[`BottomPanel should match the snapshot 1`] = `
 }
 
 .c3 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: 33%;
   border-right: none none #A3BAC3;
@@ -82,7 +88,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
       <div
         className="c0"
       >
-        <styled.div
+        <styled.button
           iconColor="#3d73bf"
           iconRightBorder="1px solid #A3BAC3"
           iconSize="1.25rem"
@@ -104,6 +110,8 @@ exports[`BottomPanel should match the snapshot 1`] = `
                   "lastClassName": "c3",
                   "rules": Array [
                     "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                     [Function],
@@ -127,11 +135,11 @@ exports[`BottomPanel should match the snapshot 1`] = `
 ",
                   ],
                 },
-                "displayName": "styled.div",
+                "displayName": "styled.button",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-bdVaJa",
-                "target": "div",
+                "target": "button",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
@@ -148,7 +156,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
             tabIndex="0"
             type="button"
           >
-            <div
+            <button
               className="c1"
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -159,10 +167,10 @@ exports[`BottomPanel should match the snapshot 1`] = `
               <i
                 className="icon-heart"
               />
-            </div>
+            </button>
           </StyledComponent>
-        </styled.div>
-        <styled.div
+        </styled.button>
+        <styled.button
           iconColor="#3d73bf"
           iconLeftBorder="1px solid #A3BAC3"
           iconSize="1.25rem"
@@ -185,6 +193,8 @@ exports[`BottomPanel should match the snapshot 1`] = `
                   "lastClassName": "c3",
                   "rules": Array [
                     "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                     [Function],
@@ -208,11 +218,11 @@ exports[`BottomPanel should match the snapshot 1`] = `
 ",
                   ],
                 },
-                "displayName": "styled.div",
+                "displayName": "styled.button",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-bdVaJa",
-                "target": "div",
+                "target": "button",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
@@ -230,7 +240,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
             tabIndex="0"
             type="button"
           >
-            <div
+            <button
               className="c2"
               onClick={[Function]}
               onKeyDown={[Function]}
@@ -241,10 +251,10 @@ exports[`BottomPanel should match the snapshot 1`] = `
               <i
                 className="icon-heart"
               />
-            </div>
+            </button>
           </StyledComponent>
-        </styled.div>
-        <styled.div
+        </styled.button>
+        <styled.button
           iconColor="#3d73bf"
           iconSize="1.25rem"
           iconWidth="33%"
@@ -263,6 +273,8 @@ exports[`BottomPanel should match the snapshot 1`] = `
                   "lastClassName": "c3",
                   "rules": Array [
                     "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                     [Function],
@@ -286,11 +298,11 @@ exports[`BottomPanel should match the snapshot 1`] = `
 ",
                   ],
                 },
-                "displayName": "styled.div",
+                "displayName": "styled.button",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-bdVaJa",
-                "target": "div",
+                "target": "button",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
@@ -304,7 +316,7 @@ exports[`BottomPanel should match the snapshot 1`] = `
             tabIndex="0"
             type="button"
           >
-            <div
+            <button
               className="c3"
               role="button"
               tabIndex="0"
@@ -313,9 +325,9 @@ exports[`BottomPanel should match the snapshot 1`] = `
               <i
                 className="icon-comment"
               />
-            </div>
+            </button>
           </StyledComponent>
-        </styled.div>
+        </styled.button>
       </div>
     </StyledComponent>
   </styled.div>

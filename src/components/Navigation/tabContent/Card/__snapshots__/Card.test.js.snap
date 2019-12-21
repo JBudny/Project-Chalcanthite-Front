@@ -58,6 +58,8 @@ Object {
 
 exports[`Card should match the snapshot 1`] = `
 .c2 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: auto;
   border-right: none none #A3BAC3;
@@ -71,6 +73,8 @@ exports[`Card should match the snapshot 1`] = `
 }
 
 .c9 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: auto;
   border-right: none none #A3BAC3;
@@ -84,6 +88,8 @@ exports[`Card should match the snapshot 1`] = `
 }
 
 .c16 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: 33%;
   border-right: 1px solid #A3BAC3;
@@ -97,6 +103,8 @@ exports[`Card should match the snapshot 1`] = `
 }
 
 .c17 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: 33%;
   border-right: none none #A3BAC3;
@@ -110,6 +118,8 @@ exports[`Card should match the snapshot 1`] = `
 }
 
 .c18 {
+  background: transparent;
+  border: none;
   display: inline-block;
   width: 33%;
   border-right: none none #A3BAC3;
@@ -420,7 +430,7 @@ exports[`Card should match the snapshot 1`] = `
                 <div
                   className="c1"
                 >
-                  <styled.div
+                  <styled.button
                     iconColor="#1F2023"
                     iconSize="1.25rem"
                     role="button"
@@ -437,6 +447,8 @@ exports[`Card should match the snapshot 1`] = `
                             "lastClassName": "c18",
                             "rules": Array [
                               "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                               [Function],
@@ -460,11 +472,11 @@ exports[`Card should match the snapshot 1`] = `
 ",
                             ],
                           },
-                          "displayName": "styled.div",
+                          "displayName": "styled.button",
                           "foldedComponentIds": Array [],
                           "render": [Function],
                           "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
+                          "target": "button",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
@@ -476,7 +488,7 @@ exports[`Card should match the snapshot 1`] = `
                       role="button"
                       tabIndex="0"
                     >
-                      <div
+                      <button
                         className="c2"
                         role="button"
                         tabIndex="0"
@@ -484,9 +496,9 @@ exports[`Card should match the snapshot 1`] = `
                         <i
                           className="icon-ellipsis"
                         />
-                      </div>
+                      </button>
                     </StyledComponent>
-                  </styled.div>
+                  </styled.button>
                 </div>
               </StyledComponent>
             </styled.div>
@@ -851,7 +863,7 @@ exports[`Card should match the snapshot 1`] = `
                               className="c8"
                             >
                               746
-                              <styled.div
+                              <styled.button
                                 iconColor="#d1b03b"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
@@ -870,6 +882,8 @@ exports[`Card should match the snapshot 1`] = `
                                         "lastClassName": "c18",
                                         "rules": Array [
                                           "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                                           [Function],
@@ -893,11 +907,11 @@ exports[`Card should match the snapshot 1`] = `
 ",
                                         ],
                                       },
-                                      "displayName": "styled.div",
+                                      "displayName": "styled.button",
                                       "foldedComponentIds": Array [],
                                       "render": [Function],
                                       "styledComponentId": "sc-bdVaJa",
-                                      "target": "div",
+                                      "target": "button",
                                       "toString": [Function],
                                       "warnTooManyClasses": [Function],
                                       "withComponent": [Function],
@@ -911,7 +925,7 @@ exports[`Card should match the snapshot 1`] = `
                                   tabIndex="0"
                                   type="button"
                                 >
-                                  <div
+                                  <button
                                     className="c9"
                                     onClick={[Function]}
                                     onKeyDown={[Function]}
@@ -922,9 +936,9 @@ exports[`Card should match the snapshot 1`] = `
                                     <i
                                       className="icon-star-empty"
                                     />
-                                  </div>
+                                  </button>
                                 </StyledComponent>
-                              </styled.div>
+                              </styled.button>
                             </div>
                           </StyledComponent>
                         </styled.div>
@@ -1234,7 +1248,7 @@ exports[`Card should match the snapshot 1`] = `
                 <div
                   className="c15"
                 >
-                  <styled.div
+                  <styled.button
                     iconColor="#3d73bf"
                     iconRightBorder="1px solid #A3BAC3"
                     iconSize="1.25rem"
@@ -1256,6 +1270,8 @@ exports[`Card should match the snapshot 1`] = `
                             "lastClassName": "c18",
                             "rules": Array [
                               "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                               [Function],
@@ -1279,11 +1295,11 @@ exports[`Card should match the snapshot 1`] = `
 ",
                             ],
                           },
-                          "displayName": "styled.div",
+                          "displayName": "styled.button",
                           "foldedComponentIds": Array [],
                           "render": [Function],
                           "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
+                          "target": "button",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
@@ -1300,7 +1316,7 @@ exports[`Card should match the snapshot 1`] = `
                       tabIndex="0"
                       type="button"
                     >
-                      <div
+                      <button
                         className="c16"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -1311,10 +1327,10 @@ exports[`Card should match the snapshot 1`] = `
                         <i
                           className="icon-heart"
                         />
-                      </div>
+                      </button>
                     </StyledComponent>
-                  </styled.div>
-                  <styled.div
+                  </styled.button>
+                  <styled.button
                     iconColor="#3d73bf"
                     iconLeftBorder="1px solid #A3BAC3"
                     iconSize="1.25rem"
@@ -1337,6 +1353,8 @@ exports[`Card should match the snapshot 1`] = `
                             "lastClassName": "c18",
                             "rules": Array [
                               "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                               [Function],
@@ -1360,11 +1378,11 @@ exports[`Card should match the snapshot 1`] = `
 ",
                             ],
                           },
-                          "displayName": "styled.div",
+                          "displayName": "styled.button",
                           "foldedComponentIds": Array [],
                           "render": [Function],
                           "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
+                          "target": "button",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
@@ -1382,7 +1400,7 @@ exports[`Card should match the snapshot 1`] = `
                       tabIndex="0"
                       type="button"
                     >
-                      <div
+                      <button
                         className="c17"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -1393,10 +1411,10 @@ exports[`Card should match the snapshot 1`] = `
                         <i
                           className="icon-heart"
                         />
-                      </div>
+                      </button>
                     </StyledComponent>
-                  </styled.div>
-                  <styled.div
+                  </styled.button>
+                  <styled.button
                     iconColor="#3d73bf"
                     iconSize="1.25rem"
                     iconWidth="33%"
@@ -1415,6 +1433,8 @@ exports[`Card should match the snapshot 1`] = `
                             "lastClassName": "c18",
                             "rules": Array [
                               "
+  background: transparent;
+  border: none;
   display: inline-block;
   width: ",
                               [Function],
@@ -1438,11 +1458,11 @@ exports[`Card should match the snapshot 1`] = `
 ",
                             ],
                           },
-                          "displayName": "styled.div",
+                          "displayName": "styled.button",
                           "foldedComponentIds": Array [],
                           "render": [Function],
                           "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
+                          "target": "button",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
@@ -1456,7 +1476,7 @@ exports[`Card should match the snapshot 1`] = `
                       tabIndex="0"
                       type="button"
                     >
-                      <div
+                      <button
                         className="c18"
                         role="button"
                         tabIndex="0"
@@ -1465,9 +1485,9 @@ exports[`Card should match the snapshot 1`] = `
                         <i
                           className="icon-comment"
                         />
-                      </div>
+                      </button>
                     </StyledComponent>
-                  </styled.div>
+                  </styled.button>
                 </div>
               </StyledComponent>
             </styled.div>
