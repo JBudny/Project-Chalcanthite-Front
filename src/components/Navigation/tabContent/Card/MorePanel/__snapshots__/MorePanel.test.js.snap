@@ -18,6 +18,10 @@ exports[`MorePanel should match the snapshot 1`] = `
   cursor: pointer;
 }
 
+.c1:disabled {
+  color: #aaa;
+}
+
 .c0 {
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
   display: -webkit-box;
@@ -103,6 +107,10 @@ exports[`MorePanel should match the snapshot 1`] = `
                     [Function],
                     ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                   ],
                 },

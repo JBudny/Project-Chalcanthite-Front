@@ -72,6 +72,10 @@ exports[`Card should match the snapshot 1`] = `
   cursor: pointer;
 }
 
+.c2:disabled {
+  color: #aaa;
+}
+
 .c9 {
   background: transparent;
   border: none;
@@ -85,6 +89,10 @@ exports[`Card should match the snapshot 1`] = `
   -ms-transform: none;
   transform: none;
   cursor: pointer;
+}
+
+.c9:disabled {
+  color: #aaa;
 }
 
 .c16 {
@@ -102,6 +110,10 @@ exports[`Card should match the snapshot 1`] = `
   cursor: pointer;
 }
 
+.c16:disabled {
+  color: #aaa;
+}
+
 .c17 {
   background: transparent;
   border: none;
@@ -117,6 +129,10 @@ exports[`Card should match the snapshot 1`] = `
   cursor: pointer;
 }
 
+.c17:disabled {
+  color: #aaa;
+}
+
 .c18 {
   background: transparent;
   border: none;
@@ -130,6 +146,10 @@ exports[`Card should match the snapshot 1`] = `
   -ms-transform: none;
   transform: none;
   cursor: pointer;
+}
+
+.c18:disabled {
+  color: #aaa;
 }
 
 .c15 {
@@ -257,6 +277,10 @@ exports[`Card should match the snapshot 1`] = `
   font-size: inherit;
   display: inline;
   line-height: 1.5rem;
+}
+
+.c8:disabled {
+  background: #aaa;
 }
 
 .c5 {
@@ -469,6 +493,10 @@ exports[`Card should match the snapshot 1`] = `
                               [Function],
                               ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                             ],
                           },
@@ -844,6 +872,10 @@ exports[`Card should match the snapshot 1`] = `
                                     ";
   display: inline;
   line-height: 1.5rem;
+
+  &:disabled {
+    background: #aaa;
+  }
 ",
                                   ],
                                 },
@@ -904,6 +936,10 @@ exports[`Card should match the snapshot 1`] = `
                                           [Function],
                                           ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                                         ],
                                       },
@@ -1292,6 +1328,10 @@ exports[`Card should match the snapshot 1`] = `
                               [Function],
                               ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                             ],
                           },
@@ -1375,6 +1415,10 @@ exports[`Card should match the snapshot 1`] = `
                               [Function],
                               ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                             ],
                           },
@@ -1455,6 +1499,10 @@ exports[`Card should match the snapshot 1`] = `
                               [Function],
                               ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                             ],
                           },

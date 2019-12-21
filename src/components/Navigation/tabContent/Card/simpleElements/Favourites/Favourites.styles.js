@@ -13,6 +13,10 @@ const Favorites: StyledComponent<Props, any, HTMLDivElement> = styled.div`
   font-size: ${({ fontSize }) => fontSize || 'inherit'};
   display: inline;
   line-height: 1.5rem;
+
+  &:disabled {
+    background: #aaa;
+  }
 `;
 
 export default Favorites;

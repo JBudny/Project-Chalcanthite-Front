@@ -18,6 +18,10 @@ exports[`BottomPanel should match the snapshot 1`] = `
   cursor: pointer;
 }
 
+.c1:disabled {
+  color: #aaa;
+}
+
 .c2 {
   background: transparent;
   border: none;
@@ -33,6 +37,10 @@ exports[`BottomPanel should match the snapshot 1`] = `
   cursor: pointer;
 }
 
+.c2:disabled {
+  color: #aaa;
+}
+
 .c3 {
   background: transparent;
   border: none;
@@ -46,6 +54,10 @@ exports[`BottomPanel should match the snapshot 1`] = `
   -ms-transform: none;
   transform: none;
   cursor: pointer;
+}
+
+.c3:disabled {
+  color: #aaa;
 }
 
 .c0 {
@@ -132,6 +144,10 @@ exports[`BottomPanel should match the snapshot 1`] = `
                     [Function],
                     ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                   ],
                 },
@@ -215,6 +231,10 @@ exports[`BottomPanel should match the snapshot 1`] = `
                     [Function],
                     ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                   ],
                 },
@@ -295,6 +315,10 @@ exports[`BottomPanel should match the snapshot 1`] = `
                     [Function],
                     ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                   ],
                 },

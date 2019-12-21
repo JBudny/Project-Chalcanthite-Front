@@ -23,6 +23,10 @@ const IconBox: StyledComponent<Props, any, HTMLButtonElement> = styled.button`
   font-size: ${({ iconSize }) => iconSize || 'medium'};
   transform: ${({ iconTransform }) => iconTransform || 'none'};
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 `;
 
 export default IconBox;

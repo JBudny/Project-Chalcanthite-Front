@@ -92,6 +92,10 @@ exports[`TitlePanel should match the snapshot 1`] = `
   line-height: 1.5rem;
 }
 
+.c5:disabled {
+  background: #aaa;
+}
+
 .c6 {
   background: transparent;
   border: none;
@@ -105,6 +109,10 @@ exports[`TitlePanel should match the snapshot 1`] = `
   -ms-transform: none;
   transform: none;
   cursor: pointer;
+}
+
+.c6:disabled {
+  color: #aaa;
 }
 
 .c2 {
@@ -522,6 +530,10 @@ exports[`TitlePanel should match the snapshot 1`] = `
                             ";
   display: inline;
   line-height: 1.5rem;
+
+  &:disabled {
+    background: #aaa;
+  }
 ",
                           ],
                         },
@@ -582,6 +594,10 @@ exports[`TitlePanel should match the snapshot 1`] = `
                                   [Function],
                                   ";
   cursor: pointer;
+
+  &:disabled {
+    color: #aaa;
+  }
 ",
                                 ],
                               },
