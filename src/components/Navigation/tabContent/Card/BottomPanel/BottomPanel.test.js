@@ -1,111 +1,82 @@
 import 'jest-styled-components';
 
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { cleanup, fireEvent } from '@testing-library/react';
 import React from 'react';
 
+import dummyInitialState from '../../../../../utils/testUtils/dummyData/dummyInitialState';
+import renderWithRedux from '../../../../../utils/testUtils/renderWithRedux';
 import BottomPanel from './BottomPanel';
 
-describe('BottomPanel', () => {
-  let bottomPanelTree;
-  const selectedNodesEqualTo = (sel, val) => expect(bottomPanelTree.find(sel).length).toBe(val);
+afterEach(cleanup);
 
-  beforeEach(() => {
-    bottomPanelTree = mount(<BottomPanel />);
-  });
+test('BottomPanel should render properly', async () => {
+  const initialState = { ...dummyInitialState };
+  const { asFragment } = renderWithRedux(<BottomPanel />, { initialState });
 
-  it('should match the snapshot', () => {
-    expect(toJson(bottomPanelTree)).toMatchSnapshot();
-  });
+  expect(asFragment()).toMatchSnapshot();
+});
 
-  it('props should match the snapshot', () => {
-    expect(bottomPanelTree.props()).toMatchSnapshot();
-  });
+test('BottomPanel should render disabled buttons when user is not logged in', async () => {
+  const initialState = { ...dummyInitialState };
+  const { getAllByRole } = renderWithRedux(<BottomPanel />, { initialState });
 
-  it("should initially render two buttons with 'icon-heart' style", () => {
-    selectedNodesEqualTo('i.icon-heart-filled', 0);
-    selectedNodesEqualTo('i.icon-heart', 2);
-  });
+  const buttons = await getAllByRole('button');
+  buttons.forEach(button => expect(button).toHaveAttribute('disabled'));
+});
 
-  describe(': clicked like button ', () => {
-    it("should toggle 'icon-heart' class to 'icon-heart-filled'", () => {
-      bottomPanelTree
-        .find('i.icon-heart')
-        .at(0)
-        .simulate('click');
-      selectedNodesEqualTo('i.icon-heart-filled', 1);
-      selectedNodesEqualTo('i.icon-heart', 1);
-    });
+test('BottomPanel should render enabled buttons when user is logged in', async () => {
+  const initialState = { ...dummyInitialState, auth: { auth: true } };
+  const { getAllByRole } = renderWithRedux(<BottomPanel />, { initialState });
 
-    it("Should toggle 'icon-heart-filled' class to 'icon-heart'", () => {
-      bottomPanelTree
-        .find('i.icon-heart')
-        .at(0)
-        .simulate('click');
-      bottomPanelTree
-        .find('i.icon-heart-filled')
-        .at(0)
-        .simulate('click');
-      selectedNodesEqualTo('i.icon-heart-filled', 0);
-      selectedNodesEqualTo('i.icon-heart', 2);
-    });
+  const buttons = await getAllByRole('button');
+  buttons.forEach(button => expect(button).not.toHaveAttribute('disabled'));
+});
 
-    it("should toggle dislike button 'icon-heart-filled' class to 'icon-heart'", () => {
-      bottomPanelTree
-        .find('i.icon-heart')
-        .at(1)
-        .simulate('click');
-      bottomPanelTree
-        .find('i.icon-heart')
-        .at(0)
-        .simulate('click');
-      selectedNodesEqualTo('i.icon-heart-filled', 1);
-      selectedNodesEqualTo('i.icon-heart', 1);
-    });
-  });
+test('BottomPanel should initially render two buttons with an empty heart', async () => {
+  const initialState = { ...dummyInitialState, auth: { auth: true } };
+  const { getAllByRole } = renderWithRedux(<BottomPanel />, { initialState });
 
-  describe(': clicked dislike button ', () => {
-    beforeEach(() => {
-      bottomPanelTree = mount(<BottomPanel />);
-    });
+  const buttons = await getAllByRole('button');
+  expect(buttons[0]).toMatchSnapshot();
+  expect(buttons[1]).toMatchSnapshot();
+});
 
-    it("should toggle 'icon-heart' class to 'icon-heart-filled'", () => {
-      bottomPanelTree
-        .find('i.icon-heart')
-        .at(1)
-        .simulate('click');
-      selectedNodesEqualTo('i.icon-heart-filled', 1);
-      selectedNodesEqualTo('i.icon-heart', 1);
-    });
+test('Like button should toggle an empty heart into filled heart after click on it', async () => {
+  const initialState = { ...dummyInitialState, auth: { auth: true } };
+  const { getAllByRole } = renderWithRedux(<BottomPanel />, { initialState });
 
-    it("should toggle 'icon-heart-filled' class to 'icon-heart'", () => {
-      bottomPanelTree
-        .find('i.icon-heart')
-        .at(1)
-        .simulate('click');
-      bottomPanelTree
-        .find('i.icon-heart-filled')
-        .at(0)
-        .simulate('click');
-      selectedNodesEqualTo('i.icon-heart-filled', 0);
-      selectedNodesEqualTo('i.icon-heart', 2);
-    });
+  const buttons = await getAllByRole('button');
+  fireEvent.click(buttons[0]);
+  expect(buttons[0]).toMatchSnapshot();
+});
 
-    it("should toggle like button 'icon-heart-filled' class to 'icon-heart'", () => {
-      bottomPanelTree
-        .find('i.icon-heart')
-        .at(0)
-        .simulate('click');
-      bottomPanelTree
-        .find('i.icon-heart')
-        .at(0)
-        .simulate('click');
-      selectedNodesEqualTo('i.icon-heart-filled', 1);
-      selectedNodesEqualTo('i.icon-heart', 1);
-    });
-  });
+test('Dislike button should toggle an empty heart into filled heart after click on it', async () => {
+  const initialState = { ...dummyInitialState, auth: { auth: true } };
+  const { getAllByRole } = renderWithRedux(<BottomPanel />, { initialState });
 
-  it('should render comment button', () => {
-    expect(bottomPanelTree.find('i.icon-comment').length).toBe(1);
-  });
+  const buttons = await getAllByRole('button');
+  fireEvent.click(buttons[1]);
+  expect(buttons[1]).toMatchSnapshot();
+});
+
+test('Dislike button should toggle Like button filled heart into an empty heart after click on it', async () => {
+  const initialState = { ...dummyInitialState, auth: { auth: true } };
+  const { getAllByRole } = renderWithRedux(<BottomPanel />, { initialState });
+
+  const buttons = await getAllByRole('button');
+  fireEvent.click(buttons[0]);
+  fireEvent.click(buttons[1]);
+
+  expect(buttons[0]).toMatchSnapshot();
+});
+
+test('Like button should toggle Dislike button filled heart into an empty heart after click on it', async () => {
+  const initialState = { ...dummyInitialState, auth: { auth: true } };
+  const { getAllByRole } = renderWithRedux(<BottomPanel />, { initialState });
+
+  const buttons = await getAllByRole('button');
+  fireEvent.click(buttons[1]);
+  fireEvent.click(buttons[0]);
+
+  expect(buttons[1]).toMatchSnapshot();
 });

@@ -4,7 +4,9 @@ import '../../../../../utils/fontello/css/fontello.css';
 import isEqual from 'lodash/isEqual';
 import React, { useState } from 'react';
 import { FormattedMessage } from 'react-intl';
+import { useSelector } from 'react-redux';
 
+import type { AppState } from '../../../../../types/redux.types';
 import { createLink, createLinksList } from '../../../../../utils/createLinks/createLinks';
 import type { TitlePanelProps } from '../Card.types';
 import Author from '../simpleElements/Author/Author.styles';
@@ -18,6 +20,8 @@ import TitlePanelWrapper from './TitlePanel.styles';
 const TitlePanel = (props: TitlePanelProps) => {
   const [star, setStar] = useState(false);
   const { tags, favorites, author, title } = props;
+
+  const isDisabled = useSelector((state: AppState) => !state.auth.auth);
 
   const handleFavouritesClick = () => setStar(!star);
 
@@ -54,6 +58,7 @@ const TitlePanel = (props: TitlePanelProps) => {
             type="button"
             onKeyDown={handleFavouritesKeyDown}
             onClick={handleFavouritesClick}
+            disabled={isDisabled}
           >
             <i className={star ? 'icon-star' : 'icon-star-empty'} />
           </IconBox>

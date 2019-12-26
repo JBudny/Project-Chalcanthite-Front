@@ -3,13 +3,17 @@ import '../../../../../utils/fontello/css/fontello.css';
 
 import isEqual from 'lodash/isEqual';
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 
+import type { AppState } from '../../../../../types/redux.types';
 import IconBox from '../simpleElements/IconBox/IconBox.styles';
 import BottomPanelWrapper from './BottomPanel.styles';
 
 const BottomPanel = () => {
   const [likeHeart, setLikeHeart] = useState(false);
   const [dislikeHeart, setDislikeHeart] = useState(false);
+
+  const isDisabled = useSelector((state: AppState) => !state.auth.auth);
 
   const switchLikeHeart = () => {
     if (dislikeHeart) setDislikeHeart(false);
@@ -40,6 +44,7 @@ const BottomPanel = () => {
         iconRightBorder="1px solid #A3BAC3"
         onKeyDown={e => handleKeyDown(e, true)}
         onClick={() => handleClick(true)}
+        disabled={isDisabled}
       >
         <i className={likeHeart ? 'icon-heart-filled' : 'icon-heart'} />
       </IconBox>
@@ -54,6 +59,7 @@ const BottomPanel = () => {
         iconTransform="rotate(180deg)"
         onKeyDown={e => handleKeyDown(e, false)}
         onClick={() => handleClick(false)}
+        disabled={isDisabled}
       >
         <i className={dislikeHeart ? 'icon-heart-filled' : 'icon-heart'} />
       </IconBox>
@@ -64,6 +70,7 @@ const BottomPanel = () => {
         iconWidth="33%"
         iconSize="1.25rem"
         iconColor="#3d73bf"
+        disabled={isDisabled}
       >
         <i className="icon-comment" />
       </IconBox>

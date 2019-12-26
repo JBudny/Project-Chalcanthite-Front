@@ -1,58 +1,61 @@
 import 'jest-styled-components';
 
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { cleanup, fireEvent } from '@testing-library/react';
 import React from 'react';
-import { IntlProvider } from 'react-intl';
 
-import messagesEn from '../../../../../translations/en.json';
+import dummyInitialState from '../../../../../utils/testUtils/dummyData/dummyInitialState';
 import dummyTitlePanelProps from '../../../../../utils/testUtils/dummyData/dummyTitlePanelProps';
+import renderWithRedux from '../../../../../utils/testUtils/renderWithRedux';
 import TitlePanel from './TitlePanel';
 
 describe('TitlePanel', () => {
-  const language = 'en';
-  const messages = {
-    en: messagesEn,
-  };
+  afterEach(cleanup);
 
   const { tags, favorites, author, title } = dummyTitlePanelProps;
+  let initialState = { ...dummyInitialState };
 
-  let titlePanelTree;
-
-  beforeEach(() => {
-    titlePanelTree = mount(
-      <IntlProvider locale={language} messages={messages[language]}>
-        <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />
-      </IntlProvider>,
+  test('should render an author link', () => {
+    const { getByText } = renderWithRedux(
+      <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />,
+      { initialState },
     );
+
+    expect(getByText('Author:')).toBeInTheDocument();
   });
 
-  it('should match the snapshot', () => {
-    expect(toJson(titlePanelTree)).toMatchSnapshot();
+  test('should match the snapshot', () => {
+    const { asFragment } = renderWithRedux(
+      <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />,
+      { initialState },
+    );
+
+    expect(asFragment()).toMatchSnapshot();
   });
 
-  it('props should match the snapshot', () => {
-    expect(titlePanelTree.props()).toMatchSnapshot();
+  test('should toggle icon an-star-empty to the icon-star after click on star button', () => {
+    initialState = { ...initialState, auth: { auth: true } };
+
+    const { getByRole } = renderWithRedux(
+      <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />,
+      { initialState },
+    );
+
+    const starButton = getByRole('button');
+    fireEvent.click(starButton);
+    expect(starButton).toMatchSnapshot();
   });
 
-  it('should render author link', () => {
-    expect(
-      titlePanelTree
-        .find('div')
-        .at(4)
-        .find('a')
-        .props(),
-    ).toHaveProperty('children', author);
-  });
+  test('should toggle an icon-star to the an icon-star-empty after click on star button', () => {
+    initialState = { ...initialState, auth: { auth: true } };
 
-  it("should toggle 'icon-star-empty' class to 'icon-star' after click on star button", () => {
-    titlePanelTree.find('i.icon-star-empty').simulate('click');
-    expect(titlePanelTree.find('i.icon-star').props()).toMatchSnapshot();
-  });
+    const { getByRole } = renderWithRedux(
+      <TitlePanel tags={tags} favorites={favorites} author={author} title={title} />,
+      { initialState },
+    );
 
-  it("should toggle 'icon-star' class to 'icon-star-empty' after click on star button", () => {
-    titlePanelTree.find('i.icon-star-empty').simulate('click');
-    titlePanelTree.find('i.icon-star').simulate('click');
-    expect(titlePanelTree.find('i.icon-star-empty').props()).toMatchSnapshot();
+    const starButton = getByRole('button');
+    fireEvent.click(starButton);
+    fireEvent.click(starButton);
+    expect(starButton).toMatchSnapshot();
   });
 });
